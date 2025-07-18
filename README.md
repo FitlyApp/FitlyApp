@@ -1,4 +1,6 @@
-<h1 align = "center">FitlyApp</h1>  
+<h1 align="center">FitlyApp</h1>
+<span style="color:blue">Texto azul</span>
+
 
 ## Sobre o projeto: 
 Uma plataforma para a organização da alimentação diária, nossa ideia é prover uma quantidade de calorias diárias baseada nas preferências do usuário, perguntaremos, peso, altura, sexo, idade, exercício semanal e também o objetivo, sendo ganho de massa muscular, perda de gordura, ou os dois simultaneamente. Nosso objetivo é prover metas alcançáveis referente a meta que o usuário estipulou, podendo ser 2 semanas, 1 mês, 2 meses,etc.
