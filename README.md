@@ -22,7 +22,7 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 - Escolhemos o líder: Igor Marcon Michels; 
 - Discutimos temas relacionados à alimentação equilibrada;
 - Iniciamos e concluímos a pesquisa relacionada ao exercício físico
-#### Ações necessárias:
+#### Ações necessárias ✔️:
 - [X] ~Definir o líder~
 - [X] ~Discussão do conteúdo~
 - [X] ~Término da pesquisa~
@@ -37,5 +37,10 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 - Victor Murilo fez as anotações e criou a ata, com evento no google agenda
 - Matheus e Kaue trabalharam no github compartilhado
 - Victor Murilo planejou as ações necessárias junto ao líder
-- Email: fitly.appp@gmail.com
+- Email: Fitlyapp1@gmail.com
+- Definição do secretário: Victor Murilo
+#### Ações necessárias ✔️:
+- [X] ~Tela de login e cadastro~
+- [X] ~Produção do README do github compartilhado    
+
  
