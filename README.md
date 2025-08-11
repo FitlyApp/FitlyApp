@@ -41,6 +41,11 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 - Definição do secretário: Victor Murilo
 #### Ações necessárias ✔️:
 - [X] ~Tela de login e cadastro~
-- [X] ~Produção do README do github compartilhado    
+- [X] ~Produção do README do github compartilhado~
+- [X] ~Início da programação do site~
+- [ ] Criação das redes Sociais do projeto
+- [X] ~Esboço do design do site no figma~
+- [ ] Ata Completa
+
 
  
