@@ -14,6 +14,7 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 -  **Kaue Teixeira**: Responsável por programar as partes estáticas do site, além de auxiliar na pesquisa;
 -  **Pedro José Oliveira da Roza**: Responsável pela pesquisa e auxiliar no desenvolvimento das partes estáticas do site.
    ## Observação: As funções dos colaboradores ainda estão sujeito à mudanças conforme o andamento do projeto.
+
 <h2>Atas de reuniões 🕚: </h2>
 
 ### ` 11 de julho de 2025, 09:45 até às 11:15 `
@@ -22,12 +23,15 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 - Escolhemos o líder: Igor Marcon Michels; 
 - Discutimos temas relacionados à alimentação equilibrada;
 - Iniciamos e concluímos a pesquisa relacionada ao exercício físico
+
 #### Ações necessárias ✔️:
 - [X] ~Definir o líder~
 - [X] ~Discussão do conteúdo~
 - [X] ~Término da pesquisa~
+
 ### ` 18 de julho de 2025, 09:45 até às 11:15 `
 **Participantes**: `Pedro José Oliveira da Roza`, `Victor Murilo Bernardes`, `Matheus Maximiano`, `Victor Feliciano`, `Igor Marcon Michels` e `Kaue Teixeira`
+
 #### Anotações 📓: 
 - Definição do nome fictício: Fitly
 - Criação do instagram do trabalho: **app.fitly**
@@ -39,6 +43,7 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 - Victor Murilo planejou as ações necessárias junto ao líder
 - Email: Fitlyapp1@gmail.com
 - Definição do secretário: Victor Murilo
+
 #### Ações necessárias ✔️:
 - [X] ~Tela de login e cadastro~
 - [X] ~Produção do README do github compartilhado~
@@ -46,6 +51,33 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 - [ ] Criação das redes Sociais do projeto
 - [X] ~Esboço do design do site no figma~
 - [ ] Ata Completa
+- [X] ~Criação da organização no github~
 
+### ` 8 de Agosto de 2025, 8:00 até às 9:30 | 8 de agosto de 2025 09:45 até às 11:15 `
+**Participantes**: `Pedro José Oliveira da Roza`, `Victor Murilo Bernardes`, `Matheus Maximiano`, `Victor Feliciano`, `Igor Marcon Michels` e `Kaue Teixeira`
 
- 
+#### Anotações 📓:
+-  Como os computadores da sala B3 foram resetados, acabamos perdendo o email do app, incluindo a conta do instagram. Por isso, criamos um novo email e uma nova conta nas redes sociais.
+- email: Fitlyapp1@gmail.com
+- Definição das cores: Preto e branco (juntamente aos seus diferentes tons). Em páginas de fundo claro, letras pretas mais finas. Em páginas de fundo escuro, letras em branco mais grossas para dar um destaque. Os títulos serão em azul.
+- Adicionamos as atas já feitas no README.md
+- Criação da logo, utilizando como base as cores já definidas do site
+- Correção do design no figma
+- Início da integração da tela de login/cadastro em banco de dados
+- Adição e pesquisa de imagens
+- Programação inicial do index no github
+- Adição de conteúdo no figma (malefícios e benefícios, imagens, páginas, etc.)
+- Produção do roteiro de perguntas
+- Produção do rodapé do app no Figma
+- Produção da página de configurações (no figma)
+- Pesquisa de alimentos
+- Configuração da conta do instagram
+
+#### Ações necessárias ✔️:
+- [X] ~Definir as cores do app~
+- [X] ~Criação do logo do app~
+- [X] ~Adição das atas~
+- [ ] Término do rodapé
+- [X] ~Término do roteiro de perguntas~
+- [ ] Término do design da página de configurações no figma
+- [X] ~Início da página sobre o projeto~ 
