@@ -258,6 +258,41 @@ plataforma
 }
 
 /************************************************
+Depoimentos
+************************************************/
+
+.depoimentos h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #0D1B2A;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.depoimentos ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    color: #FFFFFF;
+}
+
+.depoimentos ul li {
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 12px;
+    align-items: center;
+    border-color: #30AFFF;
+    background-color: rgba(0, 157, 255, 0.8);
+    backdrop-filter: blur(2px);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    text-decoration: none;
+    list-style: none;
+    max-width: 250px;
+}
+
+
+/************************************************
 NotFound (404)
 ************************************************/
 
@@ -297,3 +332,4 @@ NotFound (404)
     background-color: #009DFF;
     transform: translateY(-2px);
 }
+
