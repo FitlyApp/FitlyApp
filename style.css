@@ -339,16 +339,63 @@ footer
 
 .ThreeCollum {
     display: flex;
-    margin: 4rem 8rem 0rem 8rem;
+    padding: 4rem 8rem 0rem 8rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ThreeCollum div {
+    align-items: center;
+    width: 30%;
+}
+
+.ThreeCollum h3 {
+    color: #009DFF;
+}
+
+.Parte3 {
+    text-align: right;
+}
+
+.Parte2 {
+    text-align: left;
+}
+
+.Parte1 {
+    text-align: left;
+    display: flex;
+}
+
+
+
+.logoFooter h2 {
+    font-size: 1.5rem;
+}
+
+.Parte1 i {
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.ThreeCollum i {
+    font-size: 1.5rem;
+}
+
+.ThreeCollum a {
+    font-size: 0.8rem;
+    color: #000000;
+    text-decoration: none;
 }
 
 .ThreeCollum p {
     font-size: 0.8rem;
-    text-align: left;
 }
 
-.Parte1 img{
-    width: 15%;
+.ThreeCollum li {
+    list-style: none;
+}
+
+.Parte1 .logoFooter img{
+    width: 50%;
 }
 
 .FullBar p{
