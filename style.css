@@ -333,26 +333,27 @@ NotFound (404)
     transform: translateY(-2px);
 }
 
-<<<<<<< HEAD
-=======
-
 /************************************************
 footer
 ************************************************/
 
-footer.ThreeCollum {
+.ThreeCollum {
     display: flex;
-    margin: 8rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin: 4rem 8rem 0rem 8rem;
+}
+
+.ThreeCollum p {
+    font-size: 0.8rem;
+    text-align: left;
 }
 
 .Parte1 img{
-    width: 10%;
+    width: 15%;
 }
 
-footer.FullBar {
-    
+.FullBar p{
     text-align: center;
+    font-weight: 200;
+    font-size: 0.8rem;
+    margin: 0.8rem;
 }
->>>>>>> c535af0e784211f7403269e04d8645f5925c6f2c
