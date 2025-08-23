@@ -134,7 +134,7 @@ Início
     object-fit: cover;
     display: block;
     width: 100%;
-    height: 880px;
+    max-height: 1010px;
     opacity: 0.3;
     background-color: #000000;
 }
@@ -333,3 +333,26 @@ NotFound (404)
     transform: translateY(-2px);
 }
 
+<<<<<<< HEAD
+=======
+
+/************************************************
+footer
+************************************************/
+
+footer.ThreeCollum {
+    display: flex;
+    margin: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.Parte1 img{
+    width: 10%;
+}
+
+footer.FullBar {
+    
+    text-align: center;
+}
+>>>>>>> c535af0e784211f7403269e04d8645f5925c6f2c
