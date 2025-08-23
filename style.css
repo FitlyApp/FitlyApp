@@ -235,6 +235,10 @@ plataforma
     margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
+.plataforma i {
+    color: #009DFF;
+}
+
 
 
 .plataforma h4 {
@@ -264,7 +268,6 @@ Depoimentos
 .depoimentos h2 {
     font-size: 2rem;
     text-align: center;
-    color: #0D1B2A;
     margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
@@ -290,6 +293,39 @@ Depoimentos
     list-style: none;
     max-width: 250px;
 }
+
+/************************************************
+CTA
+************************************************/
+
+.CTA img {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    max-height: 350px;
+    opacity: 0.3;
+    background-color: #000000;
+}
+
+.CTA a {
+    background-color: #30AFFF;
+    display: inline-block;
+    margin: 30px 0px 30px 0px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    text-decoration: none;
+     font-weight: bold;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.CTA a:hover {
+    background-color: #009DFF;
+    transform: translateY(-2px);
+}
+
 
 
 /************************************************
