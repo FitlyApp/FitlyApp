@@ -40,7 +40,7 @@ HTML
 html {
     font-family: 'Poppins';
     scroll-behavior: smooth;
-    background-color: #e4e4ea;
+    background-color: #f0eded;
 }
 html {
     font-size: calc(15px + 0.390625vw);
@@ -101,12 +101,17 @@ header nav ul li a:hover {
 /************************************************
 geral
 ************************************************/
-section h1 {
-    color: #009DFF;
+section{
     text-align: center;
+}
+section h1 {
+    color: #0D1B2A;
     font-size: 2rem;
     font-weight: bold;
     margin: 2rem;
+    display: inline-block;
+    border-bottom: 3px solid #009DFF;
+    padding-bottom: 5px;
 }
 
 section p.meio {
@@ -130,7 +135,7 @@ section p {
 section ul li h2 {
     font-size: 1.4vw;
     font-weight: bold;
-    text-align: left;
+    text-align: left; 
 }
 
 section ul li {
@@ -161,7 +166,10 @@ section ul li div.texto {
 section ul li {
     width: 30%;
 }
-
+section ul li div.texto p a {
+    color: #009DFF;
+    font-weight: bold;
+}
 section ul li:hover {
     transform: translateY(-5px);
 }
