@@ -106,55 +106,70 @@ section h1 {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-    padding: 2rem;
+    margin: 2rem;
 }
+
 section p.meio {
     text-align: center;
     font-size: 20px;
-    padding: 0vw 20rem 2rem 20rem;
+    margin: 0vw 20rem 2rem 20rem;
 }
+
 section ul {
     display: flex;
     text-align: center;
     padding: 0 2rem 0 2rem;
-    justify-content: space-between;
+    justify-content: center;
 }
 section p {
-    color: rgb(111, 112, 112);
+    color: #2e2e2e;
     font-size: 20px;
     text-align: left;
 }
+
 section ul li h2 {
     font-size: 1.4vw;
     font-weight: bold;
     text-align: left;
 }
+
 section ul li {
     flex-direction: column;  
     align-items: center;
     background-color: white;
     border: 2px ;
     border-radius: 10px;
-    padding: 0 2rem;
     margin: 0 1rem 0 1rem;
-
 }
+
 section ul li img {
-    margin: 1.8rem 0 0 0;
+    margin: 1rem 0 0 0;
     border: 2px solid #616161;
     border-radius: 10px;
-    width: 70%;
+    width: 90%;
 }
+
 section ul li p {
     margin-top: 8px;
     text-align: justify;
 }
+
 section ul li div.texto {
-    margin: 0 5.3rem 2rem 5.3rem;
+    margin: 0 2rem 2rem 2rem;
 }
+
+section ul li {
+    width: 30%;
+}
+
+section ul li:hover {
+    transform: translateY(-5px);
+}
+
 /************************************************
 footer
 ************************************************/
+
 p.footer {
     text-align: center;
     font-size: x-small;
