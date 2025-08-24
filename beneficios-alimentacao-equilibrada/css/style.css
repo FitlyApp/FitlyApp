@@ -145,19 +145,20 @@ section p {
     font-size: 20px;
     text-align: left;
 }
-section h2 {
+section ul li h2 {
     font-size: 1.4vw;
     font-weight: bold;
     text-align: left;
 }
 section ul li {
-    padding: 0 2rem;
-    background-color: white;
-    margin: 0 1rem 0 1rem;
-    border: 2px ;
-    border-radius: 10px;
     flex-direction: column;  
     align-items: center;
+    background-color: white;
+    border: 2px ;
+    border-radius: 10px;
+    padding: 0 2rem;
+    margin: 0 1rem 0 1rem;
+
 }
 section ul li img {
     margin: 1.8rem 0 0 0;
@@ -168,4 +169,16 @@ section ul li img {
 section ul li p {
     margin-top: 8px;
     text-align: justify;
+}
+section ul li div.texto {
+    margin: 0 5.3rem 2rem 5.3rem;
+}
+/************************************************
+footer
+************************************************/
+p.footer {
+    text-align: center;
+    font-size: x-small;
+    font-weight: bold;
+    padding: 4rem;
 }
