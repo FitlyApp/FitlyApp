@@ -208,9 +208,9 @@ Footer
 
 
 .Parte1 img{
-   width: 15%;
+   width: 40%;
+   height: max-content;
 }
-
 
 .FullBar p{
    text-align: center;
