@@ -148,6 +148,30 @@ section.nutrients h3 {
   margin: 0 0 2vw 0;
   font-weight: bold;
 }
-section.nutrients ul {
+section.nutrients ul li {
+  list-style: none;
+  margin: 10px 10px 10px 20px;
+}
+section.nutrients ul li p strong{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+section.nutrients ul li p a {
+  margin: 0 0 0 20px;
+  color: #009DFF;
+}
+section.nutrients ul li div {
   display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+ section.nutrients ul li div img {
+  width: 30.625vw;
+  height: 22.604vw;
+} 
+/************************************************
+Conclusão
+************************************************/
+p {
+  margin: 10px 10px 10px 20px;
 }
