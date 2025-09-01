@@ -81,3 +81,27 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 - [X] ~Término do roteiro de perguntas~
 - [ ] Término do design da página de configurações no figma
 - [X] ~Início da página sobre o projeto~ 
+
+### ` 20 de Agosto de 2025, 13:00 até às 13:45`
+**Participantes**: `Igor Maicon Michels` e `Victor Murilo Bernardes`
+#### Anotações 📓:
+- Programação da estrutura de algumas páginas;
+- Estilo da página inicial
+- Produção do início do conteúdo da página inicial;
+- Início da produção dos artigos (conteúdo e programação);
+- Discussão de ideias;
+- Correções de erros;
+
+### `23 de agosto de 2025, 08:00 até às 09:30`|`23 de agosto de 2025, 9:45 até às 11:15`
+**Participantes**: `Igor Maicon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira` e `Matheus Maximiniano Lacerda` 
+#### Ações necessárias ✔️: 
+- [ ] Finalização das páginas inicial
+- [ ] Finalização do Header
+- [ ] Iniciar e finalizar o footer
+- [X] ~Organizar o projeto no vscode~
+- [X] ~Indexação das páginas~
+- [X] ~Início da página sobre o projeto~
+- [X] ~Finalização da página de Artigos~ 
+- [X] ~Finalização da página de Artigos~
+- [X] ~Início da página inicial do Artigo~
+- [ ] Criação do menu responsível
