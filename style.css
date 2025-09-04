@@ -59,7 +59,9 @@ html {
     font-size: calc(15px + 0.390625vw);
 
 }
-
+ul li {
+    list-style-type: none;
+}
 /************************************************
 header
 ************************************************/
@@ -375,13 +377,26 @@ NotFound (404)
 /************************************************
 footer
 ************************************************/
-footer {
+footer div{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-footer div.logo-socialMidias {
-    padding: 10px;
+footer div div {
+    display: block;
+    margin: 1vw 3vw;
 }
+
+footer div div h2 {
+    font-size: 1.5vw;
+}
+footer div div ul li a {
+    font-size: 1vw;
+}
+footer div div p {
+    font-size: 1vw;
+}
+
 footer div a {
     display: flex;
     align-items: center;
@@ -389,3 +404,11 @@ footer div a {
 footer div a img {
     width: 8vw;
 }
+footer div div.logo p {
+    margin-bottom: 20px;
+}
+footer div div.logo ul {
+    display: flex;
+    justify-content: space-around;
+}
+
