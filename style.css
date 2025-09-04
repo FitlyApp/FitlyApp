@@ -26,7 +26,10 @@ Poppins Font
   src: url(https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
+a {
+    color: #000000;
+    text-decoration: none;
+}
 /************************************************
 Coolors
 ************************************************/
@@ -372,71 +375,17 @@ NotFound (404)
 /************************************************
 footer
 ************************************************/
-
-.ThreeCollum {
+footer {
     display: flex;
-    padding: 4rem 8rem 0rem 8rem;
     justify-content: space-between;
-    align-items: flex-start;
 }
-
-.ThreeCollum div {
-    align-items: center;
-    width: 30%;
+footer div.logo-socialMidias {
+    padding: 10px;
 }
-
-.ThreeCollum h3 {
-    color: #009DFF;
-}
-
-.Parte3 {
-    text-align: right;
-}
-
-.Parte2 {
-    text-align: left;
-}
-
-.Parte1 {
-    text-align: left;
+footer div a {
     display: flex;
+    align-items: center;
 }
-
-
-
-.logoFooter h2 {
-    font-size: 1.5rem;
-}
-
-.Parte1 i {
-    margin: 0 0.5rem 0 0.5rem;
-}
-
-.ThreeCollum i {
-    font-size: 1.5rem;
-}
-
-.ThreeCollum a {
-    font-size: 0.8rem;
-    color: #000000;
-    text-decoration: none;
-}
-
-.ThreeCollum p {
-    font-size: 0.8rem;
-}
-
-.ThreeCollum li {
-    list-style: none;
-}
-
-.Parte1 .logoFooter img{
-    width: 50%;
-}
-
-.FullBar p{
-    text-align: center;
-    font-weight: 200;
-    font-size: 0.8rem;
-    margin: 0.8rem;
+footer div a img {
+    width: 8vw;
 }
