@@ -127,7 +127,7 @@ main {
     padding: 0.5rem 2rem 0.5rem 2rem;
 }
 main section.introduction h2 {
-  font-size: 8vw;
+  font-size: 4vw;
   text-align: center;
   color: #009DFF;
   margin: 0 0 2vw 0;
@@ -135,28 +135,32 @@ main section.introduction h2 {
 }
 main section.introduction p {
   text-align: center;
-  font-size: 3vw;
+  font-size: 1.3rem;
     margin: 0 0 2vw 0;
 }
 /************************************************
 Nutrientes
 ************************************************/
 section.nutrients h3 {
-  font-size: 4vw;
+  font-size: 3vw;
   text-align: center;
   color: #009DFF;
   margin: 0 0 2vw 0;
   font-weight: bold;
 }
+
 section.nutrients ul li {
   list-style: none;
   margin: 10px 10px 10px 20px;
 }
 section.nutrients ul li p strong{
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
-section.nutrients ul li p a {
+section.nutrients  p {
+  font-size: 1.3rem;
+}
+  section.nutrients ul li p a {
   margin: 0 0 0 20px;
   color: #009DFF;
 }
@@ -174,4 +178,63 @@ Conclusão
 ************************************************/
 p {
   margin: 10px 10px 10px 20px;
+}
+/************************************************
+Footer
+************************************************/
+footer div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vw 3vw 0 3vw;
+}
+footer div div {
+    display: block;
+}
+
+footer div div h2 {
+    font-size: 1.5vw;
+}
+footer div div ul li a {
+    font-size: 1vw;
+}
+footer div div p {
+    font-size: 1vw;
+}
+footer div a {
+    display: flex;
+    align-items: center;
+}
+footer div a img {
+    width: 8vw;
+}
+footer div div.logo img {
+   width: 5vw;
+}
+footer div div p {
+    margin: 10px 0;
+}
+footer div div.logo ul {
+    display: flex;
+    justify-content: space-around;
+}
+footer div div > h2 {
+    color: #009DFF;
+}
+footer div div ul li {
+    margin: 10px 0;
+}
+footer div div ul li a:hover {
+    text-decoration: underline #009DFF 0.1vw;
+}
+footer div div p.email {
+    color: #009DFF;
+}
+footer div.direitos  {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px;
+}
+footer div.direitos p {
+    color: gray;
 }
