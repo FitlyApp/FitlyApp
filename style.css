@@ -381,10 +381,10 @@ footer div{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 1vw 3vw 0 3vw;
 }
 footer div div {
     display: block;
-    margin: 1vw 3vw;
 }
 
 footer div div h2 {
@@ -396,7 +396,6 @@ footer div div ul li a {
 footer div div p {
     font-size: 1vw;
 }
-
 footer div a {
     display: flex;
     align-items: center;
@@ -404,11 +403,30 @@ footer div a {
 footer div a img {
     width: 8vw;
 }
-footer div div.logo p {
-    margin-bottom: 20px;
+footer div div.logo img {
+   width: 5vw;
+}
+footer div div p {
+    margin: 10px 0;
 }
 footer div div.logo ul {
     display: flex;
     justify-content: space-around;
 }
-
+footer div div > h2 {
+    color: #009DFF;
+}
+footer div div ul li {
+    margin: 10px 0;
+}
+footer div div ul li a:hover {
+    text-decoration: underline #009DFF 0.1vw;
+}
+footer div div p.email {
+    color: #009DFF;
+}
+footer div.direitos  {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
