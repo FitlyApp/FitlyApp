@@ -103,6 +103,7 @@ geral
 ************************************************/
 section{
     text-align: center;
+    padding: 0 30vw 0 30vw;
 }
 section h1 {
     color: #0D1B2A;
@@ -115,4 +116,17 @@ section h1 {
 }
 section a p{
     background-color: #009DFF;
+}
+section div.tudo {
+    display: flex;
+    align-items: center;
+}
+section div.tudo img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 8px;
+    border: 2px solid #000000;
+}
+section div.texto {
+    padding: 0 0 0 8vw;
 }
