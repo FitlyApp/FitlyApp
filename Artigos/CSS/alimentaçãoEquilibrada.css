@@ -41,7 +41,6 @@ Reset
     padding: 0;
     box-sizing: border-box;
 }
-
 /************************************************
 HTML
 ************************************************/
@@ -99,7 +98,7 @@ header nav ul li{
 }
 
 header nav ul li a {
-    font-size: 3vw;
+    font-size: 1.5vw;
     color: #000000;
     text-decoration: none;
     font-weight: normal;
@@ -191,39 +190,45 @@ footer div{
 footer div div {
     display: block;
 }
-
-footer div div h2 {
-    font-size: 1.5vw;
+footer div div a {
+  text-decoration: none;
 }
+footer div div a h2 {
+    font-size: 1.5vw;
+    color: black;
+  }
 footer div div ul li a {
     font-size: 1vw;
-}
-footer div div p {
+    color: #000000;
+  }
+  footer div div p {
     font-size: 1vw;
-}
-footer div a {
+  }
+  footer div a {
     display: flex;
     align-items: center;
-}
-footer div a img {
+  }
+  footer div a img {
     width: 8vw;
-}
-footer div div.logo img {
-   width: 5vw;
-}
-footer div div p {
+  }
+  footer div div.logo img {
+    width: 5vw;
+  }
+  footer div div p {
     margin: 10px 0;
-}
-footer div div.logo ul {
+  }
+  footer div div.logo ul {
     display: flex;
     justify-content: space-around;
-}
-footer div div > h2 {
+  }
+  footer div div > h2 {
     color: #009DFF;
-}
-footer div div ul li {
+  }
+  footer div div ul li {
     margin: 10px 0;
-}
+    list-style-type: none;
+  }
+
 footer div div ul li a:hover {
     text-decoration: underline #009DFF 0.1vw;
 }
