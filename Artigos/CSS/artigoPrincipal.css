@@ -103,30 +103,116 @@ geral
 ************************************************/
 section{
     text-align: center;
-    padding: 0 30vw 0 30vw;
+    padding: 0 20vw 0 20vw;
 }
 section h1 {
     color: #0D1B2A;
     font-size: 2rem;
     font-weight: bold;
-    margin: 2rem;
+    margin: 2rem 2rem 0 2rem;
     display: inline-block;
     border-bottom: 3px solid #009DFF;
     padding-bottom: 5px;
 }
-section a p{
-    background-color: #009DFF;
+section ul li h2 {
+    color: #000000;
+    font-weight: bold;
+    padding: 2rem;
 }
 section div.tudo {
     display: flex;
     align-items: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    padding: 2vw;
+    border-radius: 1vw;
 }
-section div.tudo img {
-    width: 10rem;
-    height: 10rem;
+section div.tudo a img {
+    width: 90%;
+    height: 280px;
+    object-fit: fill;
     border-radius: 8px;
     border: 2px solid #000000;
 }
 section div.texto {
-    padding: 0 0 0 8vw;
+    padding: 0 0 0 4rem;
+    text-align: left;
+    color: #000000;
+}
+section div.texto p.button {
+    background-color: white;
+    text-align: center;
+    color: #000000;
+    border-radius: 2vw;
+    margin: 2vw 0 0 0;
+    border: 2px solid #009DFF;
+}
+section ul li div.texto p{
+    font-size: 1.vw;
+}
+section ul li {
+    color: white;
+    
+}
+/************************************************
+footer
+************************************************/
+footer {
+    background-color: white;
+    padding: 2vw 0 0 0;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vw 3vw 0 3vw;
+}
+footer div div {
+    display: block;
+}
+
+footer div div h2 {
+    font-size: 1.5vw;
+}
+footer div div ul li a {
+    font-size: 1vw;
+}
+footer div div p {
+    font-size: 1vw;
+}
+footer div a {
+    display: flex;
+    align-items: center;
+}
+footer div a img {
+    width: 8vw;
+}
+footer div div.logo img {
+   width: 5vw;
+}
+footer div div p {
+    margin: 10px 0;
+}
+footer div div.logo ul {
+    display: flex;
+    justify-content: space-around;
+}
+footer div div > h2 {
+    color: #009DFF;
+}
+footer div div ul li {
+    margin: 10px 0;
+}
+footer div div ul li a:hover {
+    text-decoration: underline #009DFF 0.1vw;
+}
+footer div div p.email {
+    color: #009DFF;
+}
+footer div.direitos  {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 20px;
+}
+footer div.direitos p {
+    color: gray;
 }
