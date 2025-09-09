@@ -152,18 +152,27 @@ section div.tudo {
   padding: 2vw;
   border-radius: 1vw;
 }
+
+section div.tudo > a {
+    flex-basis: 40%;
+    flex-shrink: 0;
+}
+
 section div.tudo a img {
-  width: 90%;
+  width: 100%;
   height: 280px;
   object-fit: fill;
   border-radius: 8px;
   border: 2px solid #000000;
 }
+
 section div.texto {
-  padding: 0 0 0 4rem;
+  flex-basis: 60%;
+  padding: 0 0 0 2rem;
   text-align: left;
   color: #000000;
 }
+
 section div.texto p.button {
   background-color: white;
   text-align: center;
