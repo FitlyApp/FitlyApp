@@ -48,9 +48,9 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 - [X] ~Tela de login e cadastro~
 - [X] ~Produção do README do github compartilhado~
 - [X] ~Início da programação do site~
-- [ ] Criação das redes Sociais do projeto
+- [X] ~Criação das redes Sociais do projeto~
 - [X] ~Esboço do design do site no figma~
-- [ ] Ata Completa
+- [X] ~Ata Completa~
 - [X] ~Criação da organização no github~
 
 ### ` 8 de Agosto de 2025, 8:00 até às 9:30 | 8 de agosto de 2025 09:45 até às 11:15 `
@@ -77,9 +77,8 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 - [X] ~Definir as cores do app~
 - [X] ~Criação do logo do app~
 - [X] ~Adição das atas~
-- [ ] Término do rodapé
+- [X] ~Término do rodapé~
 - [X] ~Término do roteiro de perguntas~
-- [ ] Término do design da página de configurações no figma
 - [X] ~Início da página sobre o projeto~ 
 
 ### ` 20 de Agosto de 2025, 13:00 até às 13:45`
@@ -95,24 +94,33 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 ### `23 de agosto de 2025, 08:00 até às 09:30`|`23 de agosto de 2025, 9:45 até às 11:15`
 **Participantes**: `Igor Maicon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira` e `Matheus Maximiniano Lacerda` 
 #### Ações necessárias ✔️: 
-- [ ] Finalização das páginas inicial
-- [ ] Finalização do Header
-- [ ] Iniciar e finalizar o footer
+- [X] ~Finalização das páginas inicial~
+- [X] ~Finalização do Header~
+- [X] ~Iniciar o footer~
 - [X] ~Organizar o projeto no vscode~
 - [X] ~Indexação das páginas~
 - [X] ~Início da página sobre o projeto~
-- [X] ~Finalização da página de Artigos~ 
-- [X] ~Finalização da página de Artigos~
-- [X] ~Início da página inicial do Artigo~
-- [ ] Criação do menu recolhivel para o header 
+- [X] ~Finalização da página de  um dos artigos~ 
+- [X] ~Início da página inicial do artigo~
+- [ ] Criação do menu recolhivel para o header `Adiada para a segunda parte do trabalho` 
 
 ### `29 de agosto de 2025, 9:45 até às 11:15`
 **Participantes**: `Igor Maicon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
 ### Anotações 📓:
 - Conversamos com o professor sobre a nova colaboradora: Bruna (Nutricionista, irmã do colega Victor)
 #### Ações necessárias ✔️:
-- [ ] Criação do roteiro de perguntas
-- [ ] Finalização de duas páginas de artigo
-- [ ] Finalização da página sobre o projeto 
+- [X] ~Criação do roteiro de perguntas~
+- [X] ~Finalização de duas páginas de artigo~
+- [X] ~Finalização da página sobre o projeto~ 
 - [X] ~Início do BackEnd~
-- [X] ~Primeiros do Instagram~
+- [X] ~Primeiros posts do Instagram~
+
+### `5 de Setembro de 2025, 09:45 até 11:15`
+**Participantes**: `Igor Maicon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
+### Anotações 📓:
+- Iniciamos o roteiro de perguntas
+- Finalizamos o footer
+- Criação de mais uma página do artigo
+###
+- [X] ~Achar imagens que condizem com o conteúdo~
+- [X] ~Finalizar todas as outras atividades até o momento~

@@ -37,17 +37,28 @@ Reset
 /************************************************
 HTML
 ************************************************/
+
 html {
     font-family: 'Poppins';
     scroll-behavior: smooth;
-    background-color: #f3f1f1;
-}
-html {
+    background-color: #FFFFFF;
     font-size: calc(15px + 0.390625vw);
+    list-style-type: none;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul li {
+    list-style: none;
+}
+
 /************************************************
 header
 ************************************************/
+
 header {
     object-fit: cover;
     position: sticky;
@@ -60,30 +71,37 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 header h2 {
     font-size: 1.5rem;
     color: #000000;
     font-weight: bold;
     float: left;
 }
+
 header .logo {
   display: flex;
   align-items: center;
 }
+
 header .logo img {
   height: 2rem;
 }
+
+
 header nav ul li{
     margin: 10px;
     display: inline;
     float: right;
 }
+
 header nav ul li a {
     font-size: 0.8rem;
     color: #000000;
     text-decoration: none;
     font-weight: normal;
 }
+
 header nav ul li a.contato {
     border-style: solid;
     border-radius: 5px;
@@ -91,6 +109,7 @@ header nav ul li a.contato {
     border-color: #009DFF;
     padding: 0.2rem;
 }
+
 header nav ul li a:hover {
     background-color: #009DFF;
     color: #0D1B2A;

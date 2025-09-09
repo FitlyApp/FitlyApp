@@ -41,7 +41,6 @@ Reset
     padding: 0;
     box-sizing: border-box;
 }
-
 /************************************************
 HTML
 ************************************************/
@@ -54,13 +53,8 @@ html {
     list-style-type: none;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
 main {
-    margin: 0 5vw;
+    margin: 0 10vw;
 }
 
 
@@ -130,81 +124,93 @@ header nav ul li a:hover {
     border-radius: 5px;
     padding: 0.2rem;
 }
-     
+
 /************************************************
-introdução
+Introdução
 ************************************************/
-section.introducao h2 {
-    color: #009DFF;
-    margin: 2.5rem 0;
+
+section.introdução {
+    margin-top: 2rem;
     text-align: center;
 }
-section.introducao p{
-    text-align: center;
+section.introdução h2 {
+    color: #009DFF;
     margin: 0 0 2.5rem 0;
 }
-
-/************************************************
-planejamento
-************************************************/
-section.planejamento h3 {
-    color: #009DFF;
-    margin: 0 0 1rem 40px;
-    font-weight: bold;
+section.introdução p {
+    margin: 0 0 2.5rem 0;
 }
-section.planejamento p {
+/************************************************
+Definição
+************************************************/
+
+section.explicação h3 {
+    margin: 0 0 1rem 40px;
+    color: #009DFF;
+}
+section.explicação p {
     margin: 0 0 1rem 0;
 }
-section.planejamento h4 {
-    font-weight: bold;
+section.explicação p span {
     color: #009DFF;
-    margin: 0 0 1rem 40px;
-    font-size: 1.2rem;
 }
-
-/************************************************
-Porção
-************************************************/
-section.porção h3 {
-    color: #009DFF;
-    margin: 1rem 0 1rem 40px;
-}
-section.porção > p {
-    margin: 0.5rem 0;
-}
-/************************************************
-adaptação
-************************************************/
-section.adaptação > div {
+section.explicação div.Exemplos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-section.adaptação div div h3 {
-    color: #009DFF;
-    margin: 1rem 0 1rem 40px;
-}
-section.adaptação div div p {
-    margin: 1rem 0;
-}
-section.adaptação div div p span {
-    color: #009DFF;
-}
-section.adaptação p {
-    margin: 2rem 0;
+section.explicação div.Exemplos ul li {
+    margin:  0 0 35px 0;
+    justify-content: space-around;
 }
 
 /************************************************
-Referências
+Motivo
 ************************************************/
-section.referencias h3 {
-    font-weight: normal;
-    margin: 1rem 0 1rem 40px;
+section.motivo h3 {
+    margin: 0 0 1rem 40px;
+    color: #009DFF;    
 }
-section.referencias ul li {
+section.motivo p {
+    margin: 0 0 1rem 0;
+}
+section.motivo p span {
+    color: #009DFF;
+}
+
+/************************************************
+Exercícios
+************************************************/
+section.exercicio {
+    display: flex; 
+   justify-content: space-between;
+    margin: 3rem 0 0 0;
+    align-items: center;
+}
+section.exercicio h3 {
+    margin: 0 0 2rem 0;
+    color: #009DFF;
+}
+section.exercicio ul li {
+    margin: 0 0 35px 0;
+}
+section.exercicio p {
+    padding: 0 2vw 0 0;
+}
+section.exercicio div img {
+    height: 70%;
+}
+/************************************************
+Referencia
+************************************************/
+section.referencia h3 {
+    margin: 2rem 0 30px 0;
+}
+section.referencia ul li {
     list-style-type: none;
-    margin:  0  0 20px 20px;
+    
 }
-section.referencias ul li a {
+section.referencia ul li a {
+    margin: 0 0 2vw 20px;
     color: #009DFF;
 }
 /************************************************
@@ -214,7 +220,7 @@ footer div{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1vw 3vw 0 3vw;
+    margin: 2vw 3vw 0 3vw;
 }
 footer div div {
     display: block;
