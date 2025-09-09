@@ -391,6 +391,10 @@ main h2{
  padding-bottom: 5px;
 }
 
+main .sobre p{
+  margin: 40px;
+}
+
 
 .colab ul li p img{
  padding: 5px;
@@ -399,19 +403,11 @@ main h2{
 }
 
 
-.colab .primeira-dupla{
+.colab .dupla{
   display: flex;
+  justify-content: space-between;
 }
 
-
-.colab ul.segunda-dupla{
-  display: flex;
-}
-
-
-.colab ul.terceira-dupla{
-  display: flex;
-}
 .imagem{
   width: 600px;
   height: auto;
@@ -422,33 +418,61 @@ main h2{
 
 
 /************************************************
-Footer
+footer
 ************************************************/
-.ThreeCollum {
-  display: flex;
-  margin: 4rem 8rem 0rem 8rem;
+footer div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vw 3vw 0 3vw;
+}
+footer div div {
+    display: block;
 }
 
-
-
-
-.ThreeCollum p {
-  font-size: 0.8rem;
-  text-align: left;
+footer div div h2 {
+    font-size: 1.5vw;
 }
-
-
-
-
-.Parte1 img{
-  width: 40%;
-  height: max-content;
+footer div div ul li a {
+    font-size: 1vw;
 }
-
-
-.FullBar p{
-  text-align: center;
-  font-weight: 200;
-  font-size: 0.8rem;
-  margin: 0.8rem;
+footer div div p {
+    font-size: 1vw;
+}
+footer div a {
+    display: flex;
+    align-items: center;
+}
+footer div a img {
+    width: 8vw;
+}
+footer div div.logo img {
+   width: 5vw;
+}
+footer div div p {
+    margin: 10px 0;
+}
+footer div div.logo ul {
+    display: flex;
+    justify-content: space-around;
+}
+footer div div > h2 {
+    color: #009DFF;
+}
+footer div div ul li {
+    margin: 10px 0;
+}
+footer div div ul li a:hover {
+    text-decoration: underline #009DFF 0.1vw;
+}
+footer div div p.email {
+    color: #009DFF;
+}
+footer div.direitos  {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px;
+}
+footer div.direitos p {
+    color: gray;
 }
