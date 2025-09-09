@@ -49,11 +49,17 @@ html {
     font-family: 'Poppins';
     scroll-behavior: smooth;
     background-color: #FFFFFF;
+    font-size: calc(15px + 0.390625vw);
+    list-style-type: none;
 }
 
-html {
-    font-size: calc(15px + 0.390625vw);
+main {
+    margin: 0 10vw;
+}
 
+
+ul li {
+    list-style: none;
 }
 
 /************************************************
@@ -67,38 +73,37 @@ header {
     padding: 0.5rem 3rem 0.5rem 3rem;
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(2px);
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+header h2 {
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: bold;
+    float: left;
+}
+
 header .logo {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  
 }
 
 header .logo img {
   height: 2rem;
 }
 
-header .logo a {
-font-size: 1.5rem;
-    color: #000000;
-    font-weight: bold;
-    float: left;
-    text-decoration: none;
-    
-}
 
 header nav ul li{
-    margin: 20px;
+    margin: 10px;
     display: inline;
+    float: right;
 }
 
 header nav ul li a {
-    font-size: 1.5vw;
+    font-size: 0.8rem;
     color: #000000;
     text-decoration: none;
     font-weight: normal;
