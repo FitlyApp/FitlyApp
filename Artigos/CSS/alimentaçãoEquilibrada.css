@@ -137,7 +137,7 @@ main {
   padding: 0.5rem 2rem 0.5rem 2rem;
 }
 main section.introduction h2 {
-  font-size: 4vw;
+  font-size: 3vw;
   text-align: center;
   color: #009dff;
   margin: 0 0 2vw 0;
@@ -145,30 +145,30 @@ main section.introduction h2 {
 }
 main section.introduction p {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin: 0 0 2vw 0;
 }
 /************************************************
 Nutrientes
 ************************************************/
 section.nutrients h3 {
-  font-size: 3vw;
+  font-size: 1.5rem;
   text-align: center;
   color: #009dff;
-  margin: 0 0 2vw 0;
   font-weight: bold;
 }
 
 section.nutrients ul li {
+ 
   list-style: none;
-  margin: 10px 10px 10px 20px;
+  margin: 10px 10px 2rem 20px;
 }
 section.nutrients ul li p strong {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 section.nutrients p {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 section.nutrients ul li p a {
   margin: 0 0 0 20px;
@@ -187,7 +187,7 @@ section.nutrients ul li div img {
 Conclusão
 ************************************************/
 p {
-  margin: 10px 10px 10px 20px;
+  margin: 10px 10px 2vw 20px;
 }
 /************************************************
 Footer
