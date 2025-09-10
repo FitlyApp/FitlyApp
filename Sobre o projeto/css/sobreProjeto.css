@@ -142,9 +142,6 @@
       border-radius: 5px;
       padding: 0.2rem;
   }
-  <<<<<<< HEAD
-
-
   header nav ul li img{
     width: 45px;
     height: 45px;
@@ -278,13 +275,7 @@
       border-radius: 5px;
       padding: 0.2rem;
   }
-
-
-  =======
-      
-  >>>>>>> 98556398ba3bfe88df401f32480ac7da80278fec
-
-
+  
   /************************************************
   Main
   ************************************************/
@@ -332,7 +323,7 @@
   }
 
 
-  .colab .dupla{
+   .colab .dupla{
     display: flex;
     justify-content: space-between;
   }
