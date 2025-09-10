@@ -151,10 +151,12 @@ main section.introduction p {
 /************************************************
 Nutrientes
 ************************************************/
-section.nutrients div {
+section.nutrients ul div {
   display: flex;
   align-items: center;
+  justify-content: center;
   justify-content: space-around;
+
 }
 section.nutrients h3 {
   font-size: 1.5rem;
@@ -162,14 +164,25 @@ section.nutrients h3 {
   color: #009dff;
   font-weight: bold;
 }
+section ul div li {
+      transition: all 0.3s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 
-section.nutrients ul li {
-  flex-direction: column;  
+}
+section ul div li:hover {
+    transform: translateY(-5px);
+}
+section ul div {
+  display: flex;
+  justify-content: center;
+}
+section.nutrients ul div li {
     align-items: center;
     border: 10px gray;
     border-radius: 10px;
   list-style: none;
   margin: 10px 10px 2rem 20px;
+  width: 50%;
 }
 section.nutrients ul li p strong {
   font-size: 1.1rem;
@@ -189,6 +202,10 @@ section.nutrients ul li div {
 section.nutrients ul div li div img {
   width: 30.625vw;
   height: 22.604vw;
+  margin: 1rem 0 0 0;
+    border: 2px solid #616161;
+    border-radius: 10px;
+    object-fit: cover;
 }
 /************************************************
 Conclusão

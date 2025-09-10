@@ -165,6 +165,9 @@ section ul li {
     border: 2px ;
     border-radius: 10px;
     margin: 0 1rem 0 1rem;
+    width: 30%;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 section ul li img {
@@ -184,13 +187,6 @@ section ul li p {
 
 section ul li div.texto {
     margin: 0 2rem 2rem 2rem;
-}
-
-section ul li {
-    width: 30%;
-    transition: all 0.3s ease;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-
 }
 section ul li div.texto p a {
     color: #009DFF;
