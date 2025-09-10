@@ -151,6 +151,11 @@ main section.introduction p {
 /************************************************
 Nutrientes
 ************************************************/
+section.nutrients div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 section.nutrients h3 {
   font-size: 1.5rem;
   text-align: center;
@@ -159,7 +164,10 @@ section.nutrients h3 {
 }
 
 section.nutrients ul li {
- 
+  flex-direction: column;  
+    align-items: center;
+    border: 10px gray;
+    border-radius: 10px;
   list-style: none;
   margin: 10px 10px 2rem 20px;
 }
@@ -177,9 +185,8 @@ section.nutrients ul li p a {
 section.nutrients ul li div {
   display: flex;
   justify-content: center;
-  margin: 20px;
 }
-section.nutrients ul li div img {
+section.nutrients ul div li div img {
   width: 30.625vw;
   height: 22.604vw;
 }
@@ -189,6 +196,7 @@ Conclusão
 p {
   margin: 10px 10px 2vw 20px;
 }
+
 /************************************************
 Footer
 ************************************************/
