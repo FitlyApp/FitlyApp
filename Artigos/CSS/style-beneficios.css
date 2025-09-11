@@ -260,6 +260,10 @@ footer div.direitos p {
     font-size: 0.8rem;
 }
 
+footer a {
+    text-decoration: none;
+    color: black;
+}
 
 /************************************************
 celular

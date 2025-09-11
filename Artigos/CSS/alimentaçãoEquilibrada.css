@@ -55,7 +55,7 @@ HTML
 html {
   font-family: "Poppins";
   scroll-behavior: smooth;
-  background-color: #ffffff;
+  background-color: #e4ba6b77;
   font-size: calc(15px + 0.390625vw);
   list-style-type: none;
 }
@@ -104,7 +104,6 @@ header .logo img {
 header nav ul li {
   margin: 10px;
   display: inline;
-  float: right;
 }
 
 header nav ul li a {
@@ -151,58 +150,55 @@ main section.introduction p {
 /************************************************
 Nutrientes
 ************************************************/
-section.nutrients ul div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-around;
-
-}
 section.nutrients h3 {
   font-size: 1.5rem;
   text-align: center;
   color: #009dff;
   font-weight: bold;
 }
+
+section.nutrients ul div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 0 0;
+}
 section ul div li {
       transition: all 0.3s ease;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
 
 }
 section ul div li:hover {
     transform: translateY(-5px);
 }
-section ul div {
-  display: flex;
-  justify-content: center;
-}
+
 section.nutrients ul div li {
-    align-items: center;
-    border: 10px gray;
+  background-color: white;
+  align-items: center;
     border-radius: 10px;
   list-style: none;
   margin: 10px 10px 2rem 20px;
   width: 50%;
+  padding: 20px;
 }
+
 section.nutrients ul li p strong {
   font-size: 1.1rem;
   font-weight: bold;
 }
+
 section.nutrients p {
   font-size: 1rem;
 }
+
 section.nutrients ul li p a {
   margin: 0 0 0 20px;
   color: #009dff;
 }
-section.nutrients ul li div {
-  display: flex;
-  justify-content: center;
-}
+
 section.nutrients ul div li div img {
   width: 30.625vw;
   height: 22.604vw;
-  margin: 1rem 0 0 0;
     border: 2px solid #616161;
     border-radius: 10px;
     object-fit: cover;
@@ -279,4 +275,10 @@ footer div.direitos  {
 footer div.direitos p {
     color: gray;
     font-size: 0.8rem;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: black;
 }
