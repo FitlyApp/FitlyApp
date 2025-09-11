@@ -64,10 +64,6 @@ main {
   margin: 0 10vw;
 }
 
-ul li {
-  list-style: none;
-}
-
 /************************************************
 header
 ************************************************/
@@ -150,7 +146,7 @@ Definição
 ************************************************/
 
 section.explicação h3 {
-  margin: 0 0 1rem 40px;
+  margin: 0 0 1rem 0;
   color: #009dff;
 }
 section.explicação p {
@@ -172,7 +168,7 @@ section.explicação div.Exemplos ul li {
 Motivo
 ************************************************/
 section.motivo h3 {
-  margin: 0 0 1rem 40px;
+  margin: 0 0 1rem 0;
   color: #009dff;
 }
 section.motivo p {
