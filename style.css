@@ -435,7 +435,11 @@ footer div div p {
 }
 footer div div.logo ul {
     display: flex;
-    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+footer div div.logo ul span {
+    font-size: 1.1rem;
 }
 footer div div > h2 {
     color: #009DFF;
