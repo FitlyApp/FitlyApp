@@ -139,7 +139,7 @@ Início
     object-fit: cover;
     display: block;
     width: 100%;
-    max-height: 1010px;
+    height: 1010px;
     opacity: 0.3;
     background-color: #000000;
 }
