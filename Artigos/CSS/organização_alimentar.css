@@ -278,3 +278,8 @@ footer div.direitos p {
     color: gray;
     font-size: 0.8rem;
 }
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
