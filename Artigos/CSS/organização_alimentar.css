@@ -219,7 +219,6 @@ footer div{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1vw 3vw 0 3vw;
 }
 footer div div {
     display: block;
