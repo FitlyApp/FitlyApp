@@ -41,7 +41,7 @@ HTML
 html {
     font-family: 'Poppins';
     scroll-behavior: smooth;
-    background-color: #FFFFFF;
+    background-color: #f7f7f7;
     font-size: calc(15px + 0.390625vw);
     list-style-type: none;
 }
@@ -54,6 +54,15 @@ main {
 ul li {
     list-style: none;
 }
+
+body {
+  color: #333333;
+}
+
+p {
+  line-height: 1.6;
+}
+
 
 /************************************************
 header
