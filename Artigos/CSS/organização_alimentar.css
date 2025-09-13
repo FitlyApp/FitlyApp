@@ -166,30 +166,61 @@ section.introducao p {
 /************************************************
 planejamento
 ************************************************/
-section.planejamento h3 {
-  color: #333333;
+
+
+ section.planejamento h3 {
+  color: #009dff;
   margin: 0 0 1rem 40px;
   font-weight: bold;
 }
-section.planejamento p {
+ section.planejamento p {
   margin: 0 0 1rem 0;
 }
-section.planejamento h4 {
+ section.planejamento h4 {
   font-weight: bold;
   color: #333333;
   margin: 0 0 1rem 40px;
   font-size: 1.2rem;
 }
-
+/************************************************
+Dicas práticas 
+************************************************/
+div.texto_e_video {
+  display: flex;
+}
+div.texto_e_video div iframe {
+  margin: 20px auto;
+  
+}
+section.dicas h4 {
+  font-weight: bold;
+  color: #009dff;
+  margin: 0 0 1rem 40px;
+  font-size: 1.2rem;
+  
+}
+section.dicas p {
+  margin: 0 0 1rem 0;
+}
 /************************************************
 Porção
 ************************************************/
+section.porção {
+  justify-content: space-around;
+}
 section.porção h3 {
-  color: #333333;
+  color: #009dff;
   margin: 1rem 0 1rem 40px;
 }
-section.porção > p {
+section.porção ul li {
   margin: 0.5rem 0;
+}
+section.porção p {
+  margin: 0.5rem 0;
+}
+div.texto_e_video div.video p{
+  text-align: center;
+  margin: 0 0 0 7rem;
 }
 /************************************************
 adaptação
@@ -199,14 +230,14 @@ section.adaptação > div {
   justify-content: space-between;
 }
 section.adaptação div div h3 {
-  color: #333333;
+  color: #009DFF;
   margin: 1rem 0 1rem 40px;
 }
 section.adaptação div div p {
   margin: 1rem 0;
 }
 section.adaptação div div p span {
-  color: #333333;
+  color: #009DFF;
   font-size: 1.2rem;
 }
 section.adaptação p {
@@ -224,7 +255,18 @@ section.adaptação p.dica-extra span {
   font-weight: bold;
   color: #007acc; 
 }
+section.adaptação p.dica-extra {  
+  background-color: #e6f5ff; 
+  border-left: 4px solid #009dff;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
 
+section.adaptação p.dica-extra span {
+  font-weight: bold;
+  color: #007acc; 
+}
 /************************************************
 Referências
 ************************************************/

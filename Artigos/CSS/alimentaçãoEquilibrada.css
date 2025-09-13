@@ -216,6 +216,10 @@ section.nutrients ul div li div img {
   margin: auto;
 }
 
+section.nutrients div.video p {
+  text-align: center;
+  margin: 30px 0 20px;
+}
 
 /************************************************
 Footer
