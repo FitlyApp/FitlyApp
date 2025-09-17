@@ -249,17 +249,20 @@ main h2 {
 section.colaboradores div.colab ul.dupla li {
   padding: 0 3rem 2rem 3rem;      
 }
+
+.colab .unit img{
+  border: 3px solid #009DFF;
+}
+
 .colab .dupla {
   display: flex;
-  justify-content: center;  /* centraliza no meio da tela */
+  justify-content: center;  
   align-items: flex-start;
   gap: 2rem;                
   
 }
 
-
-/* Imagens com mesmo tamanho */
-.colab .dupla li img,
+.colab .dupla .unit li img,
 .imagem {
   width: 20rem;
   height: 20rem;
