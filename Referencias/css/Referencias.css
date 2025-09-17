@@ -52,6 +52,7 @@ html {
   background-color: #f7f7f7;
   font-size: calc(15px + 0.390625vw);
   list-style-type: none;
+  margin: 0 1vw;
 }
 
 a {
@@ -126,3 +127,43 @@ header nav ul li a:hover {
 /************************************************
 geral
 ************************************************/
+section {
+  text-align: center;
+}
+section ul li {
+  padding: 1vw 0vw 2vw 1vw;
+  background-color: #FFFFFF;
+  margin: 5vw 39vw 5vw 5vw;
+  border-radius: 1vw;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+section h1 {
+  text-align: center;
+  font-size: 3vw;
+  padding: 2vw 0 0 0;
+  color: #009dff;
+  display: inline-block;
+  border-bottom: 3px solid #000000;
+}
+section ul li h2 {
+  font-size: 2.5vw;
+  padding: 0 0 1vw 0;
+}
+section ul li h2 img {
+  width: 1.8vw;
+  height: 1.8vw;
+  margin: 0 1.2vw 0 0;
+}
+section ul li p {
+  padding: 0 0 0 3vw;
+}
+section ul li p span {
+  font-style: italic;
+}
+section ul li p a {
+  color: #009dff;
+}
+section ul li p a:hover {
+  text-decoration: underline;
+}
