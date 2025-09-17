@@ -121,6 +121,25 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 - Iniciamos o roteiro de perguntas
 - Finalizamos o footer
 - Criação de mais uma página do artigo
-###
+### Ações necessárias ✔️:
 - [X] ~Achar imagens que condizem com o conteúdo~
 - [X] ~Finalizar todas as outras atividades até o momento~
+
+### `12 de Setembro de 2025, 09:45 até 11:15`
+**Participantes**: `Igor Maicon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
+### Anotações 📓:
+- Colocamos o site no ar fitly.com.br
+- Iniciamos o roteiro de perguntas no html e css 
+### Ações necessárias ✔️:
+- [X] ~Tirar foto da equipe separadamente~
+- [X] -Conseguir uma foto da colaboradora~
+- [X] ~Anotar correções que podem ser feitas no design do site~
+
+### `13 de Setembro de 2025, 08:00 até 11:15`
+**Participantes**: `Igor Maicon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda` e `Pedro José`
+### Anotações 📓:
+- Continuar o roteiro de perguntas~ 
+- [X] ~Fazer as correções de design anotadas 
+- [X] ~Tirar a foto da equipe~
+- [X] ~Criação da página de referências no figma e HTML~
+- [ ] Conversar sobre a reunião do Kennedy
