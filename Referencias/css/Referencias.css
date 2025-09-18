@@ -127,22 +127,24 @@ header nav ul li a:hover {
 
 
 /************************************************
-geral
+Formatação
 ************************************************/
 section {
   text-align: center;
 }
 
 section ul li{
-  width: 45%;
-  height: auto;
+  max-width: 900px;
+  width: fit-content;
   max-height: 500px;
+  height: fit-content;
   padding: 1vw 0vw 2vw 1vw;
   margin: 5vw 2vw 5vw 5vw;
   background-color: #FFFFFF;
   border-radius: 1vw;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   text-align: left;
+  word-wrap: break-word;   
 }
 
 section h1 {
@@ -183,7 +185,6 @@ section ul li p a:hover {
 
 /* === Formatacao === */
 section ul{
-  display: flex;
   gap: 0.6rem;
   max-width: 700vw;
   max-height: 6 00vw;
