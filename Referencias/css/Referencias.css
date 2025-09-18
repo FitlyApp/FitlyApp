@@ -124,46 +124,77 @@ header nav ul li a:hover {
   border-radius: 5px;
   padding: 0.2rem;
 }
+
+
 /************************************************
 geral
 ************************************************/
 section {
   text-align: center;
 }
-section ul li {
+
+section ul li{
+  width: 45%;
+  height: auto;
+  max-height: 500px;
   padding: 1vw 0vw 2vw 1vw;
+  margin: 5vw 2vw 5vw 5vw;
   background-color: #FFFFFF;
-  margin: 5vw 39vw 5vw 5vw;
   border-radius: 1vw;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   text-align: left;
 }
+
 section h1 {
   text-align: center;
   font-size: 3vw;
   padding: 2vw 0 0 0;
-  color: #009dff;
+  color: #000000;
   display: inline-block;
-  border-bottom: 3px solid #000000;
+  border-bottom: 3px solid #009dff;
 }
+
 section ul li h2 {
   font-size: 2.5vw;
   padding: 0 0 1vw 0;
 }
+
 section ul li h2 img {
   width: 1.8vw;
   height: 1.8vw;
   margin: 0 1.2vw 0 0;
 }
+
 section ul li p {
-  padding: 0 0 0 3vw;
+  padding: 0 3vw;
 }
+
 section ul li p span {
   font-style: italic;
 }
+
 section ul li p a {
   color: #009dff;
 }
+
 section ul li p a:hover {
   text-decoration: underline;
 }
+
+/* === Formatacao === */
+section ul{
+  display: flex;
+  gap: 0.6rem;
+  max-width: 700vw;
+  max-height: 6 00vw;
+}
+
+section ul li{
+  display: block;
+}
+
+section ul li p{
+  margin: 4px 4px;
+  display: inline-block;
+}
+
