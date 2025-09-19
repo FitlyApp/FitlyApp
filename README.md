@@ -139,8 +139,8 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 ### `13 de Setembro de 2025, 08:00 até 11:15`
 **Participantes**: `Igor Maicon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda` e `Pedro José`
 ### Anotações 📓:
-- Continuar o roteiro de perguntas~ 
+- [X] ~Continuar o roteiro de perguntas~ 
 - [X] ~Fazer as correções de design anotadas~
 - [X] ~Tirar a foto da equipe~
 - [X] ~Criação da página de referências no figma e HTML~
-- [ ] Conversar sobre a reunião do Kennedy
+- [X] ~Conversar sobre a reunião do Kennedy~
