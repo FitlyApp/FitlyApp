@@ -7,13 +7,13 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 
 ## Integrantes👨‍⚕️: 
 
-- **Igor Maicon Michels**: Líder do projeto, responsável pela entrega das partes de cada um e coordenador das funções de cada um;
+- **Igor Maicon Michels**: Líder do projeto, responsável pela entrega das partes de cada um e coordenador das funções de cada um, além de auxiliar na pesquisa e programação;
 - **Victor Feliciano**: Responsável pelo desenvolvimento da base de dados e as funcionalidades do app e o site, como login e senha, cálculos com os dados informados pelo usuário;
 -  **Victor Murilo Bernardes**: Secretário do projeto, responsável pela descrição e desenvolvimento das atas de reunião;
--  **Matheus Maximiano Lacerda**: Criador da organização, responsável por parte da pesquisa, mais especificamente as partes sobre benefícios e maléficios da alimentação equilibrada e desequilibrada, respectivamente;
+-  **Matheus Maximiano Lacerda**: Criador da organização, responsável por parte da pesquisa, mais especificamente as partes sobre benefícios e maléficios da alimentação equilibrada e desequilibrada, respectivamente, além disso também auxiliou na programação do site;
 -  **Kaue Teixeira**: Responsável por programar as partes estáticas do site, além de auxiliar na pesquisa;
--  **Pedro José Oliveira da Roza**: Responsável pela pesquisa e auxiliar no desenvolvimento das partes estáticas do site.
--  **CONVIDADA: Bruna Ignasio Bernardes**: Irmã do integrante Victor Murilo, ela é formada em nutrição, trabalha atualmente com marketing, ajudou na criação de vários artigos para o projeto;
+-  **Pedro José Oliveira da Roza**: Responsável por parte da pesquisa e auxiliar no desenvolvimento das partes estáticas do site;
+-  **CONVIDADA: Bruna Ignasio Bernardes**: Irmã do integrante Victor Murilo, ela é formada em nutrição, trabalha atualmente com marketing, ajudou na criação de vários artigos para o projeto.
    ## Observação: As funções dos colaboradores ainda estão sujeito à mudanças conforme o andamento do projeto.
 
 <h2>Atas de reuniões 🕚: </h2>
