@@ -223,25 +223,16 @@ main .all-sec nav ul li .part , main .all-sec ul li .ações{
 .all-sec nav ul .esquerda,
 .all-sec nav ul .direita {
   background-color: #f7f7f7;  
-  width: fit-content;
+  width: 50rem;
   height: fit-content;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   margin: 1rem 0;
-}
-
-
-.all-sec nav ul .esquerda {
-  margin-right: auto;
   text-align: left;
 }
 
 
-.all-sec nav ul .direita {
-  margin-left: auto;
-  text-align: left;
-}
 
 main h1 {
   text-align: center;
