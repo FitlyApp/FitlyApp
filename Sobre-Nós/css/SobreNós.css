@@ -196,9 +196,6 @@ a {
   text-decoration: none;
   color: black;
 }
-strong {
-  text-decoration: none;
-}
 
 p {
   margin: 30px;
@@ -208,39 +205,16 @@ main {
   text-align: center;
 }
 
-main .all-sec nav ul li .part , main .all-sec ul li .ações{
-  color: #009DFF ;
+.sobre {
+  margin: 1vw 10vw;
 }
 
-.all-sec nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  width: 90%;
+.colaboradores {
+  margin: 1vw 10vw;
 }
 
-
-.all-sec nav ul .esquerda,
-.all-sec nav ul .direita {
-  background-color: #f7f7f7;  
-  width: fit-content;
-  height: fit-content;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  margin: 1rem 0;
-}
-
-
-.all-sec nav ul .esquerda {
-  margin-right: auto;
-  text-align: left;
-}
-
-
-.all-sec nav ul .direita {
-  margin-left: auto;
-  text-align: left;
+.colab {
+  margin: 1vw 10vw;
 }
 
 main h1 {
@@ -269,6 +243,43 @@ main h2 {
   padding-bottom: 5px;
 }
 
+/************************************************
+  Colaboradores
+************************************************/
+section.colaboradores div.colab ul.dupla li {
+  padding: 0 3rem 2rem 3rem;      
+}
+
+.colab .unit img{
+  border: 3px solid #009DFF;
+}
+
+.colab .dupla {
+  display: flex;
+  justify-content: center;  
+  align-items: flex-start;
+  gap: 2rem;                
+  
+}
+
+.colab .dupla .unit li img,
+.imagem {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 0.6rem;
+  padding: 5px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+
+.colab .dupla li strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #0d1b2a;
+}
 
 /************************************************
   footer
