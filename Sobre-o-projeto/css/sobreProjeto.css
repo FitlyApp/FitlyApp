@@ -234,11 +234,12 @@ main .all-sec nav ul li .part , main .all-sec ul li .ações{
 
 
 
-main h1 {
+main .colaboradores h2, 
+main .all-sec h2 {
   text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #0d1b2a;
   margin: 3vw 10vw;
   margin-top: 3vw;
@@ -258,6 +259,62 @@ main h2 {
   display: inline-block;
   border-bottom: 3px solid #009dff;
   padding-bottom: 5px;
+}
+
+main .all-sec ul li i{
+  color: #009DFF;
+}
+
+main .all-sec ul li div li.p{
+  margin: 0;
+  line-height: 1.5;
+  list-style-type: disc;
+}
+
+/************************************************
+  Colaboradores
+************************************************/
+.colaboradores {
+  margin: 1vw 10vw;
+}
+
+.colab {
+  margin: 1vw 10vw;
+}
+
+section.colaboradores div.colab ul.dupla li {
+  padding: 0 3rem 2rem 3rem;      
+}
+
+.colab .unit img{
+  border: 3px solid #009DFF;
+}
+
+.colab .dupla {
+  display: flex;
+  justify-content: center;  
+  align-items: flex-start;
+  gap: 2rem;                
+  
+}
+
+.colab .dupla .unit li img,
+.imagem {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 0.6rem;
+  padding: 5px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+
+.colab .dupla li strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #0d1b2a;
 }
 
 
