@@ -134,17 +134,14 @@ section {
 }
 
 section ul li{
-  max-width: 900px;
-  width: fit-content;
-  max-height: 500px;
-  height: fit-content;
+  width: 45%;
+  height: auto;
   padding: 1vw 0vw 2vw 1vw;
-  margin: 5vw 2vw 5vw 5vw;
+  margin: 2vw;
   background-color: #FFFFFF;
   border-radius: 1vw;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   text-align: left;
-  word-wrap: break-word;   
 }
 
 section h1 {
@@ -156,8 +153,10 @@ section h1 {
   border-bottom: 3px solid #009dff;
 }
 
+
 section ul li h2 {
-  font-size: 2.5vw;
+  font-size: 1.7vw;
+  font-weight: bold;
   padding: 0 0 1vw 0;
 }
 
@@ -185,9 +184,9 @@ section ul li p a:hover {
 
 /* === Formatacao === */
 section ul{
+  display: flex;
   gap: 0.6rem;
-  max-width: 700vw;
-  max-height: 6 00vw;
+  justify-content: center;
 }
 
 section ul li{
@@ -199,3 +198,73 @@ section ul li p{
   display: inline-block;
 }
 
+/************************************************
+footer
+************************************************/
+footer div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vw 3vw 0 3vw;
+}
+footer div div {
+    display: block;
+}
+
+footer div div h2 {
+    font-size: 1.5vw;
+}
+footer div div ul li a {
+    font-size: 1vw;
+}
+footer div div p {
+    font-size: 1vw;
+}
+footer div a {
+    display: flex;
+    align-items: center;
+}
+footer div a img {
+    width: 8vw;
+}
+footer div div.logo img {
+   width: 5vw;
+}
+footer div div p {
+    margin: 10px 0;
+}
+
+footer div div.logo ul {
+    display: flex;
+    gap: 0.5rem;
+}
+
+footer div div.logo ul span {
+    font-size: 1.1rem;
+}
+footer div div > h2 {
+    color: #009DFF;
+}
+footer div div ul li {
+    margin: 10px 0;
+}
+footer div div ul li a:hover {
+    text-decoration: underline #009DFF 0.1vw;
+}
+footer div div p.email {
+    color: #009DFF;
+}
+footer div.direitos  {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 15px 0;
+}
+footer div.direitos p {
+    color: gray;
+    font-size: 0.8rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
