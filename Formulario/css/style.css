@@ -56,7 +56,7 @@ main {
   text-align: center;
   align-items: center;
   background-color: white;
-  margin: 10vw;
+  margin: 35vw;
   padding: 20px 5px 20px 5px;
   border-radius: 15px;
 }
@@ -75,19 +75,20 @@ main section ul {
   text-align: center;
   align-items: center;
   transform: translateX(36%);
+  margin: 0px 0px 0px -155px;
 }
 main section ul li .preenchido {
   background-color: rgb(77, 158, 250);
   padding: 5px 30px 5px 30px;
+  margin: 0px 0px 0px 0px;
   border-radius: 20px;
 }
 
 main section ul li div {
   background-color: rgb(52, 55, 58);
   padding: 5px 30px 5px 30px;
-  margin: 15px 15px 0px 10px;
+  margin: 0px 1px 0px 10px;
   border-radius: 20px;
-  right: 50%;
 }
 
 .formulario label input.texto {
@@ -96,7 +97,7 @@ main section ul li div {
   border: 0;
   background-color: #f8f8f8;
   outline-offset: 3px;
-  padding: 10px 1rem;
+  padding: 10px 10px;
   transition: 0.25s;
 }
 
@@ -109,7 +110,7 @@ main section ul li div {
   background-color: #30afff;
   display: inline-block;
   margin: 1vw 0 0 0px;
-  padding: 12px 50px;
+  padding: 12px 20px;
   border-radius: 8px;
   font-size: 1rem;
   text-decoration: none;
