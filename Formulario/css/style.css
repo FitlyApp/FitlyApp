@@ -56,7 +56,7 @@ main {
   text-align: center;
   align-items: center;
   background-color: white;
-  margin: 35vw;
+  margin: 5vw 37vw;
   padding: 20px 5px 20px 5px;
   border-radius: 15px;
 }
@@ -80,14 +80,14 @@ main section ul {
 main section ul li .preenchido {
   background-color: rgb(77, 158, 250);
   padding: 5px 30px 5px 30px;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 5px 0px 0px;
   border-radius: 20px;
 }
 
 main section ul li div {
   background-color: rgb(52, 55, 58);
   padding: 5px 30px 5px 30px;
-  margin: 0px 1px 0px 10px;
+  margin: 0px 5px 0px 10px;
   border-radius: 20px;
 }
 
