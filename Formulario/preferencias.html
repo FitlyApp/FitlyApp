@@ -3,71 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulario Fitly - Etapa 1</title>
+    <title>Formulario Fitly - Etapa 6</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <main>
       <section>
-        <h1>Vamos começar!</h1>
-        <p class="etapa">Nome, Idade e Gênero</p>
+        <h1>Preferências</h1>
+        <p class="etapa">Conte-nos mais sobre sua dieta</p>
         <ul>
           <li><div class="preenchido"></div></li>
-          <li><div></div></li>
+          <li><div class="preenchido"></div></li>
           <li><div></div></li>
           <li><div></div></li>
         </ul>
         <form action="" class="formulario">
-          <h2>Nome</h2>
-          <label>
-            <input
-              class="texto"
-              type="text"
-              placeholder="Seu nome"
-              name="nome"
-              id="nome"
-            />
-          </label>
-          <h2>Idade</h2>
-          <label>
-            <input
-              class="texto"
-              type="number"
-              placeholder="Sua idade"
-              name="idade"
-              id="idade"
-            />
-          </label>
-          <h2>Sexo</h2>
+          <h2>Você segue algum tipo de dieta específica?</h2>
           <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" class="option" name="dieta" value="onivoro" />
+              <span class="radio-custom"></span>
+              Nenhuma específica (Onívoro)
+            </label>
             <label class="radio-label">
               <input
                 type="radio"
                 class="option"
-                name="sexo"
-                value="masculino"
+                name="dieta"
+                value="vegetariano"
               />
               <span class="radio-custom"></span>
-              Masculino
+              Vegetariana
             </label>
             <label class="radio-label">
-              <input type="radio" class="option" name="sexo" value="feminino" />
+              <input type="radio" class="option" name="dieta" value="vegano" />
               <span class="radio-custom"></span>
-              Feminino
+              Vegana
             </label>
           </div>
-          <a href="dados-corporais.html">Próximo</a>
+          <a href="motivacao.html">Próximo</a>
         </form>
       </section>
     </main>
   </body>
   <script src="js/formulario.js"></script>
   <script>
-    const proximoBtn = document.querySelector('a[href="dados-corporais.html"]');
+    const proximoBtn = document.querySelector('a[href="motivacao.html"]');
     if (proximoBtn) {
       proximoBtn.addEventListener("click", function (event) {
         event.preventDefault();
-        if (salvarEtapa(1)) {
+        if (salvarEtapa(6)) {
           window.location.href = proximoBtn.href;
         }
       });

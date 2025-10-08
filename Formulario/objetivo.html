@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Fitly - Etapa 4</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Sua Meta</h1>
+        <p class="etapa">Qual é o seu principal objetivo?</p>
+        <ul>
+          <li><div class="preenchido"></div></li>
+          <li><div class="preenchido"></div></li>
+          <li><div class="preenchido"></div></li>
+          <li><div class="preenchido"></div></li>
+        </ul>
+        <form action="" class="formulario">
+          <h2>Selecione uma das opções abaixo:</h2>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input
+                type="radio"
+                class="option"
+                name="objetivo"
+                value="perder_gordura"
+              />
+              <span class="radio-custom"></span>
+              Perder Gordura (Emagrecer)
+            </label>
+            <label class="radio-label">
+              <input
+                type="radio"
+                class="option"
+                name="objetivo"
+                value="manter_peso"
+              />
+              <span class="radio-custom"></span>
+              Manter o Peso (Mais saúde e disposição)
+            </label>
+            <label class="radio-label">
+              <input
+                type="radio"
+                class="option"
+                name="objetivo"
+                value="ganhar_massa"
+              />
+              <span class="radio-custom"></span>
+              Ganhar Massa Muscular (Hipertrofia)
+            </label>
+          </div>
+          <a href="habitos.html">Próximo</a>
+        </form>
+      </section>
+    </main>
+  </body>
+  <script src="js/formulario.js"></script>
+  <script>
+    const proximoBtn = document.querySelector('a[href="habitos.html"]');
+    if (proximoBtn) {
+      proximoBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        if (salvarEtapa(4)) {
+          window.location.href = proximoBtn.href;
+        }
+      });
+    }
+  </script>
+</html>

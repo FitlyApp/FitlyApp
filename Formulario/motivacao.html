@@ -3,71 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulario Fitly - Etapa 1</title>
+    <title>Formulario Fitly - Etapa 7</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <main>
       <section>
-        <h1>Vamos começar!</h1>
-        <p class="etapa">Nome, Idade e Gênero</p>
+        <h1>Sua Motivação</h1>
+        <p class="etapa">Entender seu 'porquê' nos ajuda a te apoiar</p>
         <ul>
           <li><div class="preenchido"></div></li>
-          <li><div></div></li>
-          <li><div></div></li>
+          <li><div class="preenchido"></div></li>
+          <li><div class="preenchido"></div></li>
           <li><div></div></li>
         </ul>
         <form action="" class="formulario">
-          <h2>Nome</h2>
-          <label>
-            <input
-              class="texto"
-              type="text"
-              placeholder="Seu nome"
-              name="nome"
-              id="nome"
-            />
-          </label>
-          <h2>Idade</h2>
-          <label>
-            <input
-              class="texto"
-              type="number"
-              placeholder="Sua idade"
-              name="idade"
-              id="idade"
-            />
-          </label>
-          <h2>Sexo</h2>
+          <h2>O que mais te motiva a alcançar seu objetivo?</h2>
           <div class="radio-group">
             <label class="radio-label">
               <input
                 type="radio"
                 class="option"
-                name="sexo"
-                value="masculino"
+                name="motivacao"
+                value="saude"
               />
               <span class="radio-custom"></span>
-              Masculino
+              Melhorar a saúde e bem-estar
             </label>
             <label class="radio-label">
-              <input type="radio" class="option" name="sexo" value="feminino" />
+              <input
+                type="radio"
+                class="option"
+                name="motivacao"
+                value="estetica"
+              />
               <span class="radio-custom"></span>
-              Feminino
+              Estética e autoconfiança
+            </label>
+            <label class="radio-label">
+              <input
+                type="radio"
+                class="option"
+                name="motivacao"
+                value="energia"
+              />
+              <span class="radio-custom"></span>
+              Mais energia e disposição
             </label>
           </div>
-          <a href="dados-corporais.html">Próximo</a>
+          <a href="saude.html">Próximo</a>
         </form>
       </section>
     </main>
   </body>
   <script src="js/formulario.js"></script>
   <script>
-    const proximoBtn = document.querySelector('a[href="dados-corporais.html"]');
+    const proximoBtn = document.querySelector('a[href="saude.html"]');
     if (proximoBtn) {
       proximoBtn.addEventListener("click", function (event) {
         event.preventDefault();
-        if (salvarEtapa(1)) {
+        if (salvarEtapa(7)) {
           window.location.href = proximoBtn.href;
         }
       });
