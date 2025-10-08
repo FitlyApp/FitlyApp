@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seu Resultado - Fitly</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="/Imagens\logos\FitlyLogo.png" />
+  </head>
+  <body>
     <main>
-        <section class="resultado">
-            <h1>Seu Plano Personalizado</h1>
-            <p class="etapa">Este é o seu ponto de partida</p>
-            
-            <div class="resultado-principal">
-                <p>Sua meta diária (dias de semana) é de:</p>
-                <span id="resultado-calorias">0</span>
-                <p>kcal</p>
-            </div>
+      <section class="resultado">
+        <h1>Seu Plano Personalizado</h1>
+        <p class="etapa">Este é o seu ponto de partida</p>
 
-            <div class="calorias-fds-simples">
-                <p>Meta para o Fim de Semana: <strong id="resultado-fds">0</strong> kcal/dia</p>
-            </div>
+        <div class="resultado-principal">
+          <p>Sua meta diária (dias de semana) é de:</p>
+          <span id="resultado-calorias">0</span>
+          <p>kcal</p>
+        </div>
 
-            <div class="macros-titulo">
-                <h2>Divisão de Macronutrientes</h2>
-            </div>
+        <div class="calorias-fds-simples">
+          <p>
+            Meta para o Fim de Semana:
+            <strong id="resultado-fds">0</strong> kcal/dia
+          </p>
+        </div>
 
-            <div class="macros">
-                <div class="macro-card">
-                    <h3>Proteínas</h3>
-                    <span id="resultado-proteinas">0g</span>
-                </div>
-                <div class="macro-card">
-                    <h3>Carboidratos</h3>
-                    <span id="resultado-carboidratos">0g</span>
-                </div>
-                <div class="macro-card">
-                    <h3>Gorduras</h3>
-                    <span id="resultado-gorduras">0g</span>
-                </div>
-            </div>
+        <div class="macros-titulo">
+          <h2>Divisão de Macronutrientes</h2>
+        </div>
 
-            <a href="/TrabalhandoNisso.html" class="btn-final">Acessar Plataforma</a>
+        <div class="macros">
+          <div class="macro-card">
+            <h3>Proteínas</h3>
+            <span id="resultado-proteinas">0g</span>
+          </div>
+          <div class="macro-card">
+            <h3>Carboidratos</h3>
+            <span id="resultado-carboidratos">0g</span>
+          </div>
+          <div class="macro-card">
+            <h3>Gorduras</h3>
+            <span id="resultado-gorduras">0g</span>
+          </div>
+        </div>
 
-            <div class="dados-coletados-simples">
-                <h2>Resumo dos Seus Dados</h2>
-                <div id="lista-dados">
-                    </div>
-            </div>
+        <a href="/TrabalhandoNisso.html" class="btn-final"
+          >Acessar Plataforma</a
+        >
 
-            <p class="disclaimer" id="disclaimer-text"></p>
-        </section>
+        <div class="dados-coletados-simples">
+          <h2>Resumo dos Seus Dados</h2>
+          <div id="lista-dados"></div>
+        </div>
+
+        <p class="disclaimer" id="disclaimer-text"></p>
+      </section>
     </main>
-</body>
-<script src="js/resultado.js"></script>
+  </body>
+  <script src="js/resultado.js"></script>
 </html>
