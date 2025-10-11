@@ -39,9 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let metaCaloricaBase = gastoTotal;
   if (objetivo === "perder_gordura") {
-    metaCaloricaBase -= 500;
+    metaCaloricaBase -= 300;
   } else if (objetivo === "ganhar_massa") {
-    metaCaloricaBase += 500;
+    metaCaloricaBase += 300;
   }
 
   const totalSemanal = metaCaloricaBase * 7;

@@ -12,8 +12,8 @@ function salvarEtapa(pagina) {
       dadosValidos = false;
     } else {
       const idadeNum = parseInt(idade);
-      if (isNaN(idadeNum) || idadeNum < 16 || idadeNum > 120) {
-        alert("Por favor, insira uma idade válida entre 16 e 120 anos.");
+      if (isNaN(idadeNum) || idadeNum < 14 || idadeNum > 120) {
+        alert("Por favor, insira uma idade válida de no mínimo 14 anos");
         dadosValidos = false;
       } else {
         dadosFitly.nome = nome;
