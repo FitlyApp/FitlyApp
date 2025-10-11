@@ -2,12 +2,14 @@
 
 ## Sobre o projeto📘 : 
 
-Uma plataforma para a organização da alimentação diária, nossa ideia é prover uma quantidade de calorias diárias baseada nas preferências do usuário, perguntaremos, peso, altura, sexo, idade, exercício semanal e também o objetivo, sendo ganho de massa muscular, perda de gordura, ou os dois simultaneamente. Nosso objetivo é prover metas alcançáveis referente a meta que o usuário estipulou, podendo ser 2 semanas, 1 mês, 2 meses,etc.
-Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contador de peso para que ela possa mudar diariamente o seu peso, para saber se está atingindo o objetivo ou não, uma área para que ela adicione os alimentos que comeu no dia, (integrar uma base de dados), contendo alimentos variados, com suas calorias, carboidratos, proteínas, gorduras, referente a quantidade de gramas, (armazenaremos o dado de 100g), com isso utilizaremos um cálculo. Dentro dessa área, terá um gráfico em anel, onde terá as calorias diárias a serem obtidas e a quantidade de gordura, carboidrato e proteína diária que deverá consumir, isso também será um cálculo baseado nas preferências do nosso usuário.
+Na sociedade contemporânea, a busca por um estilo de vida saudável é um tema de crescente relevância, porém, a rotina acelerada e a ampla disponibilidade de alimentos ultraprocessados representam grandes desafios para a manutenção do bem-estar. O problema se manifesta em diversas frentes: a falta de tempo para o preparo das refeições, o crescimento no consumo de itens industrializados e a desinformação nutricional criam barreiras significativas. Esse cenário contribui para a elevação de doenças crônicas e obesidade, tornando evidente a necessidade de instrumentos que simplifiquem e democratizem o acesso a um planejamento dietético consciente.
+Para enfrentar essa questão, esta iniciativa propõe o desenvolvimento do Fitly, o protótipo de uma plataforma web gratuita e intuitiva, concebida para funcionar como uma parceira na jornada por uma vida mais equilibrada. O objetivo central é criar um sistema de organização nutricional personalizado, que futuramente calculará as necessidades calóricas diárias com base nos dados e metas individuais de cada pessoa, seja para perda de gordura, ganho de massa muscular ou bem-estar geral. O conceito da aplicação foi projetado para, em sua versão final, ser um recurso completo, visualizado no protótipo estático através de funcionalidades como um contador de calorias, receitas nutritivas, monitoramento de hidratação e um acervo de artigos informativos.
+A metodologia de construção partiu de uma fase de investigação aprofundada sobre os fundamentos da nutrição, orientada pela nutricionista especializada Bruna Ignacio Bernardes, incluindo o papel dos macronutrientes e as bases de cálculo calórico, como a fórmula de Harris-Benedict (GEB). Com esse embasamento teórico, o protótipo do sistema foi desenvolvido utilizando tecnologias web como HTML, CSS e JavaScript, com foco em criar uma experiência do indivíduo acessível e de fácil navegação. Um dos principais achados durante o estudo foi a confirmação de que o feedback visual e o acompanhamento constante do progresso são elementos cruciais para manter o participante engajado e motivado em seus objetivos de longo prazo.
+Com isso, espera-se que a proposta possa contribuir significativamente para a promoção da qualidade de vida e a educação nutricional. Ao oferecer um conceito claro de solução com recursos práticos, o Fitly capacita a pessoa a tomar decisões mais conscientes sobre sua dieta. Em suas considerações finais, este trabalho não se propõe apenas a ser um contador de calorias, mas um instrumento educacional que auxilia na construção de hábitos benéficos e sustentáveis. Ao aliar tecnologia e informação confiável, o aplicativo tem o potencial de gerar um impacto positivo, ajudando os indivíduos a alcançarem um maior bem-estar na rotina moderna.
 
 ## Integrantes👨‍⚕️: 
 
-- **Igor Maicon Michels**: Líder do projeto, responsável pela entrega das partes de cada um e coordenador das funções de cada um, além de auxiliar na pesquisa e programação;
+- **Igor Marcon Michels**: Líder do projeto, responsável pela entrega das partes de cada um e coordenador das funções de cada um, além de auxiliar na pesquisa e programação;
 - **Victor Feliciano**: Responsável pelo desenvolvimento da base de dados e as funcionalidades do app e o site, como login e senha, cálculos com os dados informados pelo usuário;
 -  **Victor Murilo Bernardes**: Secretário do projeto, responsável pela descrição e desenvolvimento das atas de reunião;
 -  **Matheus Maximiano Lacerda**: Criador da organização, responsável por parte da pesquisa, mais especificamente as partes sobre benefícios e maléficios da alimentação equilibrada e desequilibrada, respectivamente, além disso também auxiliou na programação do site;
@@ -83,7 +85,7 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 - [X] ~Início da página sobre o projeto~ 
 
 ### ` 20 de Agosto de 2025, 13:00 até às 13:45`
-**Participantes**: `Igor Maicon Michels` e `Victor Murilo Bernardes`
+**Participantes**: `Igor Marcon Michels` e `Victor Murilo Bernardes`
 #### Anotações 📓:
 - Programação da estrutura de algumas páginas;
 - Estilo da página inicial
@@ -93,7 +95,7 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 - Correções de erros;
 
 ### `23 de agosto de 2025, 08:00 até às 09:30`|`23 de agosto de 2025, 9:45 até às 11:15`
-**Participantes**: `Igor Maicon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira` e `Matheus Maximiniano Lacerda` 
+**Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira` e `Matheus Maximiniano Lacerda` 
 #### Ações necessárias ✔️: 
 - [X] ~Finalização das páginas inicial~
 - [X] ~Finalização do Header~
@@ -106,7 +108,7 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 - [ ] Criação do menu recolhivel para o header `Adiada para a segunda parte do trabalho` 
 
 ### `29 de agosto de 2025, 9:45 até às 11:15`
-**Participantes**: `Igor Maicon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
+**Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
 ### Anotações 📓:
 - Conversamos com o professor sobre a nova colaboradora: Bruna (Nutricionista, irmã do colega Victor)
 #### Ações necessárias ✔️:
@@ -117,7 +119,7 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 - [X] ~Primeiros posts do Instagram~
 
 ### `5 de Setembro de 2025, 09:45 até 11:15`
-**Participantes**: `Igor Maicon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
+**Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
 ### Anotações 📓:
 - Iniciamos o roteiro de perguntas
 - Finalizamos o footer
@@ -127,7 +129,7 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 - [X] ~Finalizar todas as outras atividades até o momento~
 
 ### `12 de Setembro de 2025, 09:45 até 11:15`
-**Participantes**: `Igor Maicon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
+**Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
 ### Anotações 📓:
 - Colocamos o site no ar fitly.com.br
 - Iniciamos o roteiro de perguntas no html e css 
@@ -137,7 +139,7 @@ Após essas perguntas, ele entrará em nossa plataforma, nela teremos um contado
 - [X] ~Anotar correções que podem ser feitas no design do site~
 
 ### `13 de Setembro de 2025, 08:00 até 11:15`
-**Participantes**: `Igor Maicon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda` e `Pedro José`
+**Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda` e `Pedro José`
 ### Anotações 📓:
 - [X] ~Continuar o roteiro de perguntas~ 
 - [X] ~Fazer as correções de design anotadas~
