@@ -274,11 +274,12 @@ main .all-sec ul li div li.p{
 /************************************************
   Colaboradores
 ************************************************/
+
 .colaboradores {
   margin: 1vw 10vw;
 }
 
-.colab {
+.colaboradores .colab {
   margin: 1vw 10vw;
 }
 
@@ -286,32 +287,34 @@ section.colaboradores div.colab ul.dupla li {
   padding: 0 3rem 2rem 3rem;      
 }
 
-.colab .unit img{
+.colaboradores .colab .unit img{
   border: 3px solid #009DFF;
 }
 
-.colab .dupla {
+.colaboradores .colab .dupla div {
   display: flex;
   justify-content: center;  
-  align-items: flex-start;
-  gap: 2rem;                
-  
+  gap: 3rem;
+} 
+.colaboradores .colab .dupla div li p:first-child {
+  margin: 2rem 1rem;
+  /*Formatação somente do texto, que estava fora de um <p>*/
+}
+.colaboradores .colab .dupla div li {
+  margin: 10px 0;
 }
 
-.colab .dupla .unit li img,
-.imagem {
+.colaboradores .colab li p img {
   width: 20rem;
   height: 20rem;
   object-fit: cover;
   border-radius: 0.6rem;
   padding: 5px;
-  display: block;
-  margin: 0 auto 1rem;
+  margin: 0 auto 0.5rem;
+/* Essa formatação é utilizada tanto para a imagem da Bruna quanto para os dos integrantes, para não repetir linhas de código */
 }
 
-
-.colab .dupla li strong {
-  display: block;
+.colaboradores .colab .dupla li strong {
   margin-bottom: 0.5rem;
   font-weight: bold;
   color: #0d1b2a;

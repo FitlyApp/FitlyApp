@@ -38,7 +38,10 @@ Poppins Font
 /************************************************
 Coolors
 ************************************************/
-
+:root{
+  --color-background:  #f7f7f7;
+  --color-text:black;
+}
 /************************************************
 Reset
 ************************************************/
@@ -55,11 +58,13 @@ HTML
 html {
   font-family: "Poppins";
   scroll-behavior: smooth;
-  background-color: #f7f7f7;
+  background-color: var(--color-background);
   font-size: calc(15px + 0.390625vw);
   list-style-type: none;
 }
-
+p,strong, li, a {
+  color: var(--color-text);
+}
 main {
   margin: 0 10vw;
 }
@@ -68,9 +73,6 @@ ul li {
   list-style: none;
 }
 
-body {
-  color: #333333;
-}
 
 
 /************************************************
@@ -105,7 +107,27 @@ header .logo {
 header .logo img {
   height: 2rem;
 }
-
+header nav {
+  display: flex;
+}
+header nav button {
+  font-size: 1.5rem;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  margin: 0 1.5rem;
+}
+header nav button:hover {
+  color:#009dff;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+header nav button span#lua {
+  display: block;
+}
+header nav button span#sol {
+  display: none;
+}
 header nav ul li {
   margin: 10px;
   display: inline;
@@ -164,7 +186,9 @@ section.nutrients h3 {
   color: #009dff;
   font-weight: bold;
 }
-
+section.nutrients p:last-of-type {
+  margin: 2vw 0;
+}
 section.nutrients ul div {
   display: flex;
   align-items: center;
@@ -180,7 +204,7 @@ section ul div li:hover {
 }
 
 section.nutrients ul div li {
-  background-color: white;
+  background-color: var(--color-background);
   align-items: center;
   border-radius: 10px;
   list-style: none;
@@ -284,5 +308,5 @@ footer div.direitos p {
 
 footer a {
     text-decoration: none;
-    color: black;
-}
+  color: var(--color-text);
+  }

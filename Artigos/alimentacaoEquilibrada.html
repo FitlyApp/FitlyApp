@@ -18,6 +18,10 @@
       </a>
     </div>
     <nav>
+      <button id="btn">
+        <span class="fa-solid fa-moon" id="lua"></span>
+        <span class="fa-solid fa-sun" id="sol"></span>
+      </button>
       <ul>
         <li>
           <a href="/FitlyApp/">Início</a>
@@ -31,6 +35,28 @@
       </ul>
     </nav>
   </header>
+  <script>
+    let eClaro = true;
+    const raiz = document.documentElement;
+    let luaImg = document.getElementById('lua');
+    let solImg = document.getElementById("sol");
+    let botaoNoturno = document.getElementById('btn');
+    botaoNoturno.addEventListener("click", function () {
+      if (eClaro) {
+        raiz.style.setProperty('--color-background', 'black');
+        raiz.style.setProperty('--color-text', 'white');
+        luaImg.style.display ="none";
+        solImg.style.display = "block";
+        eClaro = false
+      } else {
+          raiz.style.setProperty('--color-background', 'white');
+        raiz.style.setProperty('--color-text', 'black');   
+        luaImg.style.display ="block";
+        solImg.style.display = "none";
+        eClaro = true;
+      }
+    })
+  </script>
   <main>
     <section class="introduction">
       <h2>Alimentação Equilibrada</h2>
