@@ -15,7 +15,7 @@ Com isso, espera-se que a proposta possa contribuir significativamente para a pr
 -  **Matheus Maximiano Lacerda**: Criador da organização, responsável por parte da pesquisa, mais especificamente as partes sobre benefícios e maléficios da alimentação equilibrada e desequilibrada, respectivamente, além disso também auxiliou na programação do site;
 -  **Kaue Teixeira**: Responsável por programar as partes estáticas do site, além de auxiliar na pesquisa;
 -  **Pedro José Oliveira da Roza**: Responsável por parte da pesquisa e auxiliar no desenvolvimento das partes estáticas do site;
--  **CONVIDADA: Bruna Ignasio Bernardes**: Irmã do integrante Victor Murilo, ela é formada em nutrição, trabalha atualmente com marketing, ajudou na criação de vários artigos para o projeto.
+-  **CONVIDADA: Bruna Ignácio Bernardes**: Irmã do integrante Victor Murilo, ela é formada em nutrição, trabalha atualmente com marketing, ajudou na criação de vários artigos para o projeto.
    ## Observação: As funções dos colaboradores ainda estão sujeito à mudanças conforme o andamento do projeto.
 
 <h2>Atas de reuniões 🕚: </h2>
