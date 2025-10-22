@@ -178,7 +178,7 @@ main section.introduction p {
 
 
 /************************************************
-Nutrientes
+                  Nutrientes
 ************************************************/
 section.nutrients h3 {
   font-size: 1.5rem;
@@ -186,56 +186,63 @@ section.nutrients h3 {
   color: #009dff;
   font-weight: bold;
 }
-section.nutrients p:last-of-type {
+section.nutrients > p {
   margin: 2vw 0;
 }
-section.nutrients ul div {
+section.nutrients > div {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: 0 0 0 0;
 }
-section ul div li {
-  transition: all 0.3s ease;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+
+section.nutrients div ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
 }
-section ul div li:hover {
+
+section div ul li:hover {
   transform: translateY(-5px);
 }
 
-section.nutrients ul div li {
+section.nutrients div ul li {
   background-color: var(--color-background);
-  align-items: center;
   border-radius: 10px;
   list-style: none;
-  margin: 10px 10px 2rem 20px;
-  width: 50%;
   padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+  justify-self: center;
 }
 
-section.nutrients ul li p strong {
+ 
+section.nutrients div ul li p strong {
   font-size: 1.1rem;
   font-weight: bold;
 }
 
 section.nutrients p {
   font-size: 1rem;
+  margin: 20px 10px;
 }
 
-section.nutrients ul li p a {
+section.nutrients ul li a {
   margin: 0 0 0 20px;
   color: #009dff;
 }
-
-section.nutrients ul div li div img {
+section.nutrients ul li div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+section.nutrients ul li div img {
   border: 2px solid #616161;
   border-radius: 10px;
-  object-fit: cover;
   width: 90%;
   height: 23vw;
-  margin: auto;
 }
-
+section.nutrients div.video {
+  display: block;
+}
 section.nutrients div.video p {
   text-align: center;
   margin: 30px 0 20px;
