@@ -1,0 +1,160 @@
+/************************************************
+Poppins Font
+************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/************************************************
+Reset
+************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************************************************
+HTML
+************************************************/
+html {
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+}
+
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/************************************************
+header
+************************************************/
+header {
+  object-fit: cover;
+  position: sticky;
+  top: 0;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2px);
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px; /* Altura fixa para o cabeçalho */
+}
+
+header h2 {
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: bold;
+  float: left;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: 2rem;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  font-size: 0.8rem;
+  color: #000000;
+  text-decoration: none;
+  font-weight: normal;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+header nav ul li a.contato {
+  border: 0.1rem solid #009dff;
+  padding: 0.2rem 0.4rem;
+}
+
+header nav ul li a:hover {
+  background-color: #009dff;
+  color: #0d1b2a;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #333;
+}
+
+/************************************************
+MOBILE RESPONSIVE MENU
+************************************************/
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 60px; /* Altura do header */
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .nav-menu ul li {
+    margin: 1rem 0;
+  }
+
+  .nav-menu ul li a {
+    font-size: 1rem;
+  }
+}
