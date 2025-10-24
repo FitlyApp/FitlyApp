@@ -260,3 +260,32 @@ footer a {
     text-decoration: none;
     color: black;
 }
+
+@media (max-width: 600px) {
+  section div.tudo {
+    flex-direction: column;
+  }
+
+  section div.tudo a img {
+    width: 100%;
+    height: 280px;
+  }
+
+  section div.texto {
+    padding: 1vw 0 0 0;
+    text-align: center;
+  }
+  section ul li div.texto p {
+  font-size: 4vw;
+  }
+  section div.tudo {
+    padding: 3vw;
+  }
+  section {
+  text-align: center;
+  padding: 0 10vw 0 10vw;
+}
+section div.tudo {
+  padding: 8vw;
+}
+}
