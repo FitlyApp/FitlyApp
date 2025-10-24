@@ -65,7 +65,7 @@ header .logo {
   align-items: center;
 }
 
-header .logo img {
+header .logo a img {
   height: 2rem;
 }
 

@@ -5,16 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alimentação Equilibrada</title>
-  <link rel="stylesheet" href="CSS/alimentaçãoEquilibrada.css" />
+  <link rel="stylesheet" href="CSS/alimentaçãoEquilibrada.css"/>
+  <link rel="stylesheet" href="../base.css">
   <script src="https://kit.fontawesome.com/a1f8cb2104.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <div class="logo">
-      <img src="..\Imagens\logos\logoFitlySemTexto.png" alt="Logo">
       <a href="/FitlyApp">
-        <h2>Fitly</h2>
+      <h2>Fitly</h2>
+      <img src="..\Imagens\logos\logoFitlySemTexto.png" alt="Logo">
       </a>
     </div>
     <nav>
@@ -35,28 +36,6 @@
       </ul>
     </nav>
   </header>
-  <script>
-    let eClaro = true;
-    const raiz = document.documentElement;
-    let luaImg = document.getElementById('lua');
-    let solImg = document.getElementById("sol");
-    let botaoNoturno = document.getElementById('btn');
-    botaoNoturno.addEventListener("click", function () {
-      if (eClaro) {
-        raiz.style.setProperty('--color-background', 'black');
-        raiz.style.setProperty('--color-text', 'white');
-        luaImg.style.display ="none";
-        solImg.style.display = "block";
-        eClaro = false
-      } else {
-          raiz.style.setProperty('--color-background', 'white');
-        raiz.style.setProperty('--color-text', 'black');   
-        luaImg.style.display ="block";
-        solImg.style.display = "none";
-        eClaro = true;
-      }
-    })
-  </script>
   <main>
     <section class="introduction">
       <h2>Alimentação Equilibrada</h2>
@@ -78,7 +57,7 @@
         devem ingerir os seguinte nutrientes:
       </p>
       <div>
-      <ul>
+      <ul id="nutri">
           <li class="carbo">
             <p>
               <strong> Carboidratos: </strong>
@@ -93,7 +72,7 @@
                 mais sobre em...</a>
             </p>
             <div>
-              <img src="../Imagens/img Artigos/img alimentacao-equilibrada/bread-6292215_1280 2.png"
+              <img src="../Imagens/img_Artigos/img alimentacao-equilibrada/bread-6292215_1280 2.png"
                 alt="Imagem_de_carboidratos" />
           </li>
 
@@ -111,7 +90,7 @@
               </a>
             </p>
             <div>
-              <img src="../Imagens/img Artigos/img alimentacao-equilibrada/sam-moghadam-VpOpy6QrDrs-unsplash 2.png"alt="Foto_de_proteínas"/>
+              <img src="../Imagens/img_Artigos/img alimentacao-equilibrada/sam-moghadam-VpOpy6QrDrs-unsplash 2.png"alt="Foto_de_proteínas"/>
             </div>
                 
           </li>
@@ -133,7 +112,7 @@
                 mais sobre Lipídios em...</a>
             </p>
             <div>
-              <img src="../Imagens/img Artigos/img alimentacao-equilibrada/churros-2188871_1280 1.png"
+              <img src="../Imagens/img_Artigos/img alimentacao-equilibrada/churros-2188871_1280 1.png"
                 alt="Imagens_Churros">
             </div>
           </li>
@@ -151,7 +130,7 @@
               <a href="https://brasilescola.uol.com.br/biologia/vitaminas.htm">Leia mais sobre as vitaminas em...</a>
             </p>
             <div>
-              <img src="../Imagens/img Artigos/img alimentacao-equilibrada/fresh-fruits-2305192_1280 1.png"
+              <img src="../Imagens/img_Artigos/img alimentacao-equilibrada/fresh-fruits-2305192_1280 1.png"
                 alt="Imagem_de_Vitaminas">
             </div>
           </li>
@@ -172,7 +151,7 @@
               </a>
             </p>
             <div>
-              <img src="../Imagens/img Artigos/img alimentacao-equilibrada/water-1632785_1280 1.png"
+              <img src="../Imagens/img_Artigos/img alimentacao-equilibrada/water-1632785_1280 1.png"
                 alt="Imagem_de_Água">
             </div>
           </li>
@@ -192,7 +171,7 @@
         <div>
             <div class="logo">
                 <a href="/FitlyApp/">
-                    <img src="/Imagens/logos/logoFitlySemTexto.png" alt="Fitly_background">
+                    <img src="../Imagens/logos/logoFitlySemTexto.png" alt="Fitly_background">
                     <h2>
                         Fitly
                     </h2>
@@ -253,5 +232,35 @@
         </div>
     </footer>
 </body>
+<script>
+    let eClaro = true;
+    const raiz = document.documentElement;
+    let luaImg = document.getElementById('lua');
+    let solImg = document.getElementById("sol");
+    let listaNutrientes = document.getElementById("nutri").querySelectorAll('li');
+    let botaoNoturno = document.getElementById('btn');
+    botaoNoturno.addEventListener("click", function () {
+      if (eClaro) {
+        raiz.style.setProperty('--color-background', '#0a0908');
+        raiz.style.setProperty('--color-text', 'white');
+        for (const itens of listaNutrientes) {
+          itens.style.backgroundColor = "#22333b"
+        }
+        luaImg.style.display ="none";
+        solImg.style.display = "block";
+        eClaro = false
+      } else {
+          raiz.style.setProperty('--color-background', '#f7f7f7');
+        raiz.style.setProperty('--color-text', 'black');
+                for (const itens of listaNutrientes) {
+          itens.style.backgroundColor = "pink"
+        }
 
+        luaImg.style.display ="block";
+        solImg.style.display = "none";
+        eClaro = true;
+      }
+    })
+  </script>
+  
 </html>
