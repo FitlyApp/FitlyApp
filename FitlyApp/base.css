@@ -53,11 +53,11 @@ header {
   align-items: center;
 }
 
-header h2 {
+header  h2 {
   font-size: 1.5rem;
   color: #000000;
   font-weight: bold;
-  float: left;
+  float: right;
 }
 
 header .logo {
@@ -68,6 +68,7 @@ header .logo {
 header .logo a img {
   height: 2rem;
 }
+
 
 header nav ul li {
   margin: 10px;
@@ -101,7 +102,9 @@ header nav ul li a:hover {
 /************************************************
 footer
 ************************************************/
-
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+}
 footer div {
   display: flex;
   justify-content: space-between;

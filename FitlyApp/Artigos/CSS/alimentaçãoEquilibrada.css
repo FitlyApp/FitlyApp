@@ -1,7 +1,6 @@
 /************************************************
 Poppins Font
 ************************************************/
-
 /* devanagari */
 @font-face {
   font-family: "Poppins";
@@ -68,7 +67,7 @@ li {
   color: var(--color-background);
 
 }
-main {
+body {
   background-color: var(--color-background);
 }
 
@@ -112,20 +111,18 @@ Introdução
 section.introduction {
   margin: 0 10vw;
 }
-main section.introduction h2 {
-  font-size: 3vw;
+ section.introduction h2 {
+  font-size: 2.5rem;
   text-align: center;
   color: #009dff;
   padding: 2vw 0;
   font-weight: bold;
 }
-main section.introduction p {
+ section.introduction p {
   text-align: center;
   font-size: 1rem;
   margin: 0 0 2vw 0;
 }
-
-
 
 /************************************************
 Nutrientes
@@ -148,14 +145,10 @@ section.nutrients > div {
 }
 
 section.nutrients div ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  max-width: 80vw;
-}
-
-section div ul li:hover {
-  transform: translateY(-5px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 
 section.nutrients div ul li {
@@ -165,9 +158,17 @@ section.nutrients div ul li {
   padding: 20px;
   transition: all 0.3s ease;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
-  justify-self: center;
+  flex-basis: 38vw;
 }
- 
+section.nutrients div ul li:last-of-type {
+  margin: 0 0 30px 0;
+}
+
+section.nutrients div ul li:hover {
+  transform: translateY(-5px);
+}
+
+
 section.nutrients div ul li p strong {
   font-size: 1.1rem;
   font-weight: bold;
@@ -204,70 +205,120 @@ section.nutrients div.video p {
 /************************************************
 Footer
 ************************************************/
-footer div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1vw 3vw 0 3vw;
+footer {
+  padding:1vw 3vw 0 3vw ;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 footer div div {
-    display: block;
+  display: block;
 }
 
 footer div div h2 {
-    font-size: 1.5vw;
+  font-size: 1.5rem;
 }
 footer div div ul li a {
-    font-size: 1vw;
+  font-size: 1vw;
 }
 footer div div p {
-    font-size: 1vw;
-    color: black;
+  font-size: 1vw;
+  color: black;
 }
 footer div a {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 footer div a img {
-    width: 8vw;
+  width: 8vw;
 }
 footer div div.logo img {
-   width: 5vw;
+  width: 5vw;
 }
 footer div div p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 footer div div.logo ul {
-    display: flex;
-    gap: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
 }
 
 footer div div.logo ul span {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 footer div div > h2 {
-    color: #009DFF;
+  color: #009dff;
 }
-footer div div ul li {
-    margin: 10px 0;
+footer div div ul li a {
+  margin: 10px 0;
 }
 footer div div ul li a:hover {
-    text-decoration: underline #009DFF 0.1vw;
+  text-decoration: underline #009dff 0.1vw;
 }
 footer div div p.email {
-    color: #009DFF;
+  color: #009dff;
 }
-footer div.direitos  {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0 15px 0;
+footer div.direitos {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 15px 0;
 }
 footer div.direitos p {
-    color: gray;
-    font-size: 0.8rem;
+  color: gray;
+  font-size: 0.8rem;
 }
 
 footer a {
-    text-decoration: none;
-  color: var(--color-text);
+  text-decoration: none;
+  color: black;
+}
+  /*
+  =====================================================
+              Celular
+  ======================================================
+  */
+
+
+@media (max-width: 600px) {
+  /*O Menu Hamburguer O Igor aplica depois*/
+  header nav {
+    display: none;
   }
+  header .logo img {
+    height: 3vw;
+  }
+  /*
+  =====================================================
+              Introdução
+  ======================================================
+  */
+  section.introduction h2 {
+    font-size: 1.5rem;
+  }
+  section.introduction p {
+    font-size: 0.8rem;
+  }
+  section.nutrients h3 {
+    font-size: 1.3rem;
+  }
+  .nutrients p {
+    font-size: 0.8rem;
+  }
+  .nutrients ul {
+    display: block;
+    flex-wrap: nowrap;  
+  }
+  .nutrients ul li {
+      flex-basis: auto; /* Remove o tamanho fixo, baseando-se no conteúdo */
+    flex-grow: 1; /* Permite que o item cresça para ocupar o espaço disponível */
+  }
+  .nutrients ul li {
+    font-size: 0.8rem;
+  }
+  .nutrients ul li div img {
+    height: 100%;  
+  }
+}
