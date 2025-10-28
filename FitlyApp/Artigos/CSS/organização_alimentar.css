@@ -38,7 +38,20 @@ Poppins Font
 /************************************************
 Coolors
 ************************************************/
+:root{
+  --color-background:  #f7f7f7;
+  --color-text:#333333;
+}
+p,strong, a {
+  color: var(--color-text);
+}
+li {
+  color: var(--color-background);
 
+}
+body {
+  background-color: var(--color-background);
+}
 /************************************************
 Reset
 ************************************************/
@@ -74,10 +87,6 @@ ul li {
   list-style: none;
 }
 
-body {
-  color: #333333;
-}
-
 p {
   line-height: 1.7;
 }
@@ -87,63 +96,30 @@ p {
 /************************************************
 header
 ************************************************/
-
-header {
-  object-fit: cover;
-  position: sticky;
-  top: 0;
-  padding: 0.5rem 3rem 0.5rem 3rem;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(2px);
-  z-index: 10;
+header nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-
-header h2 {
+header nav button {
   font-size: 1.5rem;
-  color: #000000;
-  font-weight: bold;
-  float: left;
-}
-
-header .logo {
-  display: flex;
   align-items: center;
+  background-color: transparent;
+  border: 0;
+  margin: 0 1.5rem;
 }
-
-header .logo img {
-  height: 2rem;
+header nav button:hover {
+  color:#009dff;
+  transition: all 0.3s ease;
+  border-radius: 5px;
 }
-
+header nav button span#lua {
+  display: block;
+}
+header nav button span#sol {
+  display: none;
+}
 header nav ul li {
   margin: 10px;
   display: inline;
-  float: right;
-}
-
-header nav ul li a {
-  font-size: 0.8rem;
-  color: #000000;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-header nav ul li a.contato {
-  border-style: solid;
-  border-radius: 5px;
-  border-width: 0.1rem;
-  border-color: #009dff;
-  padding: 0.2rem;
-}
-
-header nav ul li a:hover {
-  background-color: #009dff;
-  color: #0d1b2a;
-  transition: all 0.3s ease;
-  border-radius: 5px;
-  padding: 0.2rem;
 }
 
 
@@ -243,7 +219,7 @@ section.adaptação p {
   margin: 2rem 0;
 }
 section.adaptação p.dica-extra {  
-  background-color: #e6f5ff; 
+  color: #333333; 
   border-left: 4px solid #009dff;
   padding: 15px;
   margin: 20px 0;
@@ -283,70 +259,71 @@ section.referencias ul li a {
 /************************************************
 Rodapé
 ************************************************/
-footer div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+footer {
+  padding:1vw 3vw 0 3vw ;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vw;
+}
+
+footer div a img {
+  width: 8vw;
 }
 footer div div {
-    display: block;
+  display: block;
 }
-
+footer div div.logo, div.contact, div.mapSite {
+  min-height: 24vw;
+  /*Alinha todas as Divs, e por consequências, os títulos*/
+}
 footer div div h2 {
-    font-size: 1.5vw;
+  font-size: 1.5rem;
 }
 footer div div ul li a {
-    font-size: 1vw;
+  font-size: 0.8rem;
 }
 footer div div p {
-    font-size: 1vw;
-}
-footer div a {
-    display: flex;
-    align-items: center;
-}
-footer div a img {
-    width: 8vw;
+  font-size: 0.8rem;
+  color: black;
 }
 footer div div.logo img {
-   width: 5vw;
+  width: 5vw;
 }
 footer div div p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 footer div div.logo ul {
-    display: flex;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+footer div div.logo ul li {
+  display: flex;
+  align-items: center;
 }
 
-footer div div.logo ul span {
-    font-size: 1.1rem;
-}
 footer div div > h2 {
-    color: #009DFF;
+  color: #009dff;
 }
-footer div div ul li {
-    margin: 10px 0;
+footer div div ul li > a {
+  margin: 10px 0;
 }
 footer div div ul li a:hover {
-    text-decoration: underline #009DFF 0.1vw;
+  text-decoration: underline #009dff 0.1vw;
 }
 footer div div p.email {
-    color: #009DFF;
+  color: #009dff;
 }
-footer div.direitos  {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0 15px 0;
+footer div.direitos {
+  display: flex;
+  justify-content: center;
 }
 footer div.direitos p {
-    color: gray;
-    font-size: 0.8rem;
-}
-
-footer a {
-    text-decoration: none;
-    color: black;
+  color: gray;
+  font-size: 0.8rem;
 }
 
 
