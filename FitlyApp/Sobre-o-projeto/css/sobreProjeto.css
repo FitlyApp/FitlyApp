@@ -276,30 +276,51 @@ main .all-sec ul li div li.p{
 ************************************************/
 
 .colaboradores {
-  margin: 1vw 10vw;
+  margin: 5vw auto 0 auto ;
+  width: 80%;
+  max-width: 1200px;
 }
 
-.colaboradores .colab {
-  margin: 1vw 10vw;
+.colaboradores > ul > li{
+    background-color: white;
+    border-radius: 0.7rem;
+    border: 1px solid white;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.267);
+    padding: 1vw 0.6vw;
+}
+
+.colaboradores .unico{
+  padding: 0 1vw;
+  max-width: 570px;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.colaboradores .unico .unit img{
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 0.6rem;
+  padding: 0.2px;
+  margin: 0 auto 0.5rem;
 }
 
 section.colaboradores div.colab ul.dupla li {
   padding: 0 3rem 2rem 3rem;      
 }
 
-.colaboradores .colab .unit img{
-  border: 3px solid #009DFF;
-}
-
-.colaboradores .colab .dupla div {
-  display: flex;
-  justify-content: center;  
+.colaboradores .colab{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 3rem;
+  margin: 3vw auto 0 auto;
 } 
+
 .colaboradores .colab .dupla div li p:first-child {
   margin: 2rem 1rem;
-  /*Formatação somente do texto, que estava fora de um <p>*/
 }
+
 .colaboradores .colab .dupla div li {
   margin: 10px 0;
 }
@@ -311,7 +332,6 @@ section.colaboradores div.colab ul.dupla li {
   border-radius: 0.6rem;
   padding: 5px;
   margin: 0 auto 0.5rem;
-/* Essa formatação é utilizada tanto para a imagem da Bruna quanto para os dos integrantes, para não repetir linhas de código */
 }
 
 .colaboradores .colab .dupla li strong {
@@ -389,4 +409,36 @@ footer div.direitos p {
 footer a {
     text-decoration: none;
     color: black;
+}
+
+
+
+@media (max-width: 768px) {
+  section{
+    flex-direction: column;
+  }
+
+  section div.tudo a img {
+    width: 15rem;
+    height: 10rem;
+    
+  }
+
+  section div.texto {
+    padding: 1vw 0 0 0;
+    text-align: center;
+  }
+  section ul li div.texto p {
+  font-size: 4vw;
+  }
+  section div.tudo {
+    padding: 3vw;
+  }
+  section {
+  text-align: center;
+  padding: 0 10vw 0 10vw;
+}
+section div.tudo {
+  padding: 8vw;
+}
 }
