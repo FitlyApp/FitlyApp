@@ -1,0 +1,115 @@
+/************************************************
+Poppins Font
+************************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/************************************************
+Reset
+************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************************************************
+HTML
+************************************************/
+
+html {
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+}
+
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/************************************************
+footer
+************************************************/
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1vw 3vw 0 3vw;
+}
+footer div div {
+  display: block;
+}
+
+footer div div h2 {
+  font-size: 1.5vw;
+}
+footer div div ul li a {
+  font-size: 1vw;
+}
+footer div div p {
+  font-size: 1vw;
+}
+footer div a {
+  display: flex;
+  align-items: center;
+}
+footer div a img {
+  width: 8vw;
+}
+footer div div.logo img {
+  width: 5vw;
+}
+footer div div p {
+  margin: 10px 0;
+}
+footer div div.logo ul {
+  display: flex;
+  gap: 0.5rem;
+}
+
+footer div div.logo ul span {
+  font-size: 1.1rem;
+}
+footer div div > h2 {
+  color: #009dff;
+}
+footer div div ul li {
+  margin: 10px 0;
+}
+footer div div ul li a:hover {
+  text-decoration: underline #009dff 0.1vw;
+}
+footer div div p.email {
+  color: #009dff;
+}
+footer div.direitos {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 15px 0;
+}
+footer div.direitos p {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 1000px) {
+    footer {
+        display: block;
+    }
+}
