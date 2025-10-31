@@ -146,3 +146,35 @@ Com isso, espera-se que a proposta possa contribuir significativamente para a pr
 - [X] ~Tirar a foto da equipe~
 - [X] ~Criação da página de referências no figma e HTML~
 - [X] ~Conversar sobre a reunião do Kennedy~
+
+### `17 de Setembro de 2025, 19:00 até 20:30`
+**Participantes**: `Igor Marcon Michels` e `Victor Murilo Bernardes`
+### Anotações 📓:
+ - Critério de avaliação: criatividade
+ - Colocar algo físico no projeto, algo interativo com quem for interagir conosco. Uma ideia foi colocar alimentos com alto teor de tal substância, por exemplo, açúcar: Colocar alimentos processados com muito açúcar adicionado, como por     exemplo uma coca cola, e ao lado, um recipiente com a quantidade de açúcar equivalente a porção inteira ou porção parcial (100g ou algo assim).
+ - Proibido usar EVA
+ - Proibido pendurar coisas na parede é proibido, proibido retirar cadeiras. O trabalho físico deve ser exposto em uma mesa
+ - Partes do resumo: Contexto, problema, solução, objetivo, metodologia, benefícios/considerações finais, achados
+ - Trazer um dado para o resumo, fruto de uma pesquisa
+ - 300 a 500 palavras no resumo
+ - Pedir para a nutricionista Bruna uma receita fácil de se fazer, como por exemplo, uma barra de cereal caseira
+ - Fazer um vídeo fazendo tal receita e colocar no site seria interessante
+### Ações necessárias ✔️:
+- [X] ~Fazer um esboço do resumo para, em uma próxima reunião, o professor avaliar e corrigir, para~
+- [X] ~Pedir para a nutricionista Bruna uma receita fácil de se fazer, como por exemplo, uma barra de cereal caseira~
+- (Descartado) ~Mudar o título da plataforma, usando como base o resumo, para haver uma maior coerência~
+
+### 24 de Outubro de 2025, 15:30 até 17:00`
+**Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
+### Anotações 📓:
+- N/A
+### Ações necessárias ✔️:
+- [X] ~Começar responsividade~
+- [ ] ~Mudar a cor do footer para a mesma do header~
+
+### `31 de Outubro de 2025, 09:45 até 11:15`
+**Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
+### Anotações 📓:
+- 
+### Ações necessárias ✔️:
+- 
