@@ -196,6 +196,7 @@ Dicas práticas
 ************************************************/
 div.texto_e_video {
   display: flex;
+  justify-content: space-between;
 }
 
 div.texto_e_video div iframe {
@@ -304,6 +305,7 @@ section.adaptação p.dica-extra {
   padding: 15px;
   margin: 20px 0;
   border-radius: 5px;
+  background-color: #e6f5ff; 
 }
 
 section.adaptação p.dica-extra span {
@@ -318,6 +320,7 @@ section.adaptação p.dica-extra {
   margin: 20px 0;
   border-radius: 5px;
 }
+
 
 section.adaptação p.dica-extra span {
   font-weight: bold;
@@ -388,6 +391,10 @@ footer div {
 
 footer div div {
   display: block;
+}
+footer div div.logo, div.contact, div.mapSite {
+  min-height: 16vw;
+  /*Alinha todas as Divs, e por consequências, os títulos*/
 }
 
 footer div div h2 {

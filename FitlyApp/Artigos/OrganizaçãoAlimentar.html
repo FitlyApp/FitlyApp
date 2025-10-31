@@ -71,16 +71,24 @@
                 </h4>
                 <ul>
                     <li>
-                        Monte um cardápio semanal e faça uma lista de compras completa.
+                        <p>
+                            Monte um cardápio semanal e faça uma lista de compras completa.
+                        </p>
                     </li>
                     <li>
-                        Prepare porções de arroz integral e congele para usar aos poucos.
+                        <p>
+                            Prepare porções de arroz integral e congele para usar aos poucos.
+                        </p>
                     </li>
                     <li>
-                        Tenha proteínas prontas (frango grelhado, ovos cozidos, carne moída temperada).
+                        <p>
+                            Tenha proteínas prontas (frango grelhado, ovos cozidos, carne moída temperada).
+                        </p>
                     </li>
                     <li>
-                        Lave e corte legumes para ganhar tempo nos dias corridos.
+                        <p>
+                            Lave e corte legumes para ganhar tempo nos dias corridos.
+                        </p>
                     </li>
                 </ul>
             </section>
@@ -257,17 +265,17 @@
   let luaImg = document.getElementById('lua');
   let solImg = document.getElementById("sol");
   let botaoNoturno = document.getElementById('btn');
+  let dicaExtra = document.getElementsByClassName('dica-extra');
   botaoNoturno.addEventListener("click", function () {
     if (eClaro) {
       raiz.style.setProperty('--color-background', '#0a0908');
       raiz.style.setProperty('--color-text', 'white');
       luaImg.style.display = "none";
       solImg.style.display = "block";
-      eClaro = false
+      eClaro = false;
     } else {
       raiz.style.setProperty('--color-background', '#f7f7f7');
       raiz.style.setProperty('--color-text', '#333333');
-     
       luaImg.style.display = "block";
       solImg.style.display = "none";
       eClaro = true;

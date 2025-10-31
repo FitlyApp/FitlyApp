@@ -159,6 +159,8 @@ section.nutrients div ul li {
   transition: all 0.3s ease;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
   flex-basis: 36vw;
+  min-height: 16vw;
+
 }
 section.nutrients div ul li:last-of-type {
   margin: 0 0 30px 0;
@@ -176,7 +178,6 @@ section.nutrients div ul li p strong {
 section.nutrients ul li p {
   font-size: 1rem;
   margin: 10px auto;
-  min-height: 14vw;
 }
 
 section.nutrients ul li a {
@@ -228,7 +229,7 @@ footer div div {
   display: block;
 }
 footer div div.logo, div.contact, div.mapSite {
-  min-height: 24vw;
+  min-height: 16vw;
   /*Alinha todas as Divs, e por consequências, os títulos*/
 }
 footer div div h2 {
@@ -240,6 +241,7 @@ footer div div ul li a {
 footer div div p {
   font-size: 0.8rem;
   color: black;
+  margin: 30px 0;
 }
 footer div div.logo img {
   width: 5vw;
@@ -282,7 +284,7 @@ footer div.direitos p {
               Celular
   ======================================================
   */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   /*O Menu Hamburguer O Igor aplica depois*/
 
   header .logo img {
