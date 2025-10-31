@@ -170,11 +170,12 @@ Com isso, espera-se que a proposta possa contribuir significativamente para a pr
 - N/A
 ### Ações necessárias ✔️:
 - [X] ~Começar responsividade~
-- [ ] ~Mudar a cor do footer para a mesma do header~
+- [ ] Mudar a cor do footer para a mesma do header
 
 ### `31 de Outubro de 2025, 09:45 até 11:15`
 **Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
 ### Anotações 📓:
-- 
+-
+
 ### Ações necessárias ✔️:
-- 
+-  
