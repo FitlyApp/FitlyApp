@@ -81,69 +81,51 @@ p {
   line-height: 1.7;
 }
 
+:root {
 
+  li {
+    color: var(--color-background);
+    
+  }
+  body {
+    background-color: var(--color-background);
+  }
+  
+}
+p,strong, a {
+color: var(--color-text);
+}
 
 /************************************************
 header
 ************************************************/
 
-header {
-  object-fit: cover;
-  position: sticky;
-  top: 0;
-  padding: 0.5rem 3rem 0.5rem 3rem;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(2px);
-  z-index: 10;
+header nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-
-header h2 {
+header nav button {
   font-size: 1.5rem;
-  color: #000000;
-  font-weight: bold;
-  float: left;
-}
-
-header .logo {
-  display: flex;
   align-items: center;
+  background-color: transparent;
+  border: 0;
+  margin: 0 1.5rem;
 }
-
-header .logo img {
-  height: 2rem;
+header nav button:hover {
+  color:#009dff;
+  transition: all 0.3s ease;
+  border-radius: 5px;
 }
-
+header nav button span#lua {
+  display: block;
+}
+header nav button span#sol {
+  display: none;
+}
 header nav ul li {
   margin: 10px;
   display: inline;
-  float: right;
 }
 
-header nav ul li a {
-  font-size: 0.8rem;
-  color: #000000;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-header nav ul li a.contato {
-  border-style: solid;
-  border-radius: 5px;
-  border-width: 0.1rem;
-  border-color: #009dff;
-  padding: 0.2rem;
-}
-
-header nav ul li a:hover {
-  background-color: #009dff;
-  color: #0d1b2a;
-  transition: all 0.3s ease;
-  border-radius: 5px;
-  padding: 0.2rem;
-}
 
 
 /************************************************
@@ -224,6 +206,7 @@ section.dicas p {
 section.dicas ul li {
   margin: 0.5rem 0;
   color: #333333;
+  display: flex;
 }
 
 section.dicas ul li:before {
@@ -360,6 +343,7 @@ Referências
 section.referencias h3 {
   font-weight: bold;
   margin: 1rem 0 1rem 40px;
+  color: #009dff;
 }
 
 section.referencias ul li {
@@ -376,7 +360,7 @@ section.referencias ul li a:hover {
 section.referencias h3:before {
   content: '➤ ';
   font-weight: bold;
-  color: #333333;
+  color:#009dff;
   margin-right: 0.5rem; 
 }
 

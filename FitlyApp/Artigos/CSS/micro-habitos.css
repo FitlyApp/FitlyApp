@@ -86,64 +86,6 @@ img {
 header
 ************************************************/
 
-header {
-  object-fit: cover;
-  position: sticky;
-  top: 0;
-  padding: 0.5rem 3rem 0.5rem 3rem;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(2px);
-  z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header h2 {
-  font-size: 1.5rem;
-  color: #000000;
-  font-weight: bold;
-  float: left;
-}
-
-header .logo {
-  display: flex;
-  align-items: center;
-}
-
-header .logo img {
-  height: 2rem;
-}
-
-header nav ul li {
-  margin: 10px;
-  display: inline;
-  float: right;
-}
-
-header nav ul li a {
-  font-size: 0.8rem;
-  color: #000000;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-header nav ul li a.contato {
-  border-style: solid;
-  border-radius: 5px;
-  border-width: 0.1rem;
-  border-color: #009dff;
-  padding: 0.2rem;
-}
-
-header nav ul li a:hover {
-  background-color: #009dff;
-  color: #0d1b2a;
-  transition: all 0.3s ease;
-  border-radius: 5px;
-  padding: 0.2rem;
-}
-
 /************************************************
 Introdução
 ************************************************/
@@ -263,9 +205,15 @@ section.referencia h3 {
 section.referencia ul li {
   list-style-type: none;
 }
+section.referencia ul {
+  margin: 2vw;
+}
+section.referencia ul li {
+ margin: 0 0 16px 5px;
+}
 section.referencia ul li a {
-  margin: 0 0 2vw 20px;
   color: #009dff;
+
 }
 /************************************************
 Rodapé
@@ -340,3 +288,6 @@ footer a {
 footer ul li {
   list-style: none;
 }
+  @media only screen and (max-width: 600px) {
+  
+  }

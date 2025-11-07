@@ -132,6 +132,7 @@
             </div>
         </div>
         <section class="adaptação">
+    
             <div>
                 <div>
                     <h3>
@@ -158,7 +159,7 @@
                             </p>
                         </li>
                     </ul>
-                    <p class="dica-extra">
+                    <p class="dica-extra" id="dica-extra">
                         <span>Dica Extra:</span> Cozinhe em maior quantidade e congele em porções para emergência.
                     </p>
                 </div>
@@ -194,6 +195,7 @@
             </ul>
         </section>
     </main>
+
         <footer>
     <div>
       <div class="logo">
@@ -265,19 +267,21 @@
   let luaImg = document.getElementById('lua');
   let solImg = document.getElementById("sol");
   let botaoNoturno = document.getElementById('btn');
-  let dicaExtra = document.getElementsByClassName('dica-extra');
+  let dicaExtra = document.getElementById('dica-extra');
   botaoNoturno.addEventListener("click", function () {
     if (eClaro) {
       raiz.style.setProperty('--color-background', '#0a0908');
       raiz.style.setProperty('--color-text', 'white');
       luaImg.style.display = "none";
       solImg.style.display = "block";
+      dicaExtra.style.backgroundColor = "#22333b";
       eClaro = false;
     } else {
       raiz.style.setProperty('--color-background', '#f7f7f7');
       raiz.style.setProperty('--color-text', '#333333');
       luaImg.style.display = "block";
       solImg.style.display = "none";
+      dicaExtra.style.backgroundColor = "#e6f5ff";
       eClaro = true;
     }
   })
