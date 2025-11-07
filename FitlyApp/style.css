@@ -1,272 +1,203 @@
 /************************************************
-Início
-************************************************/
+    Poppins Font
+    ************************************************/
 
-.randIMG {
-    position: relative;
-    height: auto;
-    background-color: #000000;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-.randIMG img {
-    object-fit: cover;
-    display: block;
-    width: 100%;
-    height: 1010px;
-    opacity: 0.3;
-    background-color: #000000;
-}
-
-.inicio {
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-}
-
-.inicio{
-    text-align: center;
-}
-
-.inicio h1 {
-    margin: 30px 0px 30px 0px;
-    color: #FFFFFF;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.inicio p {
-    color: #FFFFFF;
-    margin: 30px 0px 30px 0px;
-    font-size: 1rem;
-}
-
-.inicio a {
-    background-color: #30AFFF;
-    display: inline-block;
-    margin: 30px 0px 30px 0px;
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    text-decoration: none;
-     font-weight: bold;
-    color: #FFFFFF;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-
-.inicio a:hover {
-    background-color: #009DFF;
-    transform: translateY(-2px);
+a {
+  color: #000000;
+  text-decoration: none;
 }
 
 /************************************************
-plataforma
-************************************************/
+    Reset
+    ************************************************/
 
-/*.plataforma ul {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    color: #FFFFFF;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.plataforma ul li {
-    padding: 20px;
-    margin: 20px 20px 20px 20px;
-    border-radius: 12px;
+/************************************************
+    HTML
+    ************************************************/
+
+:root {
+  --step-2: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
+  --step-1: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+  --step-0: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+  --step-1-larger: clamp(1.35rem, 1.2631rem + 0.3864vw, 1.5625rem);
+  --step-2-larger: clamp(1.62rem, 1.4837rem + 0.6057vw, 1.9531rem);
+  --step-3: clamp(1.944rem, 1.7405rem + 0.9044vw, 2.4414rem);
+  --step-4: clamp(2.3328rem, 2.0387rem + 1.3072vw, 3.0518rem);
+  --step-5: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
+}
+
+html {
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+}
+
+/* USO DIRETO */
+html {
+  font-size: clamp(1rem, calc(0.5rem + 2vw), 1.625rem);
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/************************************************
+    footer
+    ************************************************/
+footer {
+  padding: 2vw 0;
+  border-top: 1px solid #eee;
+}
+
+footer > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2vw;
+  margin: 0 auto;
+  padding: 0 3vw;
+  max-width: 1200px;
+}
+
+footer div div {
+  display: block;
+  flex: 1;
+}
+
+footer div div.logo {
+  flex-basis: 40%;
+}
+
+footer div div h2 {
+  font-size: var(--step-0);
+  font-weight: 600;
+  margin-bottom: 1vw;
+}
+
+footer div div ul li a {
+  font-size: var(--step-1);
+}
+
+footer div div p {
+  font-size: var(--step-1);
+  line-height: 1.6;
+}
+
+footer div a {
+  display: flex;
+  align-items: center;
+}
+
+footer div a img {
+  width: auto;
+  height: 2.5vw;
+}
+
+footer div div.logo img {
+  width: auto;
+  height: 2.5vw;
+}
+
+footer div div p {
+  margin: 10px 0;
+}
+
+footer div div.logo ul {
+  display: flex;
+  gap: 1vw;
+  padding-left: 0;
+}
+
+footer div div.logo ul span {
+  font-size: 1.5vw;
+  transition: color 0.3s ease;
+}
+
+footer div div.logo ul a:hover span {
+  color: #009dff;
+}
+
+footer div div > h2 {
+  color: #009dff;
+}
+
+footer div div ul li {
+  margin: 0.5vw 0;
+}
+
+footer div div ul li a:hover {
+  text-decoration: underline #009dff 2px;
+}
+
+footer div div p.email {
+  color: #009dff;
+  font-weight: 500;
+}
+
+footer div.direitos {
+  display: flex;
+  justify-content: center;
+  margin: 2vw 3vw 0 3vw;
+  padding-top: 1vw;
+  border-top: 1px solid #eee;
+}
+
+footer div.direitos p {
+  color: gray;
+  font-size: 0.8vw;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  footer > div:first-child {
+    flex-direction: column;
     align-items: center;
-    background-color: #009dff;
-    border-color: #30AFFF;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-    text-decoration: none;
-    list-style: none;
-    max-width: 250px;
-} */
-
-.plataforma {
-    margin: 8rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-}
-
-.plataforma ul {
-    list-style: none;
-}
-
-.plataforma p {
-    font-size: .8rem;
-    text-align: left;
-    color: #000000;
-    margin: 0.8rem;
-    margin-right: 20rem;
-}
-
-
-.plataforma h3 {
-    font-size: 1.3rem;
-    text-align: left;
-    margin: 0.5rem 0rem 0.5rem 0rem;
-}
-
-.plataforma i {
-    color: #009DFF;
-}
-
-
-
-.plataforma h4 {
-    font-size: 1.1rem;
-    text-align: left;
-    font-weight: normal;
-    margin: 0.5rem 0rem 0.5rem 0rem;
-}
-
-.plataforma h2 {
-    font-size: 1.5rem;
-    text-align: left;
-    color: #0D1B2A;
-    margin: 1.6rem 0rem 0.8rem 0rem;
-}
-
-.plataforma img {
-    float: right;
-    margin-left: 2rem;
-    max-height: 900px;
-}
-
-/************************************************
-Depoimentos
-************************************************/
-
-.depoimentos h2 {
-    font-size: 2rem;
     text-align: center;
-    margin: 0.5rem 0rem 0.5rem 0rem;
-}
+    padding: 0 1.5vw;
+    gap: 2.5vw;
+    margin: 0;
+  }
 
-.depoimentos ul {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    color: #FFFFFF;
-}
-
-.depoimentos ul li {
-    padding: 20px;
-    margin: 20px 20px 20px 20px;
-    border-radius: 12px;
-    align-items: center;
-    border-color: #30AFFF;
-    background-color: rgba(0, 157, 255, 0.8);
-    backdrop-filter: blur(2px);
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-    text-decoration: none;
-    list-style: none;
-    max-width: 250px;
-}
-
-/************************************************
-CTA
-************************************************/
-
-.CTA {
-    position: relative;
+  footer div div.logo {
+    flex-basis: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 500px;
-    overflow: hidden;
-}
+  }
 
-.CTA img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.6;
-    background-color: #000000;
-    z-index: 1;
-}
+  footer div div.logo ul {
+    justify-content: center;
+  }
 
-.CTA h2 {
-    color: #fcfcfc;
-    font-size: 2rem;
-    font-weight: bold;
+  footer div div h2 {
+    font-size: 1.25vw;
+  }
+
+  footer div div ul li a {
+    font-size: 1vw;
+  }
+
+  footer div div p {
+    font-size: 1vw;
+  }
+
+  footer div.direitos {
+    margin: 2vw 1.5vw 0 1.5vw;
+  }
+
+  footer div.direitos p {
     text-align: center;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-    z-index: 2;
-}
-
-.CTA a {
-    background-color: #30AFFF;
-    padding: 12px 25px;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    text-decoration: none;
-    font-weight: bold;
-    color: #FFFFFF;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-    z-index: 3;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.CTA a:hover {
-    background-color: #009DFF;
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-
-
-/************************************************
-NotFound (404)
-************************************************/
-
-.NotFound {
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-}
-
-
-.NotFound h1 {
-    font-size: 4rem;
-}
-
-.NotFound h2 {
-    font-weight: normal;
-}
-
-.NotFound a {
-    background-color: #30AFFF;
-    display: inline-block;
-    margin: 30px 0px 30px 0px;
-    padding: 10px 50px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    text-decoration: none;
-     font-weight: bold;
-    color: #FFFFFF;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-
-.NotFound a:hover {
-    background-color: #009DFF;
-    transform: translateY(-2px);
+  }
 }
