@@ -11,31 +11,36 @@
 
   <body>
     <header>
-      <div class="logo">
-        <a href="/FitlyApp">
-          <img src="..\Imagens\logos\logoFitlySemTexto.png" alt="Logo" />
-          <h2>Fitly</h2>
-        </a>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="/index.html">Início</a>
-          </li>
-          <li>
-            <a href="/FitlyApp/Sobre-o-projeto/">Sobre O Projeto</a>
-          </li>
-          <li>
-            <a class="contato" href="/FitlyApp/Artigos/">Artigos</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
+    <div class="logo">
+      <a href="/FitlyApp">
+        <img src="..\Imagens\logos\logoFitlySemTexto.png" alt="Logo">
+        <h2>Fitly</h2>
+      </a>
+    </div>
+    <nav>
+      <button id="btn">
+        <span class="fa-solid fa-moon" id="lua"></span>
+        <span class="fa-solid fa-sun" id="sol"></span>
+      </button>
+      <ul>
+        <li>
+          <a href="/FitlyApp/">Início</a>
+        </li>
+        <li>
+          <a href="/FitlyApp/Sobre-o-projeto/">Sobre O Projeto</a>
+        </li>
+        <li>
+          <a class="contato" href="/FitlyApp/Artigos/">Artigos</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
     <main>
       <section>
         <h1>Artigos Principais</h1>
-        <ul>
+        <ul id="listaDivs">
+          
           <li>
             <h2>Alimentação equilibrada</h2>
             <div class="tudo">
@@ -54,6 +59,7 @@
               </div>
             </div>
           </li>
+
           <li>
             <h2>Benefícios da alimentação equilibrada</h2>
             <div class="tudo">
@@ -73,6 +79,7 @@
               </div>
             </div>
           </li>
+          
           <li>
             <h2>Micro-hábitos</h2>
             <div class="tudo">
@@ -92,6 +99,7 @@
               </div>
             </div>
           </li>
+          
           <li>
             <h2>Organização alimentar</h2>
             <div class="tudo">
@@ -178,4 +186,34 @@
         </div>
     </footer>
   </body>
+  <script>
+  let eClaro = true;
+  const raiz = document.documentElement;
+  let luaImg = document.getElementById('lua');
+  let solImg = document.getElementById("sol");
+  let itensArtigos = document.getElementById(listaDivs).querySelectorAll('li').querySelectorAll("divs").getElementById("tudo");
+  let botaoNoturno = document.getElementById('btn');
+  botaoNoturno.addEventListener("click", function () {
+    if (eClaro) {
+      for (let item of itensArtigos) {
+        item.style.backgroundColor = "#22333b";
+      }
+      raiz.style.setProperty('--color-background', '#0a0908');
+      raiz.style.setProperty('--color-text', 'white');
+      luaImg.style.display = "none";
+      solImg.style.display = "block";
+      eClaro = false
+    } else {
+      for (const item of itensArtigos) {
+        item.style.backgroundColor = "white";
+      }
+      raiz.style.setProperty('--color-background', '#f7f7f7');
+      raiz.style.setProperty('--color-text', 'black');
+   
+      luaImg.style.display = "block";
+      solImg.style.display = "none";
+      eClaro = true;
+    }
+  })
+</script>
 </html>

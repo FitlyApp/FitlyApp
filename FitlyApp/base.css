@@ -127,9 +127,11 @@ footer div div.logo, div.contact, div.mapSite {
 }
 footer div div h2 {
   font-size: 1.5rem;
+  color: #000000;
 }
 footer div div ul li a {
   font-size: 0.8rem;
+  color: #000000;
 }
 footer div div p {
   font-size: 0.8rem;
@@ -141,6 +143,7 @@ footer div div.logo img {
 }
 footer div div p {
   margin: 10px 0;
+  color: #000000;
 }
 footer div div.logo ul {
   display: flex;
