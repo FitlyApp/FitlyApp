@@ -67,62 +67,6 @@ ul li {
 header
 ************************************************/
 
-header {
-  object-fit: cover;
-  position: sticky;
-  top: 0;
-  padding: 0.5rem 3rem 0.5rem 3rem;
-  background-color: #FFFFFF;
-  backdrop-filter: blur(2px);
-  z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header h2 {
-  font-size: 1.5rem;
-  color: #000000;
-  font-weight: bold;
-  float: left;
-}
-
-header .logo {
-  display: flex;
-  align-items: center;
-}
-
-header .logo img {
-  height: 2rem;
-}
-
-header nav ul li {
-  margin: 10px;
-  display: inline;
-}
-
-header nav ul li a {
-  font-size: 0.8rem;
-  color: #000000;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-header nav ul li a.contato {
-  border-style: solid;
-  border-radius: 5px;
-  border-width: 0.1rem;
-  border-color: #009dff;
-  padding: 0.2rem;
-}
-
-header nav ul li a:hover {
-  background-color: #009dff;
-  color: #0d1b2a;
-  transition: all 0.3s ease;
-  border-radius: 5px;
-  padding: 0.2rem;
-}
 /************************************************
 geral
 ************************************************/
@@ -164,7 +108,7 @@ section div.tudo > a {
 
 section div.tudo a img {
   width: 100%;
-  height: 280px;
+  height: 15vw;
   object-fit: fill;
   border-radius: 8px;
   border: 2px solid #000000;
@@ -194,72 +138,7 @@ section ul li {
 /************************************************
 footer
 ************************************************/
-footer div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1vw 3vw 0 3vw;
-}
-footer div div {
-    display: block;
-}
 
-footer div div h2 {
-    font-size: 1.5vw;
-}
-footer div div ul li a {
-    font-size: 1vw;
-}
-footer div div p {
-    font-size: 1vw;
-}
-footer div a {
-    display: flex;
-    align-items: center;
-}
-footer div a img {
-    width: 8vw;
-}
-footer div div.logo img {
-   width: 5vw;
-}
-footer div div p {
-    margin: 10px 0;
-}
-footer div div.logo ul {
-    display: flex;
-    gap: 0.5rem;
-}
-
-footer div div.logo ul span {
-    font-size: 1.1rem;
-}
-footer div div > h2 {
-    color: #009DFF;
-}
-footer div div ul li {
-    margin: 10px 0;
-}
-footer div div ul li a:hover {
-    text-decoration: underline #009DFF 0.1vw;
-}
-footer div div p.email {
-    color: #009DFF;
-}
-footer div.direitos  {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0 15px 0;
-}
-footer div.direitos p {
-    color: gray;
-    font-size: 0.8rem;
-}
-
-footer a {
-    text-decoration: none;
-    color: black;
-}
 
 @media (max-width: 600px) {
   section div.tudo {
