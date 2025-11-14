@@ -85,15 +85,19 @@ p {
 
   li {
     color: var(--color-background);
-    
+
   }
+
   body {
     background-color: var(--color-background);
   }
-  
+
 }
-p,strong, a {
-color: var(--color-text);
+
+p,
+strong,
+a {
+  color: var(--color-text);
 }
 
 /************************************************
@@ -103,6 +107,7 @@ header
 header nav {
   display: flex;
 }
+
 header nav button {
   font-size: 1.5rem;
   align-items: center;
@@ -110,17 +115,21 @@ header nav button {
   border: 0;
   margin: 0 1.5rem;
 }
+
 header nav button:hover {
-  color:#009dff;
+  color: #009dff;
   transition: all 0.3s ease;
   border-radius: 5px;
 }
+
 header nav button span#lua {
   display: block;
 }
+
 header nav button span#sol {
   display: none;
 }
+
 header nav ul li {
   margin: 10px;
   display: inline;
@@ -166,11 +175,12 @@ section.planejamento h4 {
   margin: 0 0 1rem 40px;
   font-size: 1.2rem;
 }
+
 section.planejamento h3:before {
   content: '➤ ';
   font-weight: bold;
   color: #009dff;
-  margin-right: 0.5rem; 
+  margin-right: 0.5rem;
 }
 
 /************************************************
@@ -192,6 +202,7 @@ section.dicas h4 {
   margin: 0 0 1rem 40px;
   font-size: 1.2rem;
 }
+
 section.dicas h4:before {
   content: '➤ ';
   font-weight: bold;
@@ -214,8 +225,9 @@ section.dicas ul li:before {
   color: #009dff;
   margin-right: 0.5rem;
 }
+
 section.dicas ul {
-  margin : 0 0 1vw 45px;
+  margin: 0 0 1vw 45px;
 }
 
 /************************************************
@@ -229,11 +241,12 @@ section.porção h3 {
   color: #009dff;
   margin: 1rem 0 1rem 40px;
 }
+
 section.porção h3:before {
   content: '➤ ';
   font-weight: bold;
   color: #009dff;
-  margin-right: 0.5rem; 
+  margin-right: 0.5rem;
 }
 
 section.porção ul li {
@@ -247,12 +260,15 @@ section.porção p {
 div.texto_e_video div.video p {
   text-align: center;
 }
- div.texto_e_video div iframe {
+
+div.texto_e_video div iframe {
   margin: 0vw 5vw 0 10vw;
   width: 325px;
   height: 600px;
 }
-section.porção ul, section.porção p {
+
+section.porção ul,
+section.porção p {
   margin: 0 0 1vw 45px;
 }
 
@@ -288,7 +304,7 @@ section.adaptação p.dica-extra {
   padding: 15px;
   margin: 20px 0;
   border-radius: 5px;
-  background-color: #e6f5ff; 
+  background-color: #e6f5ff;
 }
 
 section.adaptação p.dica-extra span {
@@ -309,30 +325,36 @@ section.adaptação p.dica-extra span {
   font-weight: bold;
   color: #007acc;
 }
+
 section.adaptação img {
   width: 70%;
-  border-radius: 10px;
+  border-radius: 6px;
   margin: 3vw 0 0 0;
 }
+
 section.adaptação h3:before {
   content: '➤ ';
   font-weight: bold;
   color: #009dff;
-  margin-right: 0.5rem; 
+  margin-right: 0.5rem;
 }
+
 section.adaptação div div p.dicas-adaptação {
   font-weight: bold;
   margin: 0 0 1vw 45px;
 }
+
 section.adaptação div div ul {
-  margin : 0 0 1vw 55px;
+  margin: 0 0 1vw 55px;
 }
+
 section.adaptação div div ul li p:before {
   content: '✓';
   color: #009dff;
   margin-right: 0.5rem;
 }
-section.adaptação > p {
+
+section.adaptação>p {
   font-style: italic;
 }
 
@@ -354,14 +376,16 @@ section.referencias ul li {
 section.referencias ul li a {
   color: #009dff;
 }
+
 section.referencias ul li a:hover {
   text-decoration: underline #009dff 0.1vw;
 }
+
 section.referencias h3:before {
   content: '➤ ';
   font-weight: bold;
-  color:#009dff;
-  margin-right: 0.5rem; 
+  color: #009dff;
+  margin-right: 0.5rem;
 }
 
 /************************************************
@@ -376,9 +400,11 @@ footer div {
 footer div div {
   display: block;
 }
-footer div div.logo, div.contact, div.mapSite {
-  min-height: 16vw;
-  /*Alinha todas as Divs, e por consequências, os títulos*/
+
+footer div div.logo,
+div.contact,
+div.mapSite {
+  min-height: 16vw
 }
 
 footer div div h2 {
@@ -452,17 +478,10 @@ footer a {
 }
 
 
+/************************************************/
+/* Responsividade */
 
-
-
-
-
-
-
-
-
-
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .container {
     flex-direction: column;
   }
@@ -493,12 +512,76 @@ footer a {
     text-align: center;
   }
 
-  div.texto_e_video div iframe {
+  section.planejamento h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 0 2vh 0;
+  }
+
+  section.dicas h4 {
+    margin: 0 0 0 0;
+  }
+
+  section.dicas ul {
+    margin: 0 0 1vw 20px;
+  }
+
+  section.porção h3 {
+    margin: 0 0 1vw 20px;
+  }
+
+  section.porção ul,
+  section.porção p {
+    margin: 0 0 1vw 20px;
+  }
+
+  div.texto_e_video div iframe,
+  section.porção div.video iframe {
     width: 100%;
     max-width: 350px;
     aspect-ratio: 315 / 560;
     height: auto;
+    margin: 0 auto 20px auto;
   }
+
+  section.adaptação>div {
+    display: block;
+  }
+  section.adaptação div div h3 {
+    margin: 0 0 1vw 20px;
+    text-align: left;
+  }
+
+  section.adaptação div div p {
+    margin: 0 0 1vw 5px;
+    text-align: left;
+  }
+  section.adaptação div div ul {
+    margin: 0 0 1vw 25px;
+
+  }
+  section.adaptação div div p.dicas-adaptação {
+    margin: 0 0 1vw 20px;
+    text-align: left;
+  }
+  section.adaptação img {
+    width: 100%;
+    margin: 1vw 0 2vw 0;
+  }
+  section.adaptação p.dica-extra {
+    font-size: 0.9rem; 
+    padding: 12px;     
+    margin: 15px 0;  
+    padding: 8px 10px; 
+  }
+  section.adaptação p.dica-extra span {
+    font-size: 1.1rem;
+  }
+  section.adaptação>p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
 
 
 }
