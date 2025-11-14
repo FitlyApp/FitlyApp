@@ -191,7 +191,7 @@
   const raiz = document.documentElement;
   let luaImg = document.getElementById('lua');
   let solImg = document.getElementById("sol");
-  let itensArtigos = document.getElementById(listaDivs).querySelectorAll('li').querySelectorAll("divs").getElementById("tudo");
+  let itensArtigos = document.querySelectorAll(".tudo");
   let botaoNoturno = document.getElementById('btn');
   botaoNoturno.addEventListener("click", function () {
     if (eClaro) {

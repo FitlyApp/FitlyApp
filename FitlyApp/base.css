@@ -39,7 +39,6 @@ ul li {
 /************************************************
 header
 ************************************************/
-
 header {
   object-fit: cover;
   position: sticky;
@@ -51,13 +50,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px; /* Altura fixa para o cabeçalho */
 }
 
-header  h2 {
+header h2 {
   font-size: 1.5rem;
   color: #000000;
   font-weight: bold;
-  float: right;
+  float: left;
 }
 
 header .logo {
@@ -65,14 +65,17 @@ header .logo {
   align-items: center;
 }
 
-header .logo a img {
+header .logo img {
   height: 2rem;
 }
 
+header nav ul {
+  display: flex;
+  align-items: center;
+}
 
 header nav ul li {
-  margin: 10px;
-  display: inline;
+  margin: 0 10px;
 }
 
 header nav ul li a {
@@ -80,101 +83,233 @@ header nav ul li a {
   color: #000000;
   text-decoration: none;
   font-weight: normal;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 header nav ul li a.contato {
-  border-style: solid;
-  border-radius: 5px;
-  border-width: 0.1rem;
-  border-color: #009dff;
-  padding: 0.2rem;
+  border: 0.1rem solid #009dff;
+  padding: 0.2rem 0.4rem;
 }
 
 header nav ul li a:hover {
   background-color: #009dff;
   color: #0d1b2a;
-  transition: all 0.3s ease;
-  border-radius: 5px;
-  padding: 0.2rem;
 }
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #333;
+}
+
+/************************************************
+MOBILE RESPONSIVE MENU
+************************************************/
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: -250px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+
+    opacity: 0;
+    pointer-events: none; 
+    transform: translateY(-20px);
+    transition: top 0.35s ease, opacity 0.35s ease, transform 0.35s ease;
+  }
+
+  .nav-menu.active {
+    top: 60px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+  }
+
+  .nav-menu ul li {
+    margin: 1rem 0;
+  }
+
+  
+}
+
 
 /************************************************
 footer
 ************************************************/
-footer {
-  padding:1vw 3vw 0 3vw ;
-  background-color: rgba(255, 255, 255, 0.8);
-}
 footer div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2vw;
+  margin: 1vw 3vw 0 3vw;
 }
-footer div a {
-    display: flex;
-    align-items: center;
-}
-footer div a img {
-  width: 8vw;
-}
+
 footer div div {
   display: block;
 }
-footer div div.logo, div.contact, div.mapSite {
-  min-height: 16vw;
-  /*Alinha todas as Divs, e por consequências, os títulos*/
-}
+
 footer div div h2 {
-  font-size: 1.5rem;
-  color: #000000;
+  font-size: 1.5vw;
 }
+
 footer div div ul li a {
-  font-size: 0.8rem;
-  color: #000000;
+  font-size: 1vw;
 }
+
 footer div div p {
-  font-size: 0.8rem;
-  color: black;
-  margin: 30px 0;
+  font-size: 1vw;
 }
-footer div div.logo img {
+
+footer div a {
+  display: flex;
+  align-items: center;
+}
+
+footer div a img {
+  width: 8vw;
+}
+
+footer div h1.logo img {
   width: 5vw;
 }
+
 footer div div p {
   margin: 10px 0;
-  color: #000000;
 }
-footer div div.logo ul {
+
+footer div h1.logo ul {
   display: flex;
   gap: 0.5rem;
-  align-items: center;
 }
-footer div div.logo ul li span {
-  font-size: 1.2rem;
-}
-footer div div.logo ul li {
-  display: flex;
-  align-items: center;
+
+footer div h1.logo ul span {
+  font-size: 1.1rem;
 }
 
 footer div div > h2 {
   color: #009dff;
 }
-footer div div ul li > a {
+
+footer div div ul li {
   margin: 10px 0;
 }
+
 footer div div ul li a:hover {
   text-decoration: underline #009dff 0.1vw;
 }
+
 footer div div p.email {
   color: #009dff;
 }
+
 footer div.direitos {
   display: flex;
   justify-content: center;
+  margin: 10px 0 15px 0;
 }
+
 footer div.direitos p {
   color: gray;
   font-size: 0.8rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+  footer div {
+    margin: 3vw;
+  }
+  footer div div h2 {
+    font-size: 2.5vw;
+  }
+  footer div div p,
+  footer div div ul li a {
+    font-size: 2vw;
+  }
+  footer div h1.logo img {
+    width: 10vw;
+  }
+}
+
+@media (max-width: 768px) {
+  footer div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 5vw;
+  }
+  footer div a img {
+    width: 20vw;
+  }
+  footer div h1.logo img {
+    width: 15vw;
+  }
+  footer div div h2 {
+    font-size: 4.5vw;
+  }
+  footer div div p,
+  footer div div ul li a {
+    font-size: 3.5vw;
+  }
+  footer div h1.logo ul span {
+    font-size: 1.5rem;
+  }
+  footer div div.mapSite ul li {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  footer div {
+    margin: 6vw;
+    gap: 1.5rem;
+  }
+  footer div div h2 {
+    font-size: 5vw;
+  }
+  footer div div p,
+  footer div div ul li a {
+    font-size: 4vw;
+  }
+  footer div h1.logo img {
+    width: 20vw;
+  }
+  footer div a img {
+    width: 25vw;
+  }
+  footer div h1.logo ul span {
+    font-size: 1.8rem;
+  }
+  footer div.direitos p {
+    font-size: 3vw;
+    margin: 0 auto;
+  }
+
 }
