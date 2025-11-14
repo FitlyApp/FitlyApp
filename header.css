@@ -119,42 +119,36 @@ MOBILE RESPONSIVE MENU
     display: block;
   }
 
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
   .nav-menu {
     position: fixed;
-    left: -100%;
-    top: 60px; /* Altura do header */
-    flex-direction: column;
-    background-color: #fff;
+    top: -250px;
+    left: 0;
     width: 100%;
+    background: #fff;
+    flex-direction: column;
     text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding: 1rem 0;
+
+    opacity: 0;
+    pointer-events: none; 
+    transform: translateY(-20px);
+    transition: top 0.35s ease, opacity 0.35s ease, transform 0.35s ease;
   }
 
   .nav-menu.active {
-    left: 0;
+    top: 60px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 
   .nav-menu ul {
     flex-direction: column;
-    padding: 1rem 0;
   }
 
   .nav-menu ul li {
     margin: 1rem 0;
   }
 
-  .nav-menu ul li a {
-    font-size: 1rem;
-  }
+  
 }
