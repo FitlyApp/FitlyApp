@@ -12,7 +12,7 @@ function salvarEtapa(pagina) {
       dadosValidos = false;
     } else {
       const idadeNum = parseInt(idade);
-      if (isNaN(idadeNum) || idadeNum < 14 || idadeNum > 120) {
+      if (isNaN(idadeNum) || idadeNum < 14 || idadeNum > 120 || idadeNum < 0) {
         alert("Por favor, insira uma idade válida de no mínimo 14 anos");
         dadosValidos = false;
       } else {

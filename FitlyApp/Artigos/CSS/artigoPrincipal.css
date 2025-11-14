@@ -112,6 +112,7 @@ section h1 {
   display: inline-block;
   border-bottom: 3px solid #009dff;
   padding-bottom: 5px;
+  color: var(--color-text);
 }
 
 section h2 {
@@ -120,6 +121,7 @@ section h2 {
 section ul li h2 {
   font-weight: bold;
   padding: 2rem;
+  color: var(--color-text);
 }
 section div.tudo {
   display: flex;

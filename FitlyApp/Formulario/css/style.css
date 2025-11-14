@@ -353,10 +353,10 @@ main section ul li .preenchido {
 .dados-coletados-simples p {
   padding: 0.3rem 0;
   font-size: 0.9rem;
-  color: #555;
+  color: #555000;
   text-transform: capitalize;
 }
 
 .dados-coletados-simples p strong {
-  color: #000;
+  color: #000000;
 }

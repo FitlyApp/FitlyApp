@@ -44,7 +44,7 @@
           <li>
             <h2>Alimentação equilibrada</h2>
             <div class="tudo">
-              <a href="/FitlyApp/Artigos/AlimentacaoEquilibrada.html"
+              <a href="alimentacaoEquilibrada.html"
                 ><img
                   src="../Imagens/img_Artigos/img alimentacao-equilibrada/fresh-fruits-2305192_1280 1.png"
                   alt="img"
@@ -53,7 +53,7 @@
                 <p>
                   Adotar uma alimentação equilibrada é essencial para a promoção da saúde ao longo da vida, uma alimentação equilibrada tambem ajuda numa serie de outras coisas.
                 </p>
-                <a href="/FitlyApp/Artigos/AlimentacaoEquilibrada.html">
+                <a href="alimentacaoEquilibrada.html">
                   <p class="button">Acesse o Artigo</p>
                 </a>
               </div>
@@ -63,7 +63,7 @@
           <li>
             <h2>Benefícios da alimentação equilibrada</h2>
             <div class="tudo">
-              <a href="/FitlyApp/Artigos/BeneficiosAlimentacaoEquilibrada.html"
+              <a href="BeneficiosAlimentacaoEquilibrada.html"
                 ><img
                   src="../Imagens/img_Artigos/img_beneficios-alimentação-equilibrada/prato-02.png"
                   alt="img"
@@ -73,7 +73,7 @@
                   Uma alimentação equilibrada traz benefícios como mais energia,
                   fortalecimento da imunidade e prevenção de doenças.
                 </p>
-                <a href="/FitlyApp/Artigos/BeneficiosAlimentacaoEquilibrada.html">
+                <a href="BeneficiosAlimentacaoEquilibrada.html">
                   <p class="button">Acesse o Artigo</p>
                 </a>
               </div>
@@ -83,7 +83,7 @@
           <li>
             <h2>Micro-hábitos</h2>
             <div class="tudo">
-              <a href="/FitlyApp/Artigos/MicroHabitos.html"
+              <a href="MicroHabitos.html"
                 ><img
                   src="../Imagens/img_Artigos/img_artigoPrincipal/homen-02.png"
                   alt="img"
@@ -93,7 +93,7 @@
                   Pequenas ações e hábitos de atividades físicas, que possuem um
                   grande impacto quando somados e feitos com constância.
                 </p>
-                <a href="/FitlyApp/Artigos/MicroHabitos.html">
+                <a href="MicroHabitos.html">
                   <p class="button">Acesse o Artigo</p>
                 </a>
               </div>
@@ -103,7 +103,7 @@
           <li>
             <h2>Organização alimentar</h2>
             <div class="tudo">
-              <a href="/FitlyApp/Artigos/OrganizaçãoAlimentar.html"
+              <a href="OrganizaçãoAlimentar.html"
                 ><img
                   src="../Imagens/img_Artigos/ferks-guare-kiZKA2rZ8Y0-unsplash 1.png"
                   alt="img"
@@ -112,7 +112,7 @@
                 <p>
                   Organizar a alimentação é essencial para evitar improvisos que acabam levando a escolhas ruins. Tente tirar 30, 40 minutos para planejar a semana.
                 </p>
-                <a href="/FitlyApp/Artigos/OrganizaçãoAlimentar.html">
+                <a href="OrganizaçãoAlimentar.html">
                   <p class="button">Acesse o Artigo</p>
                 </a>
               </div>
@@ -191,14 +191,16 @@
   const raiz = document.documentElement;
   let luaImg = document.getElementById('lua');
   let solImg = document.getElementById("sol");
-  let itensArtigos = document.querySelectorAll(".tudo");
+
+  let itensArtigos = document.querySelectorAll('.tudo');
   let botaoNoturno = document.getElementById('btn');
   botaoNoturno.addEventListener("click", function () {
     if (eClaro) {
       for (let item of itensArtigos) {
-        item.style.backgroundColor = "#22333b";
+        item.style.backgroundColor = "#0a0908";
       }
-      raiz.style.setProperty('--color-background', '#0a0908');
+      //#22333b
+      raiz.style.setProperty('--color-background', '#22333b');
       raiz.style.setProperty('--color-text', 'white');
       luaImg.style.display = "none";
       solImg.style.display = "block";

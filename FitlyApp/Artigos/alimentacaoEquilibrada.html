@@ -171,6 +171,7 @@
 
     </section>
   </main>
+  
   <footer>
     <div>
       <div class="logo">
@@ -249,17 +250,17 @@
   let botaoNoturno = document.getElementById('btn');
   botaoNoturno.addEventListener("click", function () {
     if (eClaro) {
-      raiz.style.setProperty('--color-background', '#0a0908');
+      raiz.style.setProperty('--color-background', '#22333b');
       raiz.style.setProperty('--color-text', 'white');
       for (const itens of listaNutrientes) {
-        itens.style.backgroundColor = "#22333b"
+        itens.style.backgroundColor = "#0a0908";
       }
       luaImg.style.display = "none";
       solImg.style.display = "block";
       eClaro = false
     } else {
       raiz.style.setProperty('--color-background', '#f7f7f7');
-      raiz.style.setProperty('--color-text', 'black');
+      raiz.style.setProperty('--color-text', '#22333b');
       for (const itens of listaNutrientes) {
         itens.style.backgroundColor = "white"
       }
