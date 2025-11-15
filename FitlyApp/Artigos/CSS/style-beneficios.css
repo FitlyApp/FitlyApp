@@ -4,28 +4,31 @@ Poppins Font
 
 /* devanagari */
 @font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
-  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
 }
+
 /* latin-ext */
 @font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /************************************************
 Reset
 ************************************************/
@@ -34,6 +37,7 @@ Reset
     padding: 0;
     box-sizing: border-box;
 }
+
 /************************************************
 HTML
 ************************************************/
@@ -56,11 +60,11 @@ ul li {
 }
 
 body {
-  color: #333333;
+    color: #333333;
 }
 
 p {
-  line-height: 1.6;
+    line-height: 1.6;
 }
 
 
@@ -71,9 +75,10 @@ header
 /************************************************
 geral
 ************************************************/
-section{
+section {
     text-align: center;
 }
+
 section h1 {
     color: #0D1B2A;
     font-size: 2rem;
@@ -96,6 +101,7 @@ section ul {
     text-align: center;
     justify-content: center;
 }
+
 section p {
     color: #2e2e2e;
     font-size: 20px;
@@ -105,14 +111,14 @@ section p {
 section ul li h2 {
     font-size: 1.4rem;
     font-weight: bold;
-    text-align: left; 
+    text-align: left;
 }
 
 section ul li {
-    flex-direction: column;  
+    flex-direction: column;
     align-items: center;
     background-color: white;
-    border: 2px ;
+    border: 2px;
     border-radius: 10px;
     margin: 0 1rem 0 1rem;
     width: 30%;
@@ -138,13 +144,22 @@ section ul li p {
 section ul li div.texto {
     margin: 0 2rem 2rem 2rem;
 }
-section ul li div.texto p a {
+
+section ul li div.texto a {
+    display: block;
     color: #009DFF;
     font-weight: bold;
+    margin-top: 1vh;
 }
+
 section ul li:hover {
     transform: translateY(-5px);
 }
+section ul li a:hover {
+    text-decoration: underline;
+}
+
+
 
 /************************************************
 footer
@@ -153,33 +168,56 @@ footer
 /************************************************
 celular
 ************************************************/
-@media (max-width: 600px) {
-section p.meio {
-    font-size: 20px;
-    margin: 0vw 0rem 2rem 0rem;
-}
-section ul {
-    display: inline-block;
-    text-align: center;
-    padding: 0 2rem 0 2rem;
-    justify-content: center;
-}
+@media (max-width: 768px) {
+    section p.meio {
+        font-size: 20px;
+        margin: 0vw 0rem 0rem 0rem;
+        text-align: justify;
+        margin: 0;
+    }
 
-section ul li {
-    flex-direction: column;  
-    width: 100%;
-    margin: 0 0 0 0;
-    padding: 0 2rem;
-}
-section p.meio {
-    font-size: 1rem;
-    margin: 0vw 2rem 2rem 2rem;
-}
-section ul li img {
-    width: 15rem;
-    height: 10rem;
-}
-section ul li p {
-    text-align: center;
-}
+    section ul {
+        display: block;
+        text-align: center;
+        padding: 0 2rem 0 2rem; 
+        justify-content: center;
+    }
+
+    section ul li {
+        justify-content: center;
+        width: 100%;
+        padding: 1vh 1vw 0.1vh 1vw;
+        margin: 0 0 1.5rem 0;
+    }
+    section ul li h2 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 1vh 0 0 0;
+    }
+    section ul li a {
+        font-size: 1rem;  
+    }
+
+    section p.meio {
+        font-size: 1rem;
+        margin: 0vw 2rem 2rem 2rem;
+    }
+
+    section ul li img {
+        width: 15rem;
+        height: 10rem;
+        display: block; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section ul li div.texto {
+        margin: 0 1.5rem 2rem 1.5rem;
+    }
+    section ul li p {
+        text-align: justify;
+    }
+    section img {
+        justify-content: center;
+        width: 100%;
+    }
 }
