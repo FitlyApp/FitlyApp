@@ -168,7 +168,7 @@ footer
 /************************************************
 celular
 ************************************************/
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     section p.meio {
         font-size: 20px;
         margin: 0vw 0rem 0rem 0rem;
