@@ -7,33 +7,33 @@ Poppins Font
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJbecmNE.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format("woff2");
   unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0,
     U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
 }
+
 /* latin-ext */
 @font-face {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJnecmNE.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format("woff2");
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
     U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
     U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJfecg.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/poppins/v23/pxiEyp8kv8JHgFVrJJfecg.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
     U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /************************************************
 Reset
 ************************************************/
@@ -42,13 +42,14 @@ Reset
   padding: 0;
   box-sizing: border-box;
 }
+
 /************************************************
 HTML
 ************************************************/
 
-:root{
-  --color-background:  #f7f7f7;
-  --color-text:#0a0908;
+:root {
+  --color-background: #f7f7f7;
+  --color-text: #0a0908;
 }
 
 html {
@@ -75,6 +76,7 @@ header
 header nav {
   display: flex;
 }
+
 header nav button {
   font-size: 1.5rem;
   align-items: center;
@@ -82,17 +84,21 @@ header nav button {
   border: 0;
   margin: 0 1.5rem;
 }
+
 header nav button:hover {
-  color:#009dff;
+  color: #009dff;
   transition: all 0.3s ease;
   border-radius: 5px;
 }
+
 header nav button span#lua {
   display: block;
 }
+
 header nav button span#sol {
   display: none;
 }
+
 header nav ul li {
   margin: 10px;
   display: inline;
@@ -105,6 +111,7 @@ section {
   text-align: center;
   padding: 0 20vw 5vw 20vw;
 }
+
 section h1 {
   font-size: 2rem;
   font-weight: bold;
@@ -118,27 +125,30 @@ section h1 {
 section h2 {
   margin: 1.2vw 0 0 0;
 }
+
 section ul li h2 {
   font-weight: bold;
   padding: 2rem;
   color: var(--color-text);
 }
+
 section div.tudo {
   display: flex;
   align-items: center;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   padding: 2vw;
-  border-radius: 1vw;
+  border-radius: 2vw;
   background-color: white;
 }
+
 /*
 
 Esse item terá seu plano de fundo diretamente alterado, podendo haver alteração de cor através do script
 
 */
-section div.tudo > a {
-    flex-basis: 40%;
-    flex-shrink: 0;
+section div.tudo>a {
+  flex-basis: 40%;
+  flex-shrink: 0;
 }
 
 section div.tudo a img {
@@ -154,8 +164,9 @@ section div.texto {
   padding: 0 0 0 2rem;
   text-align: left;
 }
+
 section div.texto p {
-  color:var(--color-text);
+  color: var(--color-text);
 }
 
 section div.texto p.button {
@@ -166,6 +177,7 @@ section div.texto p.button {
   margin: 2vw 0 0 0;
   border: 2px solid #009dff;
 }
+
 section ul li div.texto p {
   font-size: 1vw;
 }
@@ -183,24 +195,74 @@ footer
   section div.tudo a img {
     width: 15rem;
     height: 10rem;
-    
+
   }
 
   section div.texto {
     padding: 1vw 0 0 0;
     text-align: center;
   }
+
   section ul li div.texto p {
-  font-size: 4vw;
+    font-size: 4vw;
   }
+
   section div.tudo {
     padding: 3vw;
   }
+
   section {
-  text-align: center;
-  padding: 0 10vw 0 10vw;
+    text-align: center;
+    padding: 0 10vw 0 10vw;
+  }
+
+  section div.tudo {
+    padding: 8vw;
+  }
 }
-section div.tudo {
-  padding: 8vw;
-}
+
+/************************************************/
+/* Responsividade */
+
+@media only screen and (max-width: 768px) {
+
+  section {
+    padding: 0 10vw 5vw 10vw;
+  }
+
+  section h1 {
+    font-size: 1.5rem;
+    margin: 1.5rem 1.5rem 0 1.5rem;
+  }
+
+  section h2 {
+    font-size: 1.2rem;
+    margin: 1vw 0 0 0;
+  }
+
+  section ul li h2 {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+  }
+
+  section div.texto {
+    padding: 1vw 0 0 0;
+    text-align: justify;
+    margin: 4vw 0;
+  }
+
+  section ul li div.texto p {
+    font-size: 3vw;
+  }
+
+  section ul li div.tudo div.texto p.button {
+    margin:  4vw 0 0 0;
+  }
+  section div.tudo {
+    padding: 6vw;
+  }
+  section ul li h2 {
+    margin-top: 3vw;
+  }
+
 }
