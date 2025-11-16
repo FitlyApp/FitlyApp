@@ -1,0 +1,150 @@
+
+/************************************************
+geral
+************************************************/
+section {
+    text-align: center;
+}
+
+section h1 {
+    color: #0D1B2A;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem;
+    display: inline-block;
+    border-bottom: 3px solid #009DFF;
+    padding-bottom: 5px;
+}
+
+section p.meio {
+    text-align: center;
+    font-size: 20px;
+    margin: 0vw 20rem 2rem 20rem;
+    text-align: justify;
+}
+
+section ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+section p {
+    color: #2e2e2e;
+    font-size: 20px;
+    text-align: left;
+}
+
+section ul li h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+section ul li {
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 2px;
+    border-radius: 10px;
+    margin: 0 1rem 0 1rem;
+    width: 30%;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+section ul li img {
+    margin: 1rem 0 0 0;
+    border: 2px solid #616161;
+    border-radius: 10px;
+    width: 90%;
+    height: 280px;
+    object-fit: cover;
+}
+
+section ul li p {
+    margin-top: 8px;
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+section ul li div.texto {
+    margin: 0 2rem 2rem 2rem;
+}
+
+section ul li div.texto a {
+    display: block;
+    color: #009DFF;
+    font-weight: bold;
+    margin-top: 1vh;
+}
+
+section ul li:hover {
+    transform: translateY(-5px);
+}
+section ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+/************************************************
+footer
+************************************************/
+
+/************************************************
+celular
+************************************************/
+@media only screen and (max-width: 768px) {
+    section p.meio {
+        font-size: 20px;
+        margin: 0vw 0rem 0rem 0rem;
+        text-align: justify;
+        margin: 0;
+    }
+
+    section ul {
+        display: block;
+        text-align: center;
+        padding: 0 2rem 0 2rem; 
+        justify-content: center;
+    }
+
+    section ul li {
+        justify-content: center;
+        width: 100%;
+        padding: 1vh 1vw 0.1vh 1vw;
+        margin: 0 0 1.5rem 0;
+    }
+    section ul li h2 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 1vh 0 0 0;
+    }
+    section ul li a {
+        font-size: 1rem;  
+    }
+
+    section p.meio {
+        font-size: 1rem;
+        margin: 0vw 2rem 2rem 2rem;
+    }
+
+    section ul li img {
+        width: 15rem;
+        height: 10rem;
+        display: block; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section ul li div.texto {
+        margin: 0 1.5rem 2rem 1.5rem;
+    }
+    section ul li p {
+        text-align: justify;
+    }
+    section img {
+        justify-content: center;
+        width: 100%;
+    }
+}
