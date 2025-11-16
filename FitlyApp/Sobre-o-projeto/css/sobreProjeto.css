@@ -238,8 +238,7 @@ Banner
   object-fit: cover;
   border-radius: 0.8rem;
   padding: 8px;
-  margin: 0 auto 1rem;
-  margin: 1vw 0;
+  margin-top: 3vw;
 }
 
 .colaboradores .colab {
@@ -273,13 +272,13 @@ Banner
   margin: 10px 0;
 }
 
-.colaboradores .colab li p img {
+.colaboradores .colab li p img{
   width: 100%;
   height: 20rem;
   object-fit: cover;
   border-radius: 0.6rem;
   padding: 5px;
-  margin: 0 auto 0.5rem;
+  margin-top: 3vw;
 }
 
 .colaboradores .colab .dupla li strong {
@@ -385,6 +384,7 @@ footer a {
     margin: 3rem auto;
     width: 100%;
   }
+  
   .IMG img{
     object-fit: cover;
     display: block;
@@ -405,13 +405,14 @@ footer a {
     border-radius: 0.4vw;
   } 
 
-  .colaboradores .unico li p, .colab li p{
-    margin: 0 0 3vw 0 ;
+  .colaboradores .unico li p.txt, .colab li p.txt{
+    font-size: 1.3rem;
   }
 
-  .colaboradores .unico, .cloab li p strong{
-    font-size: 1.8rem;
+  .colaboradores .unico li strong, .colab li strong{
+    font-size: 1.6rem;
   }
+
   section {
     flex-direction: column;
   }
