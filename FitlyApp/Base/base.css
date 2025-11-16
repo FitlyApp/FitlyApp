@@ -132,7 +132,7 @@ MOBILE RESPONSIVE MENU
     padding: 1rem 0;
 
     opacity: 0;
-    pointer-events: none; 
+    pointer-events: none;
     transform: translateY(-20px);
     transition: top 0.35s ease, opacity 0.35s ease, transform 0.35s ease;
   }
@@ -151,10 +151,7 @@ MOBILE RESPONSIVE MENU
   .nav-menu ul li {
     margin: 1rem 0;
   }
-
-  
 }
-
 
 /************************************************
 footer
@@ -185,7 +182,7 @@ footer div div p {
 footer div a {
   display: flex;
   align-items: center;
-}   
+}
 
 footer div a img {
   width: 8vw;
@@ -284,6 +281,11 @@ footer a {
   footer div div.mapSite ul li {
     margin: 5px 0;
   }
+
+  footer div.direitos {
+    display: block;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -309,5 +311,14 @@ footer a {
   }
   footer div.direitos p {
     font-size: 3vw;
+  }
+
+  footer div.direitos {
+    display: block;
+    text-align: center;
+  }
+
+  footer div.direitos p {
+    text-align: center;
   }
 }
