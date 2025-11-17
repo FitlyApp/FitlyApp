@@ -16,7 +16,11 @@
         <img src="/FitlyApp/Imagens/logos/logoFitlySemTexto.png" alt="Logo" />
         <a href="/FitlyApp"><h2>Fitly</h2></a>
       </h1>
-      <nav class="nav-menu">
+      <nav class="nav-menu">  
+      <button id="btn">
+        <span class="fa-solid fa-moon" id="lua"></span>
+        <span class="fa-solid fa-sun" id="sol"></span>
+      </button>
         <ul>
           <li>
             <a href="/FitlyApp/">Início</a>
@@ -236,6 +240,7 @@
       </div>
     </footer>
     <script src="/FitlyApp\Base\script.js"></script>
+    
   <script>
     let eClaro = true;
     const raiz = document.documentElement;
@@ -245,7 +250,7 @@
     let botaoNoturno = document.getElementById('btn');
     botaoNoturno.addEventListener("click", function () {
       if (eClaro) {
-        raiz.style.setProperty('--color-background', '#22333b');
+        raiz.style.setProperty('--color-background', '#1D201F');
         raiz.style.setProperty('--color-text', 'white');
         for (const itens of listaNutrientes) {
           itens.style.backgroundColor = "#0a0908";
@@ -255,7 +260,7 @@
         eClaro = false
       } else {
         raiz.style.setProperty('--color-background', '#f7f7f7');
-        raiz.style.setProperty('--color-text', '#22333b');
+        raiz.style.setProperty('--color-text', '#000000');
         for (const itens of listaNutrientes) {
           itens.style.backgroundColor = "white"
         }

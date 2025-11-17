@@ -3,6 +3,31 @@ main {
 }
 
 
+:root {
+  --color-background: #f7f7f7;
+  --color-text: #000000;
+}
+
+
+/************************************************
+HTML
+************************************************/
+
+main p,
+strong,
+a {
+  color: var(--color-text);
+}
+
+li {
+  color: var(--color-background);
+
+}
+
+body {
+  background-color: var(--color-background);
+}
+
 /************************************************
 introdução
 ************************************************/

@@ -60,7 +60,7 @@ section.explicação li {
   text-indent: -1.5em;
 }
 
-section.explicação li:before {
+section.explicação li p:before {
   content: '✓';
   color: #009dff;
   margin-right: 0.5em;
@@ -88,6 +88,7 @@ section.motivo p.dica-extra {
   border-left: 4px solid #009dff;
   padding: 15px;
   border-radius: 5px;
+  width: fit-content;
 
 }
 
@@ -121,7 +122,7 @@ section.exercicio p {
 
 section.exercicio div img {
   height: 70%;
-
+  
 }
 
 section.exercicio ul {
@@ -134,7 +135,7 @@ section.exercicio li {
   text-indent: -1.5em;
 }
 
-section.exercicio li:before {
+section.exercicio li p:before {
   content: '✓';
   color: #009dff;
   margin-right: 0.5em;
@@ -145,6 +146,7 @@ Referencia
 ************************************************/
 section.referencia h3 {
   margin: 2rem 0 30px 0;
+  color: #009dff;
 }
 
 section.referencia ul li {

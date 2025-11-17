@@ -19,6 +19,10 @@
         <a href="/FitlyApp"><h2>Fitly</h2></a>
       </h1>
       <nav class="nav-menu">
+         <button id="btn">
+        <span class="fa-solid fa-moon" id="lua"></span>
+        <span class="fa-solid fa-sun" id="sol"></span>
+      </button>
         <ul>
           <li>
             <a href="/FitlyApp/">Início</a>
@@ -260,7 +264,8 @@
             </p>
         </div>
     </footer>
-
+    <script src="/FitlyApp\Base\script.js"></script>
+    
     <script>
         let eClaro = true;
         const raiz = document.documentElement;
@@ -270,15 +275,15 @@
         let dicaExtra = document.getElementById('dica-extra');
         botaoNoturno.addEventListener("click", function () {
             if (eClaro) {
-                raiz.style.setProperty('--color-background', '#22333b');
+                raiz.style.setProperty('--color-background', '#1D201F');
                 raiz.style.setProperty('--color-text', 'white');
                 luaImg.style.display = "none";
                 solImg.style.display = "block";
-                dicaExtra.style.backgroundColor = "black";
+                dicaExtra.style.backgroundColor = "#0a0908";
                 eClaro = false;
             } else {
                 raiz.style.setProperty('--color-background', '#f7f7f7');
-                raiz.style.setProperty('--color-text', '#333333');
+                raiz.style.setProperty('--color-text', '#000000');
                 luaImg.style.display = "block";
                 solImg.style.display = "none";
                 dicaExtra.style.backgroundColor = "#e6f5ff";

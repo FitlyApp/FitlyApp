@@ -27,14 +27,35 @@ html {
   font-family: "Poppins";
   scroll-behavior: smooth;
   background-color: #ffffff;
-}
-
-html {
   font-size: calc(15px + 0.390625vw);
 }
 
 ul li {
   list-style-type: none;
+}
+:root {
+  --color-background: #f7f7f7;
+  --color-text: #000000;
+}
+
+
+/************************************************
+Collors
+************************************************/
+
+main p,
+strong,
+a {
+  color: var(--color-text);
+}
+
+li {
+  color: var(--color-background);
+
+}
+
+body {
+  background-color: var(--color-background);
 }
 /************************************************
 header
@@ -112,7 +133,40 @@ header nav ul li a:hover {
   transition: all 0.3s ease-in-out;
   background-color: #333;
 }
+/*=========================================
+TEMA CLARO E TEMA ESCURO, PEQUENO CSS PARA ESTILIZAR OS BOTÕES
+============================================*/
 
+header nav {
+  display: flex;
+}
+
+header nav button {
+  font-size: 1.5rem;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  margin: 0 1.5rem;
+}
+
+header nav button:hover {
+  color: #009dff;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+header nav button span#lua {
+  display: block;
+}
+
+header nav button span#sol {
+  display: none;
+}
+
+header nav ul li {
+  margin: 10px;
+  display: inline;
+}
 /************************************************
 MOBILE RESPONSIVE MENU
 ************************************************/
@@ -126,11 +180,10 @@ MOBILE RESPONSIVE MENU
     top: -250px;
     left: 0;
     width: 100%;
-    background: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
     flex-direction: column;
     text-align: center;
     padding: 1rem 0;
-
     opacity: 0;
     pointer-events: none;
     transform: translateY(-20px);
@@ -156,6 +209,9 @@ MOBILE RESPONSIVE MENU
 /************************************************
 footer
 ************************************************/
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+}
 footer div {
   display: flex;
   justify-content: space-between;
@@ -224,7 +280,7 @@ footer div div p.email {
 footer div.direitos {
   display: flex;
   justify-content: center;
-  margin: 10px 0 15px 0;
+  padding: 10px 0 15px 0;
 }
 
 footer div.direitos p {
@@ -242,6 +298,10 @@ footer a {
 @media (max-width: 1024px) {
   footer div {
     margin: 3vw;
+  }
+  footer div.direitos {
+    padding:  0 0 3vw 0;
+    margin: 0;
   }
   footer div div h2 {
     font-size: 2.5vw;
