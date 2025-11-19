@@ -19,6 +19,10 @@
         <a href="/FitlyApp"><h2>Fitly</h2></a>
       </h1>
       <nav class="nav-menu">
+          <button id="btn">
+        <span class="fa-solid fa-moon" id="lua"></span>
+        <span class="fa-solid fa-sun" id="sol"></span>
+      </button>
         <ul>
           <li>
             <a href="/FitlyApp/">Início</a>
@@ -101,7 +105,7 @@
           saúde, aumentando o risco de obesidade, doenças cardiovasculares e
           diabetes tipo 2.
         </p>
-        <ul>
+        <ul id="mal">
           <li>
             <img
               src="../Imagens/img_Artigos/img_beneficios-alimentação-equilibrada/logan-weaver-lgnwvr-qgZRZI-pKgM-unsplash.jpg"
@@ -213,5 +217,42 @@
       </div>
     </footer>
     <script src="/FitlyApp\Base\script.js"></script>
+      
+  <script>
+    let eClaro = true;
+    const raiz = document.documentElement;
+    let luaImg = document.getElementById('lua');
+    let solImg = document.getElementById("sol");
+    let listaBeneficios = document.querySelector('section ul').querySelectorAll('li');
+    let listaMaleficios = document.getElementById('mal').querySelectorAll('li');
+    let botaoNoturno = document.getElementById('btn');
+    botaoNoturno.addEventListener("click", function () {
+      if (eClaro) {
+        raiz.style.setProperty('--color-background', '#1D201F');
+        raiz.style.setProperty('--color-text', 'white');
+        for (const itens of listaBeneficios) {
+          itens.style.backgroundColor = "#0a0908";
+        }
+        for (const itens of listaMaleficios) {
+          itens.style.backgroundColor = "#0a0908";
+        }
+        luaImg.style.display = "none";
+        solImg.style.display = "block";
+        eClaro = false;
+      } else {
+        raiz.style.setProperty('--color-background', '#f7f7f7');
+        raiz.style.setProperty('--color-text', '#000000');
+        for (const itens of listaBeneficios) {
+          itens.style.backgroundColor = "white";
+        }
+        for (const itens of listaMaleficios) {
+          itens.style.backgroundColor = "white";
+        }
+        luaImg.style.display = "block";
+        solImg.style.display = "none";
+        eClaro = true;
+      }
+    })
+  </script>
   </body>
 </html>
