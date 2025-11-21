@@ -1,4 +1,26 @@
+/************************************************
+HTML
+************************************************/
 
+:root {
+    --color-background: #f7f7f7;
+    --color-text: #000000;
+  }
+    
+  main > p,
+  strong, h4, h2,
+  a {
+    color: var(--color-text);
+}
+
+li {
+    color: var(--color-background);
+    
+}
+
+body {
+    background-color: var(--color-background);
+}
 /************************************************
 Início
 ************************************************/
@@ -102,7 +124,6 @@ plataforma
 .plataforma p {
     font-size: .8rem;
     text-align: left;
-    color: #000000;
     margin: 0.8rem;
     margin-right: 20rem;
 }
@@ -130,7 +151,6 @@ plataforma
 .plataforma h2 {
     font-size: 1.5rem;
     text-align: left;
-    color: #0D1B2A;
     margin: 1.6rem 0rem 0.8rem 0rem;
 }
 

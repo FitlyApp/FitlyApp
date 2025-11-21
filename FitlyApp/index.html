@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitly</title>
-    <link rel="stylesheet" href="Base/style.css?v=1" />
     <link rel="stylesheet" href="Base/base.css" />
+    <link rel="stylesheet" href="Base/style.css">
     <script>
       const images = [
         "Imagens/img_pag-inicial/ambitious-studio-rick-barrett-03b61PY89hs-unsplash.jpg",
@@ -24,6 +24,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <header>
       <h1 class="logo">
@@ -31,6 +32,10 @@
         <a href="/FitlyApp"><h2>Fitly</h2></a>
       </h1>
       <nav class="nav-menu">
+     <button id="btn">
+        <span class="fa-solid fa-moon" id="lua"></span>
+        <span class="fa-solid fa-sun" id="sol"></span>
+      </button>
         <ul>
           <li>
             <a href="#inicio">Início</a>
@@ -195,5 +200,26 @@
       </div>
     </footer>
     <script src="Base/script.js"></script>
+    <script>
+      let eClaro = true;
+    const raiz = document.documentElement;
+    let luaImg = document.getElementById('lua');
+    let solImg = document.getElementById("sol");let botaoNoturno = document.getElementById('btn');
+    botaoNoturno.addEventListener("click", function () {
+      if (eClaro) {
+        raiz.style.setProperty('--color-background', '#1D201F');
+        raiz.style.setProperty('--color-text', 'white');
+        eClaro = false;   
+        luaImg.style.display = "none";
+        solImg.style.display = "block";
+      }else {
+        raiz.style.setProperty('--color-background', '#f7f7f7');
+        raiz.style.setProperty('--color-text', '#0D1B2A');
+        luaImg.style.display = "block";
+        solImg.style.display = "none";
+        eClaro = true;
+      }
+    })
+    </script>
   </body>
 </html>
