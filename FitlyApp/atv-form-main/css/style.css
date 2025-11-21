@@ -1,0 +1,112 @@
+/************************************************
+Poppins Font
+************************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/************************************************
+Reset
+************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************************************************
+HTML
+************************************************/
+
+:root {
+  --step--2: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
+  --step--1: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+  --step-0: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+  --step-1: clamp(1.35rem, 1.2631rem + 0.3864vw, 1.5625rem);
+  --step-2: clamp(1.62rem, 1.4837rem + 0.6057vw, 1.9531rem);
+  --step-3: clamp(1.944rem, 1.7405rem + 0.9044vw, 2.4414rem);
+  --step-4: clamp(2.3328rem, 2.0387rem + 1.3072vw, 3.0518rem);
+  --step-5: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
+}
+
+html {
+  font-size: clamp(0.9375rem, calc(0.9119rem + 0.1136vw), 3rem);
+}
+
+html {
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+  background: linear-gradient(90deg,rgba(42, 178, 237, 1) 0%, rgba(42, 156, 237, 1) 50%, rgba(42, 159, 237, 1) 100%);
+}
+
+ul li {
+  list-style-type: none;
+}
+:root {
+  --color-background: #f7f7f700;
+  --color-text: #030303;
+}
+
+/************************************************
+Collors
+************************************************/
+
+main p,
+strong,
+a {
+  color: var(--color-text);
+}
+
+li {
+  color: var(--color-background);
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+button {
+  background-color: #2a8ded;
+  color: #f7ffff;
+  padding: 10px 100px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 7px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main section {
+  display: none;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 100px 50px;
+  border-radius: 8px;
+}
+
+main section p {
+  margin: 1vw 0;
+}
+
+main section button {
+  margin: 1vw 0;
+}
+
+main section h1 {
+  width: 100%;
+}
+
+.pag1 {
+  display: block;
+}

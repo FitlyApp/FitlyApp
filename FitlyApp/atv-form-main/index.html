@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade Formulário</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="pag1">
+        <h1>Bem-Vindo(a)!</h1>
+        <p>Para começar, qual é o seu nome?</p>
+
+        <form action="#">
+          <label>
+            <input type="text" placeholder="Digite seu nome aqui" />
+          </label>
+        </form>
+
+        <button type="button" onclick="vaiPagina2()">Próximo</button>
+      </section>
+      <section class="pag2">
+        <h1><span></span>, você estuda no IFC?</h1>
+
+        <form action="#">
+          <label> <input type="radio" name="estudante" value="1" />Sim</label>
+          <label> <input type="radio" name="estudante" value="0" />Não </label>
+        </form>
+
+        <button type="button" onclick="vaiPagina3()">Próximo</button>
+      </section>
+
+      <section class="pag3">
+        <h1>Qual turma você pertence?</h1>
+        <form action="#">
+          <label for="turma"> Turma </label>
+
+          <select name="turma" id="turma">
+            <option value="1">1INFO1</option>
+            <option value="2">1INFO2</option>
+            <option value="3">1INFO3</option>
+          </select>
+
+          <button type="button" onclick="vaiPagina4()">Próximo</button>
+        </form>
+      </section>
+      <section class="pag4">
+        <h1>Saudações, <span>Fulano!</span></h1>
+        <p>Você estuda na turma 1INFOX.</p>
+
+        <button type="button">Continuar</button>
+      </section>
+    </main>
+    <script>
+      const pag1 = document.querySelector("section.pag1");
+      const pag2 = document.querySelector("section.pag2");
+      const pag3 = document.querySelector("section.pag3");
+      const pag4 = document.querySelector("section.pag4");
+
+      let nome = "";
+      let estudante = "";
+
+      const vaiPagina2 = () => {
+        pag1.style.display = "none";
+        pag2.style.display = "block";
+        nome = document.querySelector(".pag1 input").value;
+        document.querySelector(".pag2 h1 span").innerHTML = nome;
+        document.querySelector(".pag4 h1 span").innerHTML = nome;
+      };
+
+      const vaiPagina3 = () => {
+        estudante = documen.querySelector(".pag2 input:checked");
+        pag2.style.display = "none";
+        if (estudante == 1) {
+            pag3.style.display = "block";
+        } else {
+            pag4.style.display = "block";
+        }
+      };
+
+      const vaiPagina4 = () => {
+        pag3.style.display = "none";
+        pag4.style.display = "block";
+      };
+    </script>
+  </body>
+</html>
