@@ -8,7 +8,7 @@ HTML
   }
     
   main > p,
-  strong, h4, h2,
+  strong, h4, h2, h3,
   a {
     color: var(--color-text);
 }
@@ -290,4 +290,11 @@ NotFound (404)
 .NotFound a:hover {
     background-color: #009DFF;
     transform: translateY(-2px);
+}
+
+@media (max-width: 1300px) {
+    .plataforma img.pc {
+        display: none;
+        float: none;
+    }
 }
