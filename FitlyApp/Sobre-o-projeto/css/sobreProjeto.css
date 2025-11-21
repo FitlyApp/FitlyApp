@@ -76,13 +76,15 @@ Banner
   width: 80%;
   max-width: 1200px;
   padding: 4vw 3vw;
-  background-color: #f9f9f9;
   border-radius: 1rem;
 }
 
-.colaboradores h2{
-  text-align: center;
-  display: inline-block;
+.colaboradores .h2{
+  margin: 0 13vw ;
+  text-align: center; 
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 0 1vw 0 1vw;
   border-bottom: 5px solid #009DFF;
   border-radius: 0.3vw;
 }
@@ -210,7 +212,7 @@ Banner
   }
 
   section.colaboradores .colab li {
-    margin: 3vw 5vw;
-    padding: 2vw 4vw;
+    margin: 3vw 1vw;
+    padding: 6vw 8vw;
   }
 }
