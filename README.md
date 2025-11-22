@@ -167,15 +167,29 @@ Com isso, espera-se que a proposta possa contribuir significativamente para a pr
 ### 24 de Outubro de 2025, 15:30 até 17:00`
 **Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
 ### Anotações 📓:
-- N/A
+- Nenhuma anotação neste dia
 ### Ações necessárias ✔️:
 - [X] ~Começar responsividade~
-- [ ] Mudar a cor do footer para a mesma do header
+- [X] ~Mudar a cor do footer para a mesma do header~
 
 ### `31 de Outubro de 2025, 09:45 até 11:15`
 **Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
 ### Anotações 📓:
--
-
+- Nenhuma anotação neste dia
 ### Ações necessárias ✔️:
--  
+- [X] ~Continuar a responsividade das páginas de artigos~
+
+### `07 de Novembro de 2025, 09:45 até 11:15`
+**Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
+### Anotações 📓:
+- Nenhuma anotação neste dia
+### Ações necessárias ✔️:
+- [X] ~Continuar a responsividade das páginas de artigos~
+
+### `14 de Novembro de 2025, 09:45 até 11:15`
+**Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda` e `Pedro José`
+### Anotações 📓:
+- Nenhuma anotação neste dia
+### Ações necessárias ✔️:
+- [X] ~Continuar a responsividade das páginas de artigos~
+- [X] ~Finalização do tema claro e escuro~
