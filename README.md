@@ -202,7 +202,7 @@ Com isso, espera-se que a proposta possa contribuir significativamente para a pr
 - [X] ~Continuar a responsividade das páginas de artigos~
 - [X] ~Finalização da responsividade da página do sobre o projeto~
 
-### `21 de Novembro de 2025, 09:45 até 11:15`
+### `22 de Novembro de 2025, 09:45 até 11:15`
 **Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
 ### Anotações 📓:
 - Revisão dos conteúdos para a entrega do trabalho
