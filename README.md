@@ -141,6 +141,8 @@ Com isso, espera-se que a proposta possa contribuir significativamente para a pr
 ### `13 de Setembro de 2025, 08:00 até 11:15`
 **Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda` e `Pedro José`
 ### Anotações 📓:
+- Nenhuma anotação neste dia
+### Ações necessárias ✔️:
 - [X] ~Continuar o roteiro de perguntas~ 
 - [X] ~Fazer as correções de design anotadas~
 - [X] ~Tirar a foto da equipe~
@@ -160,9 +162,7 @@ Com isso, espera-se que a proposta possa contribuir significativamente para a pr
  - Pedir para a nutricionista Bruna uma receita fácil de se fazer, como por exemplo, uma barra de cereal caseira
  - Fazer um vídeo fazendo tal receita e colocar no site seria interessante
 ### Ações necessárias ✔️:
-- [X] ~Fazer um esboço do resumo para, em uma próxima reunião, o professor avaliar e corrigir, para~
-- [X] ~Pedir para a nutricionista Bruna uma receita fácil de se fazer, como por exemplo, uma barra de cereal caseira~
-- (Descartado) ~Mudar o título da plataforma, usando como base o resumo, para haver uma maior coerência~
+- [X] ~Fazer um esboço do resumo para, em uma próxima reunião, o professor avaliar e corrigir, para pedir para a nutricionista Bruna uma receita fácil de se fazer, como por exemplo, uma barra de cereal caseira~
 
 ### 24 de Outubro de 2025, 15:30 até 17:00`
 **Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
@@ -189,7 +189,24 @@ Com isso, espera-se que a proposta possa contribuir significativamente para a pr
 ### `14 de Novembro de 2025, 09:45 até 11:15`
 **Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda` e `Pedro José`
 ### Anotações 📓:
-- Nenhuma anotação neste dia
+- Definimos as cores exatas do tema escuro do site
+- Aprimoração do roteiro de perguntas
 ### Ações necessárias ✔️:
 - [X] ~Continuar a responsividade das páginas de artigos~
 - [X] ~Finalização do tema claro e escuro~
+### `21 de Novembro de 2025, 09:45 até 11:15`
+**Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
+### Anotações 📓:
+- Aplicar novas cores definidas
+### Ações necessárias ✔️:
+- [X] ~Continuar a responsividade das páginas de artigos~
+- [X] ~Finalização da responsividade da página do sobre o projeto~
+
+### `21 de Novembro de 2025, 09:45 até 11:15`
+**Participantes**: `Igor Marcon Michels`, `Victor Murilo Bernardes`, `Kaue Teixeira`, `Matheus Maximiniano Lacerda`, `Victor Feliciano` e `Pedro José`
+### Anotações 📓:
+- Revisão dos conteúdos para a entrega do trabalho
+- Teste da responsividade no celular
+### Ações necessárias ✔️:
+- [X] ~Correção de bugs~
+- [X] ~Continuação e finalização do roteiro de perguntas~
