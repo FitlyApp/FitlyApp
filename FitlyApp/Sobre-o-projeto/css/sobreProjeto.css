@@ -86,7 +86,7 @@ Banner
 .colaboradores .h2{
   margin: 0 13vw ;
   text-align: center; 
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 0 1vw 0 1vw;
   border-bottom: 5px solid #009DFF;
@@ -109,6 +109,14 @@ Banner
   margin: 3rem auto;
   width: 100%;
 }
+
+.colaboradores .unico .unit{
+  background-color: #fff;
+  padding: 2vw 4vw;
+  border-radius: 2vw;
+  box-shadow: 1px 1px 8px rgba(0, 0 ,0, 0.25);
+}
+
 
 .colaboradores .unico .unit img {
   width: 100%;
@@ -133,7 +141,7 @@ Banner
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
   padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+} 
 
 .colaboradores .colab {
   display: grid;
@@ -168,16 +176,6 @@ Banner
 /* === RESPONSIVIDADE === */
 
 @media screen and (max-width: 768px) {
-
-  .colaboradores .unico {
-    padding: 2rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem auto;
-    width: 100%;
-  }
-  
   .IMG img{
     object-fit: cover;
     display: block;
@@ -187,6 +185,26 @@ Banner
     opacity: 0.3;
     background-color: #000000;
   }
+
+  .colaboradores .unico {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+    width: 100%;
+  }
+  .colaboradores .h2 {
+  box-sizing: border-box; 
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 1vw;
+  border-bottom: 5px solid #009DFF;
+  border-radius: 0.3vw;
+  width: 100%;
+}
 
   .banner h1 {
     margin: 30px 0px 30px 0px;
@@ -199,11 +217,11 @@ Banner
   } 
 
   .colaboradores .unico li p.txt, .colab li p.txt{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .colaboradores .unico li strong, .colab li strong{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   section {
