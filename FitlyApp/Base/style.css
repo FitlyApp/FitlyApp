@@ -5,22 +5,26 @@ HTML
 :root {
     --color-background: #f7f7f7;
     --color-text: #000000;
-  }
-    
-  main > p,
-  strong, h4, h2, h3,
-  a {
+}
+
+main>p,
+strong,
+h4,
+h2,
+h3,
+a {
     color: var(--color-text);
 }
 
 li {
     color: var(--color-background);
-    
+
 }
 
 body {
     background-color: var(--color-background);
 }
+
 /************************************************
 Início
 ************************************************/
@@ -49,7 +53,7 @@ Início
     width: 90%;
 }
 
-.inicio{
+.inicio {
     text-align: center;
 }
 
@@ -74,7 +78,7 @@ Início
     border-radius: 8px;
     font-size: 0.9rem;
     text-decoration: none;
-     font-weight: bold;
+    font-weight: bold;
     color: #FFFFFF;
     transition: all 0.3s ease;
     border: 2px solid transparent;
@@ -281,7 +285,7 @@ NotFound (404)
     border-radius: 8px;
     font-size: 0.9rem;
     text-decoration: none;
-     font-weight: bold;
+    font-weight: bold;
     color: #FFFFFF;
     transition: all 0.3s ease;
     border: 2px solid transparent;
@@ -292,9 +296,45 @@ NotFound (404)
     transform: translateY(-2px);
 }
 
-@media (max-width: 1300px) {
-    .plataforma img.pc {
-        display: none;
+/************************************************/
+/* Responsividade */
+
+@media only screen and (max-width: 768px) {
+
+    .plataforma img {
         float: none;
+        display: block;
+        margin: 2rem auto;
+        max-height: 600px;
+        width: auto;
     }
+
+    .plataforma {
+        margin: 0;
+    }
+
+    .plataforma p,
+    .plataforma h2,
+    .plataforma h3,
+    .plataforma h4 {
+        margin: 1rem 1.5rem 1rem 1.5rem;
+    }
+
+    .plataforma h4 {
+        text-align: justify;
+        justify-content: center;
+    }
+    .plataforma h4 {
+        margin-bottom: vh;
+    }
+    .plataforma ul li p {
+        font-size: 0.9rem;
+    }
+    .plataforma ul li h3 {
+        font-size: 1.2rem;
+    }
+    .CTA h2 {
+        font-size: 1.5rem;
+    }
+
 }
