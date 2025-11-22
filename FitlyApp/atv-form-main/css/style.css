@@ -41,7 +41,12 @@ html {
 html {
   font-family: "Poppins";
   scroll-behavior: smooth;
-  background: linear-gradient(90deg,rgba(42, 178, 237, 1) 0%, rgba(42, 156, 237, 1) 50%, rgba(42, 159, 237, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(42, 178, 237, 1) 0%,
+    rgba(42, 156, 237, 1) 50%,
+    rgba(42, 159, 237, 1) 100%
+  );
 }
 
 ul li {
@@ -90,13 +95,15 @@ main {
 main section {
   display: none;
   text-align: center;
-  background-color: #f7f7f7;
-  padding: 100px 50px;
+  background-color: #ffffff;
+  padding: 3rem 3rem;
+  margin: 2;
   border-radius: 8px;
 }
 
 main section p {
   margin: 1vw 0;
+  color: rgba(0, 0, 0, 0.589);
 }
 
 main section button {
@@ -107,6 +114,26 @@ main section h1 {
   width: 100%;
 }
 
+main section h3 {
+  text-align: left;
+}
+
 .pag1 {
   display: block;
+}
+
+form label.texto input {
+  display: block;
+  margin: 1vw auto;
+  padding: 0.8rem 5rem;
+  width: 100%;
+  border: none;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  border: 2px solid #d4d4d4;
+}
+
+form label.texto input:focus {
+  border-color: #2a8ded;
+  outline: none;
 }
