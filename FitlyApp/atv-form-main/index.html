@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atividade Formulário</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
     <main>
@@ -17,11 +17,11 @@
             <h3>Nome</h3>
             <input type="text" placeholder="Seu nome" required />
           </label>
-          <h3>Idade</h3>
           <label class="texto">
+            <h3>Idade</h3>
             <input type="number" placeholder="Sua idade" min="0" required/>
           </label>
-          <label for=""></label>
+          
           <label>
             <h3>Sexo</h3>
             <input type="radio" name="genero" value="1" required />Masculino
@@ -178,10 +178,10 @@
       const dadosPessoa = {
         nome: "",
         sexo: "",
-        email: "",
         idade: 0,
         peso: 0,
-        altura: 0
+        altura: 0,
+        email: ""
       }
       // Aqui a gente armazená todos as informações, para depois também jogar no email da pessoa;
       const pag1 = document.querySelector("section.pag1");
@@ -193,12 +193,9 @@
       const pag7 = document.querySelector("section.pag7");
       const pag8 = document.querySelector("section.pag8");
       const pag9 = document.querySelector("section.pag9");
-
-      let nome = "";
-      let estudante = "";
-      let turma = "";
-
+      // QUEM FOI QUE USOU ARROW FUNCTION?????
       const vaiPagina2 = () => {
+        dadosPessoa.nome = document.getElementById('')
         pag1.style.display = "none";
         pag2.style.display = "block";
       };
