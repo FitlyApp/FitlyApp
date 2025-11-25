@@ -251,11 +251,12 @@
     let botaoNoturno = document.getElementById('btn');
     botaoNoturno.addEventListener("click", function () {
       if (eClaro) {
-        raiz.style.setProperty('--color-background', '#1D201F');
+        raiz.style.setProperty('--color-background', 'rgb(17,17,17)');
         raiz.style.setProperty('--color-text', 'white');
         for (const itens of listaNutrientes) {
-          itens.style.backgroundColor = "#0a0908";
+          itens.style.backgroundColor = "rgb(17,17,17)";
         }
+        //rgb(17,17,17)
         luaImg.style.display = "none";
         solImg.style.display = "block";
         eClaro = false
