@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     moderado: 1.55,
     muito_ativo: 1.725,
   };
+  
   const gastoTotal = geb * multiplicadores[atividade];
 
   let metaCaloricaBase = gastoTotal;
