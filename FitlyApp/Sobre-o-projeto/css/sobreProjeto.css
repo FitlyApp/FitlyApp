@@ -111,7 +111,8 @@ Banner
 }
 
 .colaboradores .unico .unit{
-  background-color: #fff;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
   padding: 2vw 4vw;
   border-radius: 2vw;
   box-shadow: 1px 1px 8px rgba(0, 0 ,0, 0.25);
@@ -136,7 +137,6 @@ Banner
 }
 
 .colaboradores .colab li {
-  background-color: #fff;
   border-radius: 0.8rem;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
   padding: 2rem;

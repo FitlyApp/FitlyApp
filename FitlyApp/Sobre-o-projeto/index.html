@@ -56,7 +56,7 @@
       </div>
 
       <div class="unico">
-        <li class="unit" id="convidada">
+        <div class="unit" id="convidada">
           <strong>Bruna Ignácio Bernardes: </strong>
           <p>
              Formada em nutrição, trabalha atualmente com marketing, ajudou na
@@ -64,8 +64,8 @@
           </p>
           <p>
             <img src="/FitlyApp/Imagens/Img_integrantes/Bruna Ignácio Bernardes.jpg" alt="Bruna" class="imagem">
-          </p>    
-        </li>   
+          </p> 
+          </div>
       </div>   
 
       <ul class="colab" id="parti">
@@ -209,25 +209,29 @@
     let solImg = document.getElementById("sol");
     let botaoNoturno = document.getElementById('btn');
     let listaParticipantes = document.getElementById('parti').querySelectorAll('li');
+    let itemBruna = document.getElementById('convidada');
     botaoNoturno.addEventListener("click", function () {
       if (eClaro) {
         raiz.style.setProperty('--color-background', '#1D201F');
         raiz.style.setProperty('--color-text', 'white');
-        eClaro = false;   
         luaImg.style.display = "none";
         solImg.style.display = "block";
+        itemBruna.style.backgroundColor = "#1D201F";
         for (const item of listaParticipantes) {
-          item.style.backgroundColor = "#1D201F"
+          item.style.backgroundColor = "#1D201F";
         }
+        eClaro = false; 
+        
       }else {
         raiz.style.setProperty('--color-background', '#f7f7f7');
         raiz.style.setProperty('--color-text', '#0D1B2A');
-        luaImg.style.display = "block";
         solImg.style.display = "none";
-        eClaro = true;
+        luaImg.style.display = "block";
+        itemBruna.style.backgroundColor = "#f7f7f7";
         for (const item of listaParticipantes) {
-          item.style.backgroundColor = "#f7f7f7"
+          item.style.backgroundColor = "#f7f7f7";
         }
+        eClaro = true;
       }
     })
     </script>

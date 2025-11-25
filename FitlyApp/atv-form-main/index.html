@@ -11,23 +11,26 @@
       <section class="pag1">
         <h1>Vamos começar!</h1>
         <p>Nome, Idade e Gênero</p>
+        
         <form action="#">
-          <h3>Nome</h3>
           <label class="texto">
+            <h3>Nome</h3>
             <input type="text" placeholder="Seu nome" required />
           </label>
           <h3>Idade</h3>
           <label class="texto">
-            <input type="number" placeholder="Sua idade" required />
+            <input type="number" placeholder="Sua idade" min="0" required/>
           </label>
-          <h3>Sexo</h3>
+          <label for=""></label>
           <label>
+            <h3>Sexo</h3>
             <input type="radio" name="genero" value="1" required />Masculino
           </label>
           <label>
             <input type="radio" name="genero" value="0" required />Feminino 
           </label>
         </form>
+        
         <button type="button" onclick="vaiPagina2()">Próximo</button>
       </section>
 
@@ -35,12 +38,12 @@
         <h1>Dados Corporais</h1>
         <p>Altura e Peso</p>
         <form action="#">
-          <h3>Qual sua altura? (cm)</h3>
           <label class="texto">
+            <h3>Qual sua altura? (cm)</h3>
             <input type="number" placeholder="Ex: 175" required />
           </label>
-          <h3>Qual seu peso? (kg)</h3>
           <label class="texto">
+            <h3>Qual seu peso? (kg)</h3>
             <input type="number" placeholder="Ex: 70.5" required />
           </label>
         </form>
@@ -171,6 +174,16 @@
       </section>
     </main>
     <script>
+      let dadosValidos = true;
+      const dadosPessoa = {
+        nome: "",
+        sexo: "",
+        email: "",
+        idade: 0,
+        peso: 0,
+        altura: 0
+      }
+      // Aqui a gente armazená todos as informações, para depois também jogar no email da pessoa;
       const pag1 = document.querySelector("section.pag1");
       const pag2 = document.querySelector("section.pag2");
       const pag3 = document.querySelector("section.pag3");
@@ -188,9 +201,6 @@
       const vaiPagina2 = () => {
         pag1.style.display = "none";
         pag2.style.display = "block";
-        nome = document.querySelector(".pag1 input").value;
-        document.querySelector(".pag2 h1 span").innerHTML = nome;
-        document.querySelector(".pag4 h1 span").innerHTML = nome;
       };
 
       const vaiPagina3 = () => {
