@@ -75,7 +75,7 @@ header {
   height: 60px;
 }
 
-header h2 {
+header .logo a {
   font-size: 1.5rem;
   color: #000000;
   font-weight: bold;
@@ -171,7 +171,7 @@ header nav ul li {
 /************************************************
 MOBILE RESPONSIVE MENU
 ************************************************/
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .hamburger {
     display: block;
   }

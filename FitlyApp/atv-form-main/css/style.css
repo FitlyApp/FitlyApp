@@ -78,11 +78,12 @@ body {
 button {
   background-color: #2a8ded;
   color: #f7ffff;
-  padding: 10px 100px;
+  padding: 10px 150px;
   border: none;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 7px;
+  cursor: pointer;
 }
 
 main {
@@ -134,6 +135,22 @@ form label.texto input {
 }
 
 form label.texto input:focus {
+  border-color: #2a8ded;
+  outline: none;
+}
+
+form label.opcao input {
+  display: block;
+  margin: 1vw auto;
+  padding: 0.8rem 5rem;
+  width: 100%;
+  border: none;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  border: 2px solid #d4d4d4;
+}
+
+form label.opcao input:focus {
   border-color: #2a8ded;
   outline: none;
 }
