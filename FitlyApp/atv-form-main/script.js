@@ -132,7 +132,6 @@ const vaiPagina8 = () => {
     pag8.style.display = "block";
 };
 const calcTudo = () => {
-    emailjs.init('mlsn.5dc33006e158a440d2f62a446825d49cea40ebba0db4950e55524d5bafdbe981');
     // Aqui já calcula a meta diária com as informações fornecidas
     let GEB = 0;
     if (dadosPessoa.sexo = "Masculino") {
@@ -164,19 +163,29 @@ const calcTudo = () => {
             case "Emagrecer":
                 proteina = GEB * 0.25 / 4;
                 gordura = GEB * 0.225 / 9;
-                carbo = GEB * 0.525;
+                carbo = GEB * 0.525 / 4;
                 break;
                 case "Manter":
-                proteina = GEB * 0.3;
-                gordura = GEB * 0.25;
-                carbo = GEB * 0.45;
+                proteina = GEB * 0.3 / 4;
+                gordura = GEB * 0.25 / 9;
+                carbo = GEB * 0.45 /4;
             case "Ganhar":
-                proteina = GEB * 0.325;
-                gordura = GEB * 0.225;
-                carbo = GEB * 0.375;
-                break;
+                proteina = GEB * 0.325 / 4;
+                gordura = GEB * 0.225 / 9;
+                carbo = GEB * 0.375 / 4;
+                break; 
         }
-    console.log(GEB, proteina, carbo, gordura)}
+    let resultadoCalo = document.getElementById('resultado-calorias');
+    resultadoCalo.innerHTML = `${GEB.toFixed(2)}dcalorias`;
+    let resultadoGordura = document.getElementById('resultado-gorduras');
+    resultadoGordura.innerHTML = `${gordura.toFixed(2)} g`
+        let resultadoProteina = document.getElementById('resultado-proteinas');
+    resultadoProteina.innerHTML = `${proteina.toFixed(2)} g`;
+        let resultadoCarbo = document.getElementById('resultado-carboidratos');
+    resultadoCarbo.innerHTML = `${carbo.toFixed(2)} g`;
+    //    console.log(GEB, proteina, carbo, gordura
+    let geral = document.getElementById('dadosGerais');
+}
 const vaiPagina9 = () => {
     
     if (document.querySelector('section.pag8 label input:checked' == "2")) {
@@ -185,3 +194,12 @@ const vaiPagina9 = () => {
     pag8.style.display = "none";
     pag9.style.display = "block";
 };
+
+const voltaPag1 = () => {
+    pag9.style.display = "none";
+    todosOsForms = document.querySelectorAll('section form');
+    for (const form of todosOsForms) {
+        form.reset();
+    }
+        pag1.style.display = "block";
+}

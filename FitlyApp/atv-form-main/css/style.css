@@ -134,9 +134,6 @@ main section h4 {
   margin: 0.5vw 0 0 0;
 }
 
-.pag1 {
-  display: block;
-}
 
 form label.texto {
   display: block;
@@ -196,7 +193,9 @@ form label.opcao input[type="radio"] {
   height: 18px;
 }
 
-
+.pag9 {
+  display: block;
+}
 .pag9 .macros {
   display: flex;
   justify-content: space-around;
