@@ -76,9 +76,10 @@ body {
 }
 
 button {
-  background-color: #2a8ded;
+  background-color: #30afff;
   color: #f7ffff;
-  padding: 10px 150px;
+  padding: 12px 150px;
+  width: 100%;
   border: none;
   font-size: 1rem;
   font-weight: bold;
@@ -94,6 +95,7 @@ main {
 }
 
 main section {
+  max-width: 550px;
   display: none;
   text-align: center;
   background-color: #ffffff;
@@ -123,34 +125,58 @@ main section h3 {
   display: block;
 }
 
+form label.texto {
+  display: block;
+  width: 100%;
+}
+
 form label.texto input {
-  display: block;
-  margin: 1vw auto;
-  padding: 0.8rem 5rem;
   width: 100%;
-  border: none;
-  background-color: #f7f7f7;
-  border-radius: 12px;
-  border: 2px solid #d4d4d4;
-}
-
-form label.texto input:focus {
-  border-color: #2a8ded;
+  height: 45px;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
   outline: none;
+  background-color: #f8fafc;
+  color: #0d0c22;
+  transition: 0.5s ease;
+  box-sizing: border-box;
+  margin: 0;
 }
 
-form label.opcao input {
-  display: block;
-  margin: 1vw auto;
-  padding: 0.8rem 5rem;
+form label.texto input:placeholder {
+  color: #94a3b8;
+}
+
+form label.texto input:hover {
+  outline: none;
+  border-color: rgb(48 175 255);
+  background-color: #fff;
+  box-shadow: 0 0 0 5px rgb(48 175 255 / 30%);
+}
+
+form label.opcao {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  margin: .5rem 0;
+  background-color: #f8fafc;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.4s ease;
   width: 100%;
-  border: none;
-  background-color: #f7f7f7;
-  border-radius: 12px;
-  border: 2px solid #d4d4d4;
+  box-sizing: border-box;
 }
 
-form label.opcao input:focus {
-  border-color: #2a8ded;
-  outline: none;
+form label.opcao:hover {
+    border-color: rgb(48 175 255);
+  background-color: #fff;
+  box-shadow: 0 0 0 5px rgb(48 175 255 / 30%);
+}
+
+form label.opcao input[type="radio"] {
+  width: 18px;
+  height: 18px;
 }
