@@ -8,8 +8,7 @@ let dadosPessoa = {
     objetivo: "",
     habitoFDS: "", // HABITO FINAL DE SEMANA, E NÃO HABITO FODASE
     dieta: "",
-    email: "",
-    condicaoMedica: false,
+    condicaoMedica: "Não possui",
     motivacao: ""
 }
 // Aqui a gente armazená todos as informações, para depois também jogar no email da pessoa;
@@ -67,13 +66,13 @@ const vaiPagina4 = () => {
 const vaiPagina5 = () => {
     switch (document.querySelector('section.pag4 label input:checked').value) {
         case "1":
-            dadosPessoa.objetivo = "Emagrecer";
+            dadosPessoa.objetivo = "Emagrecer o peso";
             break;
         case "2":
-            dadosPessoa.objetivo = "Manter"
+            dadosPessoa.objetivo = "Manter o peso"
             break;
         case "3":
-            dadosPessoa.objetivo = "Ganhar";
+            dadosPessoa.objetivo = "Ganhar massa muscular";
             break;
     }
     pag4.style.display = "none";
@@ -129,6 +128,7 @@ const vaiPagina8 = () => {
     pag7.style.display = "none";
     pag8.style.display = "block";
 };
+
 const calcTudo = () => {
     // Aqui já calcula a meta diária com as informações fornecidas
     let GEB = 0;
@@ -181,13 +181,30 @@ const calcTudo = () => {
     resultadoProteina.innerHTML = `${Math.round(proteina)} g`;
     let resultadoCarbo = document.getElementById('resultado-carboidratos');
     resultadoCarbo.innerHTML = `${Math.round(carbo)} g`;
-    //    console.log(GEB, proteina, carbo, gordura
-    let geral = document.getElementById('dadosGerais');
+    
+    //    console.log(GEB, proteina, carbo, gordura)
+
+    let geral = document.getElementById('dados-gerais');
+    geral.innerHTML = `
+    Nome: ${dadosPessoa.nome}<br>
+    sexo: ${dadosPessoa.sexo}<br>
+    idade: ${dadosPessoa.idade}<br>
+    peso: ${dadosPessoa.peso}<br>
+    altura: ${dadosPessoa.altura}<br>
+    IMC: ${(dadosPessoa.peso / (dadosPessoa.altura/100 * dadosPessoa.altura /100)).toFixed(2)}<br>
+    Frequência de exercício físico: ${dadosPessoa.frequenciaExe}<br>
+    objetivo: ${dadosPessoa.objetivo}<br>
+    Costuma comer no final de semana: ${dadosPessoa.habitoFDS}<br>
+    dieta específica: ${dadosPessoa.dieta}<br>
+    condição médica: ${dadosPessoa.condicaoMedica}<br>
+    motivação: ${dadosPessoa.motivacao}.
+    `
 }
+
 const vaiPagina9 = () => {
 
     if (document.querySelector('section.pag8 label input:checked' == "2")) {
-        dadosPessoa.condicaoMedica = false;
+        dadosPessoa.condicaoMedica = "Possui";
     }
     pag8.style.display = "none";
     pag9.style.display = "block";
