@@ -118,7 +118,13 @@ main section h1 {
 }
 
 main section h3 {
+  text-align: justify;
+  margin: 1vw 0;
+}
+
+main section h4 {
   text-align: left;
+  margin: .5vw 0 0 0;
 }
 
 .pag1 {
