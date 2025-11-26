@@ -25,7 +25,7 @@ const pag9 = document.querySelector("section.pag9");
 const vaiPagina2 = () => {
     dadosPessoa.nome = (document.getElementById('nome').value).trimRight().trimLeft();
     dadosPessoa.idade = parseInt(document.getElementById('idade').value);
-    dadosPessoa.sexo = document.querySelector('section.pag1 input:checked ').value;
+    dadosPessoa.sexo = document.querySelector('section.pag1 input:checked').value;
     if (dadosPessoa.nome !== "" && dadosPessoa.nome != null && !isNaN(dadosPessoa.idade) && dadosPessoa.idade > 0 && dadosPessoa.idade < 250) {
         pag1.style.display = "none";
         pag2.style.display = "block";
@@ -132,7 +132,7 @@ const vaiPagina8 = () => {
 const calcTudo = () => {
     //Aqui já calcula a meta diária com as informações fornecidas
     let GEB = 0;
-    if (dadosPessoa.sexo = "Masculino") {
+    if (dadosPessoa.sexo == "Masculino") {
         //Gasto Energetico BASAL
         GEB = (10 * dadosPessoa.peso) + (6.25 * dadosPessoa.altura) - (5 * dadosPessoa.idade) + 5;
         console.log(GEB);
