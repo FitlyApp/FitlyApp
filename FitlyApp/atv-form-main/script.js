@@ -176,7 +176,7 @@ const calcTudo = () => {
                 break; 
         }
     let resultadoCalo = document.getElementById('resultado-calorias');
-    resultadoCalo.innerHTML = `${GEB.toFixed(2)}dcalorias`;
+    resultadoCalo.innerHTML = `${GEB.toFixed(2)} calorias`;
     let resultadoGordura = document.getElementById('resultado-gorduras');
     resultadoGordura.innerHTML = `${gordura.toFixed(2)} g`
         let resultadoProteina = document.getElementById('resultado-proteinas');
