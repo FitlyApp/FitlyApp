@@ -291,6 +291,22 @@ p.aviso {
   border-radius: 12px;
 }
 
+.pag9 p.dados-gerais {
+  font-size: .7rem;
+  text-align: left;
+  line-height: 1.1rem;
+  margin: 0;
+  display: none;
+}
+
+/* .pag9 {
+  display: block;
+}
+
+.pag1 {
+  display: none;
+} */
+
 
 @media screen and (max-width: 768px) {
 
