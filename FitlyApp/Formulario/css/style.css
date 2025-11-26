@@ -41,12 +41,10 @@ html {
 html {
   font-family: "Poppins";
   scroll-behavior: smooth;
-  background: linear-gradient(
-    90deg,
-    rgba(42, 178, 237, 1) 0%,
-    rgba(42, 156, 237, 1) 50%,
-    rgba(42, 159, 237, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(42, 178, 237, 1) 0%,
+      rgba(42, 156, 237, 1) 50%,
+      rgba(42, 159, 237, 1) 100%);
 }
 
 input {
@@ -56,6 +54,7 @@ input {
 ul li {
   list-style-type: none;
 }
+
 :root {
   --color-background: #f7f7f700;
   --color-text: #030303;
@@ -102,6 +101,7 @@ main {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  outline: none; 
 }
 
 main section {
@@ -112,7 +112,10 @@ main section {
   padding: 3rem 3rem;
   margin: 2;
   border-radius: 8px;
+  outline: none; 
 }
+
+
 
 main section p {
   margin: 1vw 0;
@@ -137,6 +140,7 @@ main section h4 {
   text-align: left;
   margin: 0.5vw 0 0 0;
 }
+
 .pag1 {
   display: block;
 }
@@ -159,15 +163,33 @@ form label.texto input {
   box-sizing: border-box;
   margin: 0;
   font-size: 0.9rem;
-  border: 2px solid  #f5f5f5;
+  border: 2px solid #f5f5f5;
 }
 
+form label.opcao input[type="radio"] {
+  appearance: none;
+  margin: 0; 
+  width: 18px;
+  height: 18px;
+  border: 2px solid #cccccc; 
+  border-radius: 50%;       
+  background-color: #fff; 
+}
+
+form label.opcao input[type="radio"]:checked {
+  border-color: #009dff; 
+  background-image: radial-gradient(#009dff 50%, transparent 10%);
+}
+
+form label.opcao input[type="radio"]:focus {
+  outline: 2px solid #30afff; 
+  outline-offset: 2px;
+}
 form label.texto input:placeholder {
   color: #94a3b8;
 }
 
 form label.texto input:hover {
-  outline: none;
   border-color: rgb(48 175 255);
   background-color: #fff;
   box-shadow: 0 0 0 5px rgb(48 175 255 / 30%);
@@ -187,7 +209,7 @@ form label.opcao {
   width: 100%;
   box-sizing: border-box;
   font-size: 0.9rem;
-    border: 2px solid  #f5f5f5;
+  border: 2px solid #f5f5f5;
 }
 
 form label.opcao:hover {
@@ -267,4 +289,60 @@ p.aviso {
   background-color: #eeeeee;
   padding: 5px 40px;
   border-radius: 12px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  main section {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+    max-width: 100%;
+  }
+
+  .progress {
+    width: 100%;
+    margin-bottom: 1.5rem;
+
+  }
+
+  main section h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  main section p {
+    margin: 0 0 1.5rem 0;
+  }
+
+  main section h3 {
+    margin: 1.5rem 0 0.5rem 0;
+  }
+
+  main section h4 {
+    margin: 1rem 0 0.5rem 0;
+  }
+
+
+  form label.opcao {
+    margin: 0.75rem 0;
+  }
+
+  button {
+    width: 100%;
+    margin: 2rem 0 1rem 0;
+  }
+
+  .pag9 .macros {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .pag9 .macros .macro {
+    width: 100%;
+  }
+
+  .pag9 .resultado-principal {
+    margin: 1.5rem 0;
+  }
 }
