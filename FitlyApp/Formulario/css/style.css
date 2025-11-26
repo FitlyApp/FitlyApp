@@ -91,9 +91,27 @@ button {
   transition: all 0.3s ease;
 }
 
+button.voltar {
+  background-color:#f7ffff ;
+  color: #30afff;
+  border: 2px solid #30afff;
+  padding: 12px 150px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+
 button:hover {
   background-color: #009dff;
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+}
+button.voltar:hover{
+  background-color: #f7ffff;
+  transform: translateY(-4px);
 }
 
 main {
@@ -264,10 +282,6 @@ form label.opcao input[type="radio"] {
   font-size: 1.5rem;
   font-weight: bold;
   color: rgb(23, 165, 253);
-}
-
-.voltar {
-  margin-top: 35px;
 }
 
 p.aviso {
