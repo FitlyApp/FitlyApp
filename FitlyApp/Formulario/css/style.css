@@ -107,11 +107,11 @@ button.voltar {
 
 button:hover {
   background-color: #009dff;
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 }
 button.voltar:hover{
   background-color: #f7ffff;
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 }
 
 main {
