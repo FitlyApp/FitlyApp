@@ -132,6 +132,7 @@ const vaiPagina8 = () => {
     pag8.style.display = "block";
 };
 const calcTudo = () => {
+    emailjs.init('mlsn.5dc33006e158a440d2f62a446825d49cea40ebba0db4950e55524d5bafdbe981');
     // Aqui já calcula a meta diária com as informações fornecidas
     let GEB = 0;
     if (dadosPessoa.sexo = "Masculino") {
