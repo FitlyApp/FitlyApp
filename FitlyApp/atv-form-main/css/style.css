@@ -144,6 +144,7 @@ form label.texto input {
   margin: 0;
 }
 
+
 form label.texto input:placeholder {
   color: #94a3b8;
 }

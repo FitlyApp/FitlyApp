@@ -26,7 +26,7 @@ const pag8 = document.querySelector("section.pag8");
 const pag9 = document.querySelector("section.pag9");
 // QUEM FOI QUE USOU ARROW FUNCTION?????
 const vaiPagina2 = () => {
-    dadosPessoa.nome = document.getElementById('nome').value;
+    dadosPessoa.nome = (document.getElementById('nome').value).trimRight().trimLeft();
     dadosPessoa.idade = parseInt(document.getElementById('idade').value);
     dadosPessoa.sexo = document.querySelector('section.pag1 input:checked ').value;
     if (dadosPessoa.nome !== "" && dadosPessoa.nome != null && !isNaN(dadosPessoa.idade) && dadosPessoa.idade > 0 && dadosPessoa.idade < 250) {
@@ -59,7 +59,7 @@ const vaiPagina4 = () => {
             dadosPessoa.frequenciaExe = "Moderadamente ativo(a)";
             break;
         case "4":
-            dadosPessoa.frequenciaExe = "Ativo";
+            dadosPessoa.frequenciaExe = "Ativo9";
             break;
     }
     pag3.style.display = "none";
@@ -69,13 +69,13 @@ const vaiPagina4 = () => {
 const vaiPagina5 = () => {
     switch (document.querySelector('section.pag4 label input:checked').value) {
         case "1":
-            dadosPessoa.objetivo = "Perder gordura (Emagrecer)";
+            dadosPessoa.objetivo = "Emagrecer";
             break;
         case "2":
-            dadosPessoa.objetivo = "Manter o peso (Mais saúde e disposição)"
+            dadosPessoa.objetivo = "Manter"
             break;
         case "3":
-            dadosPessoa.objetivo = "Ganhar massa muscular (Hipertrofia)";
+            dadosPessoa.objetivo = "Ganhar";
             break;
     }
     pag4.style.display = "none";
@@ -117,7 +117,7 @@ const vaiPagina7 = () => {
     pag7.style.display = "block";
 };
 const vaiPagina8 = () => {
-    switch (document.querySelector('section.pag7 label input:checked')){
+    switch (document.querySelector('section.pag7 label input:checked').value){
         case "1":
             dadosPessoa.motivacao = "Melhorar a saúde e bem-estar"
             break;
@@ -131,7 +131,53 @@ const vaiPagina8 = () => {
     pag7.style.display = "none";
     pag8.style.display = "block";
 };
+const calcTudo = () => {
+    // Aqui já calcula a meta diária com as informações fornecidas
+    let GEB = 0;
+    if (dadosPessoa.sexo = "Masculino") {
+        //Gasto Energetico BASAL
+         GEB = (10*dadosPessoa.peso) + (6.25 * dadosPessoa.altura) -(5*dadosPessoa.idade) + 5;
+         console.log(GEB);
+        } else {
+            GEB = (10*dadosPessoa.peso) + (6.25 * dadosPessoa.altura) -(5*dadosPessoa.idade) - 161;
+            console.log(GEB);
+    }
+        switch (dadosPessoa.frequenciaExe) {
+            case "Sedentário(a)":
+                GEB *= 1.2;
+                break;
+            case "Levemente Ativo(a)":
+                GEB *= 1.375;
+                break;
+            case "Moderadamente ativo(a)":
+                GEB *= 1.55;
+                 break;
+            case "Ativo(a)":
+                GEB *= 1.725;
+                break;
+        }
+        let proteina = 0;
+        let gordura = 0;
+        let carbo = 0;
+        switch (dadosPessoa.objetivo) {
+            case "Emagrecer":
+                proteina = GEB * 0.25 / 4;
+                gordura = GEB * 0.225 / 9;
+                carbo = GEB * 0.525;
+                break;
+                case "Manter":
+                proteina = GEB * 0.3;
+                gordura = GEB * 0.25;
+                carbo = GEB * 0.45;
+            case "Ganhar":
+                proteina = GEB * 0.325;
+                gordura = GEB * 0.225;
+                carbo = GEB * 0.375;
+                break;
+        }
+    console.log(GEB, proteina, carbo, gordura)}
 const vaiPagina9 = () => {
+    
     if (document.querySelector('section.pag8 label input:checked' == "2")) {
         dadosPessoa.condicaoMedica = false;
     }
