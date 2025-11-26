@@ -130,7 +130,7 @@ const vaiPagina8 = () => {
 };
 
 const calcTudo = () => {
-    // Aqui já calcula a meta diária com as informações fornecidas
+    //Aqui já calcula a meta diária com as informações fornecidas
     let GEB = 0;
     if (dadosPessoa.sexo = "Masculino") {
         //Gasto Energetico BASAL
@@ -158,16 +158,16 @@ const calcTudo = () => {
     let gordura = 0;
     let carbo = 0;
     switch (dadosPessoa.objetivo) {
-        case "Emagrecer":
+        case "Emagrecer o peso":
             proteina = GEB * 0.25 / 4;
             gordura = GEB * 0.225 / 9;
             carbo = GEB * 0.525 / 4;
             break;
-        case "Manter":
+        case "Manter o peso":
             proteina = GEB * 0.3 / 4;
             gordura = GEB * 0.25 / 9;
             carbo = GEB * 0.45 / 4;
-        case "Ganhar":
+        case "Ganhar massa muscular":
             proteina = GEB * 0.325 / 4;
             gordura = GEB * 0.225 / 9;
             carbo = GEB * 0.375 / 4;
@@ -182,7 +182,7 @@ const calcTudo = () => {
     let resultadoCarbo = document.getElementById('resultado-carboidratos');
     resultadoCarbo.innerHTML = `${Math.round(carbo)} g`;
     
-    //    console.log(GEB, proteina, carbo, gordura)
+     console.log(GEB, proteina, carbo, gordura);
 
     let geral = document.getElementById('dados-gerais');
     geral.innerHTML = `
