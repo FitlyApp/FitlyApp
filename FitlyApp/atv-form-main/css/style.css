@@ -85,6 +85,12 @@ button {
   font-weight: bold;
   border-radius: 7px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #009dff;
+  transform: translateY(-2px);
 }
 
 main {
@@ -118,13 +124,14 @@ main section h1 {
 }
 
 main section h3 {
-  text-align: justify;
+  font-size: 1rem;
+  text-align: left;
   margin: 1vw 0;
 }
 
 main section h4 {
   text-align: left;
-  margin: .5vw 0 0 0;
+  margin: 0.5vw 0 0 0;
 }
 
 .pag1 {
@@ -148,8 +155,8 @@ form label.texto input {
   transition: 0.5s ease;
   box-sizing: border-box;
   margin: 0;
+  font-size: 0.9rem;
 }
-
 
 form label.texto input:placeholder {
   color: #94a3b8;
@@ -167,7 +174,7 @@ form label.opcao {
   align-items: center;
   gap: 12px;
   padding: 10px 16px;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   background-color: #f8fafc;
   border-radius: 10px;
   border: 2px solid transparent;
@@ -175,10 +182,11 @@ form label.opcao {
   transition: 0.4s ease;
   width: 100%;
   box-sizing: border-box;
+  font-size: 0.9rem;
 }
 
 form label.opcao:hover {
-    border-color: rgb(48 175 255);
+  border-color: rgb(48 175 255);
   background-color: #fff;
   box-shadow: 0 0 0 5px rgb(48 175 255 / 30%);
 }
@@ -186,4 +194,56 @@ form label.opcao:hover {
 form label.opcao input[type="radio"] {
   width: 18px;
   height: 18px;
+}
+
+
+.pag9 .macros {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pag9 .macros .macro {
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  padding: 1rem;
+}
+
+.pag9 .resultado-principal {
+  border: 2px solid rgb(23, 165, 253);
+  border-radius: 15px;
+  background-color: rgba(23, 165, 253, 0.103);
+}
+
+.pag9 .resultado-principal span {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(23, 165, 253);
+}
+
+.pag9 p {
+  font-size: 1.2rem;
+}
+
+.pag9 h2 {
+  margin: 1vw;
+}
+
+.pag9 .macros h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.pag9 .macros span {
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(23, 165, 253);
+}
+
+.voltar {
+  margin-top: 35px;
+}
+
+p.aviso {
+  font-size: .8rem;
 }

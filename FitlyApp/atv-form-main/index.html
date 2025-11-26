@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atividade Formulário</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" type="image/x-icon" href="/FitlyApp/Imagens/logos/FitlyLogo.png">
   </head>
   <body>
     <main>
@@ -13,12 +14,12 @@
         <p>Nome, Idade e Gênero</p>
         
         <form action="#">
+          <h4>Nome</h4>
           <label class="texto">
-            <h4>Nome</h4>
             <input type="text" placeholder="Seu nome" id="nome" required/>
           </label>
+          <h4>Idade</h4>
           <label class="texto">
-            <h4>Idade</h4>
             <input type="number" placeholder="Sua idade" min="0" id="idade" required/>
           </label>
           
@@ -38,12 +39,13 @@
         <h1>Dados Corporais</h1>
         <p>Altura e Peso</p>
         <form action="#">
+          <h4>Qual sua altura? (cm)</h4>
           <label class="texto">
-            <h3>Qual sua altura? (cm)</h3>
             <input type="number" placeholder="Ex: 175" id="altura" required/>
           </label>
+          <h4>Qual seu peso? (kg)</h4>
           <label class="texto">
-            <h3>Qual seu peso? (kg)</h3>
+          
             <input type="number" placeholder="Ex: 70.5" id="peso" required />
           </label>
         </form>
@@ -154,7 +156,7 @@
           <label class="opcao">
             <input type="radio" name="saude" value="1" required />Sim
           </label>
-          <label >
+          <label class="opcao">
             <input type="radio" name="saude" value="2" required />Não
           </label>
         </form>
@@ -163,14 +165,32 @@
 
       <section class="pag9">
         <h1>Seu Plano Personalizado</h1>
-        <p>Este é o seu ponto de partida</p>
-        <ul>
-          <li>
-            <p>Sua meta diária (dias de semana) é de:</p>
-            <p><strong></strong></p>
-            <p>kcal</p>
-          </li>
-        </ul>
+        <p class="etapa">Este é o seu ponto de partida</p>
+
+        <div class="resultado-principal">
+          <p>Sua meta diária é de:</p>
+          <span id="resultado-calorias">0</span>
+          <p>kcal</p>
+        </div>
+
+        <h2>Divisão de Macronutrientes</h2>
+
+        <div class="macros">
+          <div class="macro">
+            <h3>Proteínas</h3>
+            <span id="resultado-proteinas">0g</span>
+          </div>
+          <div class="macro">
+            <h3>Carboidratos</h3>
+            <span id="resultado-carboidratos">0g</span>
+          </div>
+          <div class="macro">
+            <h3>Gorduras</h3>
+            <span id="resultado-gorduras">0g</span>
+          </div>
+        </div>
+        <button class="voltar" type="button">Voltar</button>
+        <p class="aviso">Atenção: Este é um valor estimado. Para um plano alimentar preciso, consulte um nutricionista.</p>
       </section>
     </main>
     
