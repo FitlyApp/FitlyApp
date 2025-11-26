@@ -1,5 +1,3 @@
-
-
 let dadosPessoa = {
     nome: "",
     sexo: "",
@@ -117,14 +115,14 @@ const vaiPagina7 = () => {
     pag7.style.display = "block";
 };
 const vaiPagina8 = () => {
-    switch (document.querySelector('section.pag7 label input:checked').value){
+    switch (document.querySelector('section.pag7 label input:checked').value) {
         case "1":
             dadosPessoa.motivacao = "Melhorar a saúde e bem-estar"
             break;
-        case "2": 
+        case "2":
             dadosPessoa.motivacao = "Estética e autoconfiança"
             break;
-        case "3": 
+        case "3":
             dadosPessoa.motivacao = "Mais energia e disposição"
             break;
     }
@@ -136,58 +134,58 @@ const calcTudo = () => {
     let GEB = 0;
     if (dadosPessoa.sexo = "Masculino") {
         //Gasto Energetico BASAL
-         GEB = (10*dadosPessoa.peso) + (6.25 * dadosPessoa.altura) -(5*dadosPessoa.idade) + 5;
-         console.log(GEB);
-        } else {
-            GEB = (10*dadosPessoa.peso) + (6.25 * dadosPessoa.altura) -(5*dadosPessoa.idade) - 161;
-            console.log(GEB);
+        GEB = (10 * dadosPessoa.peso) + (6.25 * dadosPessoa.altura) - (5 * dadosPessoa.idade) + 5;
+        console.log(GEB);
+    } else {
+        GEB = (10 * dadosPessoa.peso) + (6.25 * dadosPessoa.altura) - (5 * dadosPessoa.idade) - 161;
+        console.log(GEB);
     }
-        switch (dadosPessoa.frequenciaExe) {
-            case "Sedentário(a)":
-                GEB *= 1.2;
-                break;
-            case "Levemente Ativo(a)":
-                GEB *= 1.375;
-                break;
-            case "Moderadamente ativo(a)":
-                GEB *= 1.55;
-                 break;
-            case "Ativo(a)":
-                GEB *= 1.725;
-                break;
-        }
-        let proteina = 0;
-        let gordura = 0;
-        let carbo = 0;
-        switch (dadosPessoa.objetivo) {
-            case "Emagrecer":
-                proteina = GEB * 0.25 / 4;
-                gordura = GEB * 0.225 / 9;
-                carbo = GEB * 0.525 / 4;
-                break;
-                case "Manter":
-                proteina = GEB * 0.3 / 4;
-                gordura = GEB * 0.25 / 9;
-                carbo = GEB * 0.45 /4;
-            case "Ganhar":
-                proteina = GEB * 0.325 / 4;
-                gordura = GEB * 0.225 / 9;
-                carbo = GEB * 0.375 / 4;
-                break; 
-        }
+    switch (dadosPessoa.frequenciaExe) {
+        case "Sedentário(a)":
+            GEB *= 1.2;
+            break;
+        case "Levemente Ativo(a)":
+            GEB *= 1.375;
+            break;
+        case "Moderadamente ativo(a)":
+            GEB *= 1.55;
+            break;
+        case "Ativo(a)":
+            GEB *= 1.725;
+            break;
+    }
+    let proteina = 0;
+    let gordura = 0;
+    let carbo = 0;
+    switch (dadosPessoa.objetivo) {
+        case "Emagrecer":
+            proteina = GEB * 0.25 / 4;
+            gordura = GEB * 0.225 / 9;
+            carbo = GEB * 0.525 / 4;
+            break;
+        case "Manter":
+            proteina = GEB * 0.3 / 4;
+            gordura = GEB * 0.25 / 9;
+            carbo = GEB * 0.45 / 4;
+        case "Ganhar":
+            proteina = GEB * 0.325 / 4;
+            gordura = GEB * 0.225 / 9;
+            carbo = GEB * 0.375 / 4;
+            break;
+    }
     let resultadoCalo = document.getElementById('resultado-calorias');
-    resultadoCalo.innerHTML = `${GEB.toFixed(2)} calorias`;
+    resultadoCalo.innerHTML = `${Math.round(GEB)} Kcal`;
     let resultadoGordura = document.getElementById('resultado-gorduras');
-    resultadoGordura.innerHTML = `${gordura.toFixed(2)} g`
-        let resultadoProteina = document.getElementById('resultado-proteinas');
-    resultadoProteina.innerHTML = `${proteina.toFixed(2)} g`;
-        let resultadoCarbo = document.getElementById('resultado-carboidratos');
-    resultadoCarbo.innerHTML = `${carbo.toFixed(2)} g`;
+    resultadoGordura.innerHTML = `${Math.round(gordura)} g`
+    let resultadoProteina = document.getElementById('resultado-proteinas');
+    resultadoProteina.innerHTML = `${Math.round(proteina)} g`;
+    let resultadoCarbo = document.getElementById('resultado-carboidratos');
+    resultadoCarbo.innerHTML = `${Math.round(carbo)} g`;
     //    console.log(GEB, proteina, carbo, gordura
     let geral = document.getElementById('dadosGerais');
 }
 const vaiPagina9 = () => {
-    
+
     if (document.querySelector('section.pag8 label input:checked' == "2")) {
         dadosPessoa.condicaoMedica = false;
     }
@@ -201,5 +199,5 @@ const voltaPag1 = () => {
     for (const form of todosOsForms) {
         form.reset();
     }
-        pag1.style.display = "block";
+    pag1.style.display = "block";
 }

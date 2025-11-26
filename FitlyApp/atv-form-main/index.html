@@ -1,203 +1,256 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atividade Formulário</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="icon" type="image/x-icon" href="/FitlyApp/Imagens/logos/FitlyLogo.png">
-    <link rel="stylesheet" href="script.js">
-  </head>
-  <body>
-    <main>
-      <section class="pag1">
-        <h1>Vamos começar!</h1>
-        <p>Nome, Idade e Gênero</p>
-        
-        <form action="#">
-          <h4>Nome</h4>
-          <label class="texto">
-            <input type="text" placeholder="Seu nome" id="nome" required/>
-          </label>
-          <h4>Idade</h4>
-          <label class="texto">
-            <input type="number" placeholder="Sua idade" min="0" id="idade" required/>
-          </label>
-          
-          <h4>Sexo</h4>
-          <label class="opcao">
-            <input type="radio" name="genero" value="Masculino" required />Masculino
-          </label>
-          <label class="opcao">
-            <input type="radio" name="genero" value="Feminino" required />Feminino 
-          </label>
-        </form>
-        
-        <button type="button" onclick="vaiPagina2()">Próximo</button>
-      </section>
 
-      <section class="pag2">
-        <h1>Dados Corporais</h1>
-        <p>Altura e Peso</p>
-        <form action="#">
-          <h4>Qual sua altura? (cm)</h4>
-          <label class="texto">
-            <input type="number" placeholder="Ex: 175" id="altura" required/>
-          </label>
-          <h4>Qual seu peso? (kg)</h4>
-          <label class="texto">
-          
-            <input type="number" placeholder="Ex: 70.5" id="peso" required />
-          </label>
-        </form>
-        <button type="button" onclick="vaiPagina3()">Próximo</button>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atividade Formulário</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="/FitlyApp/Imagens/logos/FitlyLogo.png">
+  <link rel="stylesheet" href="script.js">
+</head>
 
-      <section class="pag3">
-        <h1>Seu Estilo de Vida</h1>
-        <p>Nível de Atividade Física</p>
-        <form action="#">
-          <h3>Com que frequência você se exercita?</h3>
-          <label class="opcao">
-            <input type="radio" name="frequencia" value="1" required />Sedentário
-          </label>
-          <label class="opcao">
-            <input type="radio" name="frequencia" value="2" required />Levemente Ativo (1-3 dias/semana)
-          </label>
-          <label class="opcao">
-            <input type="radio" name="frequencia" value="3" required />Moderadamente Ativo (3-5 dias/semana)
-          </label>
-          <label class="opcao">
-            <input type="radio" name="frequencia" value="4" required />Muito Ativo (6-7 dias/semana)
-          </label>
-        </form>
-        <button type="button" onclick="vaiPagina4()">Próximo</button>
-      </section>
+<body>
+  <main>
+    <section class="pag1">
+      <h1>Vamos começar!</h1>
+      <p>Nome, Idade e Gênero</p>
 
-      <section class="pag4">
-        <h1>Sua Meta</h1>
-        <p>Qual é o seu principal objetivo?</p>
-        <form action="#">
-          <h3>Selecione uma das opções abaixo:</h3>
-          <label class="opcao">
-            <input type="radio" name="meta" value="1" required />Perder Gordura (Emagrecer)
-          </label>
-          <label class="opcao">
-            <input type="radio" name="meta" value="2" required />Manter o peso (Mais saúde e disposição)
-          </label>
-          <label class="opcao">
-            <input type="radio" name="meta" value="3" required />Ganhar Massa Muscular (Hipertrofia)
-          </label>
-        </form>
-        <button type="button" onclick="vaiPagina5()">Próximo</button>
-      </section>
+      <div class="progress">
+        <div class="preenchido"></div>
+        <div class="vazio"></div>
+        <div class="vazio"></div>
+        <div class="vazio"></div>
+      </div>
 
-      <section class="pag5">
-        <h1>Flexibilidade</h1>
-        <p>Hábitos de Fim de Semana</p>
-        <form action="#">
-          <h3>Você costuma comer um pouco mais nos finais de semana?</h3>
-          <label class="opcao">
-            <input type="radio" name="Flexibilidade" value="1" required />Não, tenho uma rotina consistente
-          </label>
-          <label class="opcao">
-            <input type="radio" name="Flexibilidade" value="2" required />Sim, no Sábado e Domingo
-          </label>
-          <label class="opcao">
-            <input type="radio" name="Flexibilidade" value="3" required />Sim, apenas no Sábado
-          </label>
-          <label class="opcao">
-            <input type="radio" name="Flexibilidade" value="4" required />Sim, na Sexta, Sábado e Domingo
-          </label>
-        </form>
-        <button type="button" onclick="vaiPagina6()">Próximo</button>
-      </section>
+      <form action="#">
+        <h4>Nome</h4>
+        <label class="texto">
+          <input type="text" placeholder="Seu nome" id="nome" required />
+        </label>
+        <h4>Idade</h4>
+        <label class="texto">
+          <input type="number" placeholder="Sua idade" min="0" id="idade" required />
+        </label>
 
-      <section class="pag6">
-        <h1>Preferências</h1>
-        <p>Conte-nos mais sobre sua dieta</p>
-        <form action="#">
-          <h3>Você segue algum tipo de dieta específica?</h3>
-          <label class="opcao">
-            <input type="radio" name="preferencias" value="1" required />Nenhuma específica (Onívoro)
-          </label>
-          <label class="opcao">
-            <input type="radio" name="preferencias" value="2"  required />Vegetariana
-          </label>
-          <label class="opcao">
-            <input type="radio" name="preferencias" value="3" required />Vegana
-          </label>
-        </form>
-        <button type="button" onclick="vaiPagina7()">Próximo</button>
-      </section>
+        <h4>Sexo</h4>
+        <label class="opcao">
+          <input type="radio" name="genero" value="Masculino" required />Masculino
+        </label>
+        <label class="opcao">
+          <input type="radio" name="genero" value="Feminino" required />Feminino
+        </label>
+      </form>
 
-      <section class="pag7">
-        <h1>Sua Motivação</h1>
-        <p>Entender seu 'porquê' nos ajuda a te apoiar</p>
-        <form action="#">
-          <h3>O que mais te motiva a alcançar seu objetivo?</h3>
-          <label class="opcao">
-            <input type="radio" name="motivacao" value="1" required />Melhorar a saúde e bem-estar
-          </label>
-          <label class="opcao">
-            <input type="radio" name="motivacao" value="2" required />Estética e autoconfiança
-          </label>
-          <label class="opcao">
-            <input type="radio" name="motivacao" value="3" required />Mais energia e disposição
-          </label>
-        </form>
-        <button type="button" onclick="vaiPagina8()">Próximo</button>
-      </section>
+      <button type="button" onclick="vaiPagina2()">Próximo</button>
+    </section>
 
-      <section class="pag8">
-        <h1>Considerações Finais</h1>
-        <p>Informações de Saúde</p>
-        <form action="#">
-          <h3>Você possui alguma condição médica, lesão ou restrição alimentar importante?</h3>
-          <label class="opcao">
-            <input type="radio" name="saude" value="1" required />Sim
-          </label>
-          <label class="opcao">
-            <input type="radio" name="saude" value="2" required />Não
-          </label>
-        </form>
-        <button type="button" onclick="vaiPagina9(), calcTudo()">Próximo</button>
-      </section>
+    <section class="pag2">
+      <h1>Dados Corporais</h1>
+      <p>Altura e Peso</p>
+      <div class="progress">
+        <div class="preenchido"></div>
+        <div class="preenchido"></div>
+        <div class="vazio"></div>
+        <div class="vazio"></div>
+      </div>
+      <form action="#">
+        <h4>Qual sua altura? (cm)</h4>
+        <label class="texto">
+          <input type="number" placeholder="Ex: 175" id="altura" required />
+        </label>
+        <h4>Qual seu peso? (kg)</h4>
+        <label class="texto">
 
-      <section class="pag9">
-        <h1>Seu Plano Personalizado</h1>
-        <p class="etapa">Este é o seu ponto de partida</p>
+          <input type="number" placeholder="Ex: 70.5" id="peso" required />
+        </label>
+      </form>
+      <button type="button" onclick="vaiPagina3()">Próximo</button>
+    </section>
 
-        <div class="resultado-principal">
-          <p>Sua meta diária é de:</p>
-          <span id="resultado-calorias"></span>
-          <p>kcal</p>
+    <section class="pag3">
+      <h1>Seu Estilo de Vida</h1>
+      <p>Nível de Atividade Física</p>
+      <div class="progress">
+        <div class="preenchido"></div>
+        <div class="preenchido"></div>
+        <div class="preenchido"></div>
+        <div class="vazio"></div>
+      </div>
+      <form action="#">
+        <h3>Com que frequência você se exercita?</h3>
+        <label class="opcao">
+          <input type="radio" name="frequencia" value="1" required />Sedentário
+        </label>
+        <label class="opcao">
+          <input type="radio" name="frequencia" value="2" required />Levemente Ativo (1-3 dias/semana)
+        </label>
+        <label class="opcao">
+          <input type="radio" name="frequencia" value="3" required />Moderadamente Ativo (3-5 dias/semana)
+        </label>
+        <label class="opcao">
+          <input type="radio" name="frequencia" value="4" required />Muito Ativo (6-7 dias/semana)
+        </label>
+      </form>
+      <button type="button" onclick="vaiPagina4()">Próximo</button>
+    </section>
+
+    <section class="pag4">
+      <h1>Sua Meta</h1>
+      <p>Qual é o seu principal objetivo?</p>
+      <div class="progress">
+        <div class="preenchido"></div>
+        <div class="preenchido"></div>
+        <div class="preenchido"></div>
+        <div class="preenchido"></div>
+      </div>
+      <form action="#">
+        <h3>Selecione uma das opções abaixo:</h3>
+        <label class="opcao">
+          <input type="radio" name="meta" value="1" required />Perder Gordura (Emagrecer)
+        </label>
+        <label class="opcao">
+          <input type="radio" name="meta" value="2" required />Manter o peso (Mais saúde e disposição)
+        </label>
+        <label class="opcao">
+          <input type="radio" name="meta" value="3" required />Ganhar Massa Muscular (Hipertrofia)
+        </label>
+      </form>
+      <button type="button" onclick="vaiPagina5()">Próximo</button>
+    </section>
+
+    <section class="pag5">
+      <h1>Flexibilidade</h1>
+      <p>Hábitos de Fim de Semana</p>
+      <div class="progress">
+        <div class="preenchido"></div>
+        <div class="vazio"></div>
+        <div class="vazio"></div>
+        <div class="vazio"></div>
+      </div>
+      <form action="#">
+        <h3>Você costuma comer um pouco mais nos finais de semana?</h3>
+        <label class="opcao">
+          <input type="radio" name="Flexibilidade" value="1" required />Não, tenho uma rotina consistente
+        </label>
+        <label class="opcao">
+          <input type="radio" name="Flexibilidade" value="2" required />Sim, no Sábado e Domingo
+        </label>
+        <label class="opcao">
+          <input type="radio" name="Flexibilidade" value="3" required />Sim, apenas no Sábado
+        </label>
+        <label class="opcao">
+          <input type="radio" name="Flexibilidade" value="4" required />Sim, na Sexta, Sábado e Domingo
+        </label>
+      </form>
+      <button type="button" onclick="vaiPagina6()">Próximo</button>
+    </section>
+
+    <section class="pag6">
+      <h1>Preferências</h1>
+      <p>Conte-nos mais sobre sua dieta</p>
+            <div class="progress">
+        <div class="preenchido"></div>
+        <div class="preenchido"></div>
+        <div class="vazio"></div>
+        <div class="vazio"></div>
+      </div>
+      <form action="#">
+        <h3>Você segue algum tipo de dieta específica?</h3>
+        <label class="opcao">
+          <input type="radio" name="preferencias" value="1" required />Nenhuma específica (Onívoro)
+        </label>
+        <label class="opcao">
+          <input type="radio" name="preferencias" value="2" required />Vegetariana
+        </label>
+        <label class="opcao">
+          <input type="radio" name="preferencias" value="3" required />Vegana
+        </label>
+      </form>
+      <button type="button" onclick="vaiPagina7()">Próximo</button>
+    </section>
+
+    <section class="pag7">
+      <h1>Sua Motivação</h1>
+      <p>Entender seu 'porquê' nos ajuda a te apoiar</p>
+      <div class="progress">
+        <div class="preenchido"></div>
+        <div class="preenchido"></div>
+        <div class="preenchido"></div>
+        <div class="vazio"></div>
+      </div>
+      <form action="#">
+        <h3>O que mais te motiva a alcançar seu objetivo?</h3>
+        <label class="opcao">
+          <input type="radio" name="motivacao" value="1" required />Melhorar a saúde e bem-estar
+        </label>
+        <label class="opcao">
+          <input type="radio" name="motivacao" value="2" required />Estética e autoconfiança
+        </label>
+        <label class="opcao">
+          <input type="radio" name="motivacao" value="3" required />Mais energia e disposição
+        </label>
+      </form>
+      <button type="button" onclick="vaiPagina8()">Próximo</button>
+    </section>
+
+    <section class="pag8">
+      <h1>Considerações Finais</h1>
+      <p>Informações de Saúde</p>
+     <div class="progress">
+        <div class="preenchido"></div>
+        <div class="preenchido"></div>
+        <div class="preenchido"></div>
+        <div class="preenchido"></div>
+      </div>
+      <form action="#">
+        <h3>Você possui alguma condição médica, lesão ou restrição alimentar importante?</h3>
+        <label class="opcao">
+          <input type="radio" name="saude" value="1" required />Sim
+        </label>
+        <label class="opcao">
+          <input type="radio" name="saude" value="2" required />Não
+        </label>
+      </form>
+      <button type="button" onclick="vaiPagina9(), calcTudo()">Próximo</button>
+    </section>
+
+    <section class="pag9">
+      <h1>Seu Plano Personalizado</h1>
+      <p class="etapa">Este é o seu ponto de partida</p>
+
+      <div class="resultado-principal">
+        <p>Sua meta diária é de:</p>
+        <span id="resultado-calorias"></span>
+        <p>kcal</p>
+      </div>
+
+      <h2>Divisão de Macronutrientes</h2>
+
+      <div class="macros">
+        <div class="macro">
+          <h3>Proteínas</h3>
+          <span id="resultado-proteinas">0g</span>
         </div>
-
-        <h2>Divisão de Macronutrientes</h2>
-
-        <div class="macros">
-          <div class="macro">
-            <h3>Proteínas</h3>
-            <span id="resultado-proteinas">0g</span>
-          </div>
-          <div class="macro">
-            <h3>Carboidratos</h3>
-            <span id="resultado-carboidratos">0g</span>
-          </div>
-          <div class="macro">
-            <h3>Gorduras</h3>
-            <span id="resultado-gorduras">0g</span>
-          </div>
+        <div class="macro">
+          <h3>Carboidratos</h3>
+          <span id="resultado-carboidratos">0g</span>
         </div>
-        <button class="voltar" type="button" onclick="voltaPag1()">Voltar</button>
-        <p class="aviso">Atenção: Este é um valor estimado. Para um plano alimentar preciso, consulte um nutricionista.</p>
-        <div class="" id="dados-gerais">
+        <div class="macro">
+          <h3>Gorduras</h3>
+          <span id="resultado-gorduras">0g</span>
         </div>
-      </section>
-    </main>
-    
-    <script src="script.js">
-    </script>
-  </body>
+      </div>
+      <button class="voltar" type="button" onclick="voltaPag1()">Voltar</button>
+      <p class="aviso">Atenção: Este é um valor estimado. Para um plano alimentar preciso, consulte um nutricionista.
+      </p>
+      <div class="" id="dados-gerais">
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js">
+  </script>
+</body>
+
 </html>

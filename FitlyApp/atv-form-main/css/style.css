@@ -49,6 +49,10 @@ html {
   );
 }
 
+input {
+  font-family: "Poppins";
+}
+
 ul li {
   list-style-type: none;
 }
@@ -155,6 +159,7 @@ form label.texto input {
   box-sizing: border-box;
   margin: 0;
   font-size: 0.9rem;
+  border: 2px solid  #f5f5f5;
 }
 
 form label.texto input:placeholder {
@@ -182,6 +187,7 @@ form label.opcao {
   width: 100%;
   box-sizing: border-box;
   font-size: 0.9rem;
+    border: 2px solid  #f5f5f5;
 }
 
 form label.opcao:hover {
@@ -244,4 +250,21 @@ form label.opcao input[type="radio"] {
 
 p.aviso {
   font-size: .8rem;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-around;
+}
+
+.preenchido {
+  background-color: #009dff;
+  padding: 5px 40px;
+  border-radius: 12px;
+}
+
+.vazio {
+  background-color: #eeeeee;
+  padding: 5px 40px;
+  border-radius: 12px;
 }
