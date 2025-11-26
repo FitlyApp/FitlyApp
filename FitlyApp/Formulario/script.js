@@ -128,7 +128,7 @@ const vaiPagina8 = () => {
     pag7.style.display = "none";
     pag8.style.display = "block";
 };
-
+ 
 const calcTudo = () => {
     //Aqui já calcula a meta diária com as informações fornecidas
     let GEB = 0;
