@@ -211,10 +211,35 @@ const vaiPagina9 = () => {
 };
 
 const voltaPag1 = () => {
-    pag9.style.display = "none";
-    todosOsForms = document.querySelectorAll('section form');
-    for (const form of todosOsForms) {
-        form.reset();
-    }
+    pag2.style.display = "none";
     pag1.style.display = "block";
+}
+const voltaPag2 = () => {
+    pag3.style.display = "none";
+    pag2.style.display = "block";
+}
+const voltaPag3 = () => {
+    pag4.style.display = "none";
+    pag3.style.display = "block";
+}
+
+const voltaPag4 = () => {
+    pag5.style.display = "none";
+    pag4.style.display = "block";
+}
+const voltaPag5 = () => {
+    pag6.style.display = "none";
+    pag5.style.display = "block";
+}
+const voltaPag6 = () => {
+    pag7.style.display = "none";
+    pag6.style.display = "block";
+}
+const voltaPag7 = () => {
+    pag8.style.display = "none";
+    pag7.style.display = "block";
+}
+const voltaPag8 = () => {
+    pag9.style.display = "none";
+    pag8.style.display = "block";
 }

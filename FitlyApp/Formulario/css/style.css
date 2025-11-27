@@ -89,20 +89,13 @@ button {
   border-radius: 7px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin: 1rem 0;
 }
 
 button.voltar {
   background-color:#f7ffff ;
   color: #30afff;
   border: 2px solid #30afff;
-  padding: 12px 150px;
-  width: 100%;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 7px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin: 0 auto;
 }
 
 button:hover {
@@ -140,9 +133,6 @@ main section p {
   color: rgba(0, 0, 0, 0.589);
 }
 
-main section button {
-  margin: 1vw 0;
-}
 
 main section h1 {
   width: 100%;
