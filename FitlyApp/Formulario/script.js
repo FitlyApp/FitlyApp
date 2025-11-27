@@ -213,31 +213,38 @@ const vaiPagina9 = () => {
 const voltaPag1 = () => {
     pag2.style.display = "none";
     pag1.style.display = "block";
+    document.getElementById("pag2").reset();
 }
 const voltaPag2 = () => {
     pag3.style.display = "none";
     pag2.style.display = "block";
+    document.getElementById("pag3").reset();
 }
 const voltaPag3 = () => {
     pag4.style.display = "none";
     pag3.style.display = "block";
+    document.getElementById("pag4").reset();
 }
 
 const voltaPag4 = () => {
     pag5.style.display = "none";
     pag4.style.display = "block";
+    document.getElementById("pag5").reset();
 }
 const voltaPag5 = () => {
     pag6.style.display = "none";
     pag5.style.display = "block";
+    document.getElementById("pag6").reset();
 }
 const voltaPag6 = () => {
     pag7.style.display = "none";
     pag6.style.display = "block";
+    document.getElementById("pag7").reset();
 }
 const voltaPag7 = () => {
     pag8.style.display = "none";
     pag7.style.display = "block";
+    document.getElementById("pag8").reset();
 }
 const voltaPag8 = () => {
     pag9.style.display = "none";
