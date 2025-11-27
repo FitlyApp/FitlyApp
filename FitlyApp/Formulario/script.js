@@ -181,24 +181,22 @@ const calcTudo = () => {
     resultadoProteina.innerHTML = `${Math.round(proteina)} g`;
     let resultadoCarbo = document.getElementById('resultado-carboidratos');
     resultadoCarbo.innerHTML = `${Math.round(carbo)} g`;
-    
-     console.log(GEB, proteina, carbo, gordura);
 
-    let geral = document.getElementById('dados-gerais');
-    geral.innerHTML = `
-    Nome: ${dadosPessoa.nome}<br>
-    sexo: ${dadosPessoa.sexo}<br>
-    idade: ${dadosPessoa.idade}<br>
-    peso: ${dadosPessoa.peso}<br>
-    altura: ${dadosPessoa.altura}<br>
-    IMC: ${(dadosPessoa.peso / (dadosPessoa.altura/100 * dadosPessoa.altura /100)).toFixed(2)}<br>
-    Frequência de exercício físico: ${dadosPessoa.frequenciaExe}<br>
-    objetivo: ${dadosPessoa.objetivo}<br>
-    Costuma comer no final de semana: ${dadosPessoa.habitoFDS}<br>
-    dieta específica: ${dadosPessoa.dieta}<br>
-    condição médica: ${dadosPessoa.condicaoMedica}<br>
-    motivação: ${dadosPessoa.motivacao}.
-    `
+    // let geral = document.getElementById('dados-gerais');
+    // geral.innerHTML = `
+    // Nome: ${dadosPessoa.nome}<br>
+    // sexo: ${dadosPessoa.sexo}<br>
+    // idade: ${dadosPessoa.idade}<br>
+    // peso: ${dadosPessoa.peso}<br>
+    // altura: ${dadosPessoa.altura}<br>
+    // IMC: ${(dadosPessoa.peso / (dadosPessoa.altura/100 * dadosPessoa.altura /100)).toFixed(2)}<br>
+    // Frequência de exercício físico: ${dadosPessoa.frequenciaExe}<br>
+    // objetivo: ${dadosPessoa.objetivo}<br>
+    // Costuma comer no final de semana: ${dadosPessoa.habitoFDS}<br>
+    // dieta específica: ${dadosPessoa.dieta}<br>
+    // condição médica: ${dadosPessoa.condicaoMedica}<br>
+    // motivação: ${dadosPessoa.motivacao}.
+    // `
 }
 
 const vaiPagina9 = () => {
