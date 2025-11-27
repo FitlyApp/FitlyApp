@@ -1,5 +1,6 @@
 let dadosPessoa = {
     nome: "",
+    email:"",
     sexo: "",
     idade: 0,
     peso: 0,
@@ -26,9 +27,15 @@ const vaiPagina2 = () => {
     dadosPessoa.nome = (document.getElementById('nome').value).trimRight().trimLeft();
     dadosPessoa.idade = parseInt(document.getElementById('idade').value);
     dadosPessoa.sexo = document.querySelector('section.pag1 input:checked').value;
+    dadosPessoa.email = document.getElementById('email').value;
     if (dadosPessoa.nome !== "" && dadosPessoa.nome != null && !isNaN(dadosPessoa.idade) && dadosPessoa.idade > 0 && dadosPessoa.idade < 250) {
-        pag1.style.display = "none";
-        pag2.style.display = "block";
+        // O email vou validar a parte
+        if (dadosPessoa.email.includes("@")) {
+            pag1.style.display = "none";
+            pag2.style.display = "block";
+        } else {
+            alert(`Informe um email válido!`);
+        }
     } else {
         alert(`ERRO! algum dos campos possui valor inválido!`);
     }
@@ -198,7 +205,9 @@ const calcTudo = () => {
     // motivação: ${dadosPessoa.motivacao}.
     // `
 }
-
+function enviarEmail(email) {
+    
+}
 const vaiPagina9 = () => {
 
     if (document.querySelector('section.pag8 label input:checked' == "2")) {
