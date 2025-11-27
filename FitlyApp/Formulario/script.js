@@ -1,3 +1,5 @@
+
+
 let dadosPessoa = {
     nome: "",
     email:"",
@@ -43,7 +45,7 @@ const vaiPagina2 = () => {
 const vaiPagina3 = () => {
     dadosPessoa.altura = parseInt(document.getElementById('altura').value)
     dadosPessoa.peso = parseInt(document.getElementById('peso').value)
-    if (!isNaN(dadosPessoa.altura) && !isNaN(dadosPessoa.peso) && dadosPessoa.altura > 0 && dadosPessoa.altura < 300 && dadosPessoa.peso > 0 && dadosPessoa.peso < 1000) {
+    if (!isNaN(dadosPessoa.altura) && !isNaN(dadosPessoa.peso) && dadosPessoa.altura > 100 && dadosPessoa.altura < 300 && dadosPessoa.peso > 20 && dadosPessoa.peso < 1000) {
         pag2.style.display = "none";
         pag3.style.display = "block";
     } else {
@@ -205,9 +207,25 @@ const calcTudo = () => {
     // motivação: ${dadosPessoa.motivacao}.
     // `
 }
-function enviarEmail(email) {
+
+function sendEmail() {
     
-}
+const serviceID = "service_fitly";
+const templateID = "template_zbqj6lr";
+const publicKey = "8g895bSDqV4WhQBqZ";
+
+const templateParams = {
+  nome: dadosPessoa.nome,
+  // AQUI é onde você controla para quem enviar:
+  email: dadosPessoa.email // O email de destino
+};
+
+emailjs.send(serviceID, templateID, templateParams, publicKey)
+  .then((response) => {
+    console.log('E-mail enviado com sucesso!', response.status, response.text);
+  }, (error) => {
+    console.log('Falha ao enviar e-mail...', error);
+  });
 const vaiPagina9 = () => {
 
     if (document.querySelector('section.pag8 label input:checked' == "2")) {
@@ -217,6 +235,7 @@ const vaiPagina9 = () => {
     pag9.style.display = "block";
 };
 
+}
 const voltaPag1 = () => {
     pag9.style.display = "none";
     todosOsForms = document.querySelectorAll('section form');

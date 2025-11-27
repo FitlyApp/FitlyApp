@@ -46,7 +46,7 @@
         </label>
       </form>
 
-      <button type="button" onclick="vaiPagina2()">Próximo</button>
+      <button type="submit" onclick="vaiPagina2(), sendEmail()">Próximo</button>
     </section>
 
     <section class="pag2">
@@ -221,8 +221,8 @@
           <input type="radio" name="saude" value="2" required>Não
         </label>
       </form>
-      <button type="button" onclick="vaiPagina9(), calcTudo()">Próximo</button>
-      <button class="voltar" type="button" onclick="voltaPag7()">Voltar</button>
+      <button type="submit" onclick="vaiPagina9(), calcTudo()">Próximo</button>
+      <button class="voltar" type="submit" onclick="voltaPag7()">Voltar</button>
     </section>
 
     <section class="pag9">
@@ -259,8 +259,16 @@
         </p>
       </div>
     </section>
+    <section class="secaoOculta">
+      <!--Esta seção terá um formulário que armazenará todas as informações informadas pelo usuário, pois o emailjs, obrigatoriamente, precisa de um formulário-->
+      <form action="#">
+        <input type="text" id="nomeOculto">
+        <input type="number" id="idadeOculta">
+        <input type="text" id="emailOculto">
+      </form>
+    </section>
   </main>
-
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js">
   </script>
 </body>
