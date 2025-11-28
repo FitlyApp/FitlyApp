@@ -1,5 +1,8 @@
+
+
 let dadosPessoa = {
     nome: "",
+    email:"",
     sexo: "",
     idade: 0,
     peso: 0,
@@ -26,9 +29,15 @@ const vaiPagina2 = () => {
     dadosPessoa.nome = (document.getElementById('nome').value).trimRight().trimLeft();
     dadosPessoa.idade = parseInt(document.getElementById('idade').value);
     dadosPessoa.sexo = document.querySelector('section.pag1 input:checked').value;
+    dadosPessoa.email = document.getElementById('email').value;
     if (dadosPessoa.nome !== "" && dadosPessoa.nome != null && !isNaN(dadosPessoa.idade) && dadosPessoa.idade > 0 && dadosPessoa.idade < 250) {
-        pag1.style.display = "none";
-        pag2.style.display = "block";
+        // O email vou validar a parte
+        if (dadosPessoa.email.includes("@")) {
+            pag1.style.display = "none";
+            pag2.style.display = "block";
+        } else {
+            alert(`Informe um email válido!`);
+        }
     } else {
         alert(`ERRO! algum dos campos possui valor inválido!`);
     }
@@ -36,7 +45,7 @@ const vaiPagina2 = () => {
 const vaiPagina3 = () => {
     dadosPessoa.altura = parseInt(document.getElementById('altura').value)
     dadosPessoa.peso = parseInt(document.getElementById('peso').value)
-    if (!isNaN(dadosPessoa.altura) && !isNaN(dadosPessoa.peso) && dadosPessoa.altura > 0 && dadosPessoa.altura < 300 && dadosPessoa.peso > 0 && dadosPessoa.peso < 1000) {
+    if (!isNaN(dadosPessoa.altura) && !isNaN(dadosPessoa.peso) && dadosPessoa.altura > 100 && dadosPessoa.altura < 300 && dadosPessoa.peso > 20 && dadosPessoa.peso < 1000) {
         pag2.style.display = "none";
         pag3.style.display = "block";
     } else {
@@ -181,28 +190,40 @@ const calcTudo = () => {
     resultadoProteina.innerHTML = `${Math.round(proteina)} g`;
     let resultadoCarbo = document.getElementById('resultado-carboidratos');
     resultadoCarbo.innerHTML = `${Math.round(carbo)} g`;
-    
-     console.log(GEB, proteina, carbo, gordura);
 
-    let geral = document.getElementById('dados-gerais');
-    geral.innerHTML = `
-    Nome: ${dadosPessoa.nome}<br>
-    sexo: ${dadosPessoa.sexo}<br>
-    idade: ${dadosPessoa.idade}<br>
-    peso: ${dadosPessoa.peso}<br>
-    altura: ${dadosPessoa.altura}<br>
-    IMC: ${(dadosPessoa.peso / (dadosPessoa.altura/100 * dadosPessoa.altura /100)).toFixed(2)}<br>
-    Frequência de exercício físico: ${dadosPessoa.frequenciaExe}<br>
-    objetivo: ${dadosPessoa.objetivo}<br>
-    Costuma comer no final de semana: ${dadosPessoa.habitoFDS}<br>
-    dieta específica: ${dadosPessoa.dieta}<br>
-    condição médica: ${dadosPessoa.condicaoMedica}<br>
-    motivação: ${dadosPessoa.motivacao}.
-    `
+    // let geral = document.getElementById('dados-gerais');
+    // geral.innerHTML = `
+    // Nome: ${dadosPessoa.nome}<br>
+    // sexo: ${dadosPessoa.sexo}<br>
+    // idade: ${dadosPessoa.idade}<br>
+    // peso: ${dadosPessoa.peso}<br>
+    // altura: ${dadosPessoa.altura}<br>
+    // IMC: ${(dadosPessoa.peso / (dadosPessoa.altura/100 * dadosPessoa.altura /100)).toFixed(2)}<br>
+    // Frequência de exercício físico: ${dadosPessoa.frequenciaExe}<br>
+    // objetivo: ${dadosPessoa.objetivo}<br>
+    // Costuma comer no final de semana: ${dadosPessoa.habitoFDS}<br>
+    // dieta específica: ${dadosPessoa.dieta}<br>
+    // condição médica: ${dadosPessoa.condicaoMedica}<br>
+    // motivação: ${dadosPessoa.motivacao}.
+    // `
 }
 
-const vaiPagina9 = () => {
+function sendEmail() {
+    
+const serviceID = "service_fitly";
+const templateID = "template_zbqj6lr";
+const publicKey = "8g895bSDqV4WhQBqZ";
 
+emailjs.send(serviceID, templateID, dadosPessoa, publicKey)
+  .then((response) => {
+    console.log('E-mail enviado com sucesso!', response.status, response.text);
+  }, (error) => {
+    console.log('Falha ao enviar e-mail...', error);
+  });
+
+  
+}
+const vaiPagina9 = () => {
     if (document.querySelector('section.pag8 label input:checked' == "2")) {
         dadosPessoa.condicaoMedica = "Possui";
     }
