@@ -24,15 +24,18 @@
       </div>
 
       <form action="#">
-        <h4>Nome</h4>
+        <h4 onclick="document.getElementById('nome').focus()">Nome</h4>
         <label class="texto">
-          <input type="text" placeholder="Seu nome" id="nome" required />
+          <input type="text" placeholder="Seu nome" id="nome"  required />
         </label>
-        <h4>Idade</h4>
+        <h4 onclick="document.getElementById('idade').focus()">Idade</h4>
         <label class="texto">
           <input type="number" placeholder="Sua idade" min="0" id="idade" required />
         </label>
-
+         <h4 onclick="document.getElementById('email').focus()">Email: </h4>
+        <label class="texto">
+          <input type="text" placeholder="Seu email" id="email" required >
+        </label>
         <h4>Sexo</h4>
         <label class="opcao">
           <input type="radio" name="genero" value="Masculino" required />Masculino
@@ -218,7 +221,7 @@
           <input type="radio" name="saude" value="2" required />Não
         </label>
       </form>
-      <button type="button" onclick="vaiPagina9(), calcTudo()">Próximo</button>
+      <button type="button" onclick="vaiPagina9(), calcTudo(), sendEmail()">Próximo</button>
       <button class="voltar" type="button" onclick="voltaPag7()">Voltar</button>
     </section>
 
@@ -257,7 +260,7 @@
       </div>
     </section>
   </main>
-
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js">
   </script>
 </body>
