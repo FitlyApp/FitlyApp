@@ -214,20 +214,16 @@ const serviceID = "service_fitly";
 const templateID = "template_zbqj6lr";
 const publicKey = "8g895bSDqV4WhQBqZ";
 
-const templateParams = {
-  nome: dadosPessoa.nome,
-  // AQUI é onde você controla para quem enviar:
-  email: dadosPessoa.email // O email de destino
-};
-
-emailjs.send(serviceID, templateID, templateParams, publicKey)
+emailjs.send(serviceID, templateID, dadosPessoa, publicKey)
   .then((response) => {
     console.log('E-mail enviado com sucesso!', response.status, response.text);
   }, (error) => {
     console.log('Falha ao enviar e-mail...', error);
   });
-const vaiPagina9 = () => {
 
+  
+}
+const vaiPagina9 = () => {
     if (document.querySelector('section.pag8 label input:checked' == "2")) {
         dadosPessoa.condicaoMedica = "Possui";
     }
@@ -235,7 +231,6 @@ const vaiPagina9 = () => {
     pag9.style.display = "block";
 };
 
-}
 const voltaPag1 = () => {
     pag9.style.display = "none";
     todosOsForms = document.querySelectorAll('section form');
