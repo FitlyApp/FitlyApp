@@ -268,6 +268,5 @@ const voltaPag7 = () => {
     document.getElementById("pag8").reset();
 }
 const voltaPag8 = () => {
-    pag9.style.display = "none";
-    pag8.style.display = "block";
+    window.location.href = "/FitlyApp/";
 }
