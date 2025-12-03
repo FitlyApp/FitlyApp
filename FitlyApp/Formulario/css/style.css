@@ -121,7 +121,6 @@ main section {
   text-align: center;
   background-color: #ffffff;
   padding: 3rem 3rem;
-  margin: 2;
   border-radius: 8px;
   outline: none; 
 }
@@ -193,7 +192,7 @@ form label.opcao input[type="radio"]:focus {
   outline: 2px solid #30afff; 
   outline-offset: 2px;
 }
-form label.texto input:placeholder {
+form label.texto input::placeholder {
   color: #94a3b8;
 }
 
