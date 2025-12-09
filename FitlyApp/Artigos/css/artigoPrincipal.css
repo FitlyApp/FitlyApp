@@ -37,11 +37,7 @@ section div.tudo {
   background-color: white;
 }
 
-/*
 
-Esse item terá seu plano de fundo diretamente alterado, podendo haver alteração de cor através do script
-
-*/
 section div.tudo>a {
   flex-basis: 40%;
   flex-shrink: 0;
@@ -65,18 +61,34 @@ section div.texto p {
   color: var(--color-text);
 }
 
+section ul li div.texto p {
+  font-size: 1rem; 
+  line-height: 1.5;  
+  margin-bottom: 1.5rem; 
+}
+
 section div.texto p.button {
   background-color: var(--color-background);
   text-align: center;
   color: var(--color-text);
-  border-radius: 2vw;
-  margin: 2vw 0 0 0;
+  border-radius: 1.6vw; 
+  padding: 0.6rem 2rem; 
+  font-size: 1.2rem;  
+  font-weight: bold;  
   border: 2px solid #009dff;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block; 
+  width: 100%; 
 }
 
-section ul li div.texto p {
-  font-size: 1vw;
+section div.texto a:hover p.button {
+  transform: translateY(-7px); 
+  box-shadow: 0 10px 15px rgba(0, 157, 255, 0.2); 
+  background-color: #009dff;
+  color: white; 
 }
+
+
 
 /************************************************
 footer
@@ -159,6 +171,19 @@ footer
   }
   section ul li h2 {
     margin-top: 3vw;
+  }
+
+  section ul li div.texto p {
+    font-size: 1.1rem;
+    text-align: justify; 
+  }
+
+  section div.texto p.button {
+    width: 100%; 
+    padding: 15px 0; 
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    border-radius: 40px; 
   }
 
 }
