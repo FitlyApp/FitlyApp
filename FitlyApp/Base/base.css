@@ -315,6 +315,9 @@ footer a {
   footer div div.logo img {
     width: 10vw;
   }
+  footer div div.mapSite ul li a {
+    margin: 3vh 0;
+  }
 }
 
 @media (max-width: 768px) {
