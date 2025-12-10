@@ -16,26 +16,33 @@
   <body>
     
     <header>
-      <h1 class="logo">
-        <img src="/FitlyApp/Imagens/logos/logoFitlySemTexto.png" alt="Logo" />
-        <a href="/FitlyApp">Fitly</a>
-      </h1>
       <nav class="nav-menu">
-      <button id="btn">
-        <span class="fa-solid fa-moon" id="lua"></span>
-        <span class="fa-solid fa-sun" id="sol"></span>
-      </button>
-        <ul>
-          <li>
-            <a href="/FitlyApp/">Início</a>
-          </li>
-          <li>
-            <a href="/FitlyApp/Sobre-o-projeto/">Sobre o Projeto</a>
-          </li>
-          <li>
-            <a class="contato" href="/FitlyApp/Artigos/">Artigos</a>
-          </li>
-        </ul>
+        <h1>
+          <a class="logo" href="/FitlyApp"
+            ><img
+              src="/FitlyApp/Imagens/logos/logoFitlySemTexto.png"
+              alt="Logo"
+            />
+            Fitly</a
+          >
+        </h1>
+        <div>
+          <button id="btn">
+            <span class="fa-solid fa-moon" id="lua"></span>
+            <span class="fa-solid fa-sun" id="sol"></span>
+          </button>
+          <ul>
+            <li>
+              <a href="/FitlyApp/">Início</a>
+            </li>
+            <li>
+              <a href="/FitlyApp/Sobre-o-projeto/">Sobre o Projeto</a>
+            </li>
+            <li>
+              <a class="contato" href="/FitlyApp/Artigos/">Artigos</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <div class="hamburger">
         <span class="bar"></span>
@@ -133,7 +140,7 @@
         </ul>
       </section>
     </main>
-    <footer>
+        <footer>
       <div>
         <div class="logo">
           <a href="/FitlyApp/">
@@ -181,6 +188,11 @@
             <li>
               <a href="/FitlyApp/Referencias/">Referências</a>
             </li>
+            <li>
+              <a href="/FitlyApp/Sobre-o-projeto/index.html#devs"
+                >Desenvolvedores</a
+              >
+            </li>
           </ul>
         </div>
         <div class="contact">
@@ -198,33 +210,22 @@
       </div>
     </footer>
     <script src="/FitlyApp/Base/script.js"></script>
-
     <script>
       let eClaro = true;
       const raiz = document.documentElement;
       let luaImg = document.getElementById("lua");
       let solImg = document.getElementById("sol");
-
-      let itensArtigos = document.querySelectorAll(".tudo");
       let botaoNoturno = document.getElementById("btn");
       botaoNoturno.addEventListener("click", function () {
         if (eClaro) {
-          for (let item of itensArtigos) {
-            item.style.backgroundColor = "#0a0908";
-          }
-          //#22333b
           raiz.style.setProperty("--color-background", "#1D201F");
           raiz.style.setProperty("--color-text", "white");
+          eClaro = false;
           luaImg.style.display = "none";
           solImg.style.display = "block";
-          eClaro = false;
         } else {
-          for (const item of itensArtigos) {
-            item.style.backgroundColor = "white";
-          }
           raiz.style.setProperty("--color-background", "#f7f7f7");
-          raiz.style.setProperty("--color-text", "black");
-
+          raiz.style.setProperty("--color-text", "#0D1B2A");
           luaImg.style.display = "block";
           solImg.style.display = "none";
           eClaro = true;

@@ -1,7 +1,11 @@
-
 /************************************************
 Formatação
 ************************************************/
+
+main {
+  margin: 0 5rem;
+}
+
 section {
   text-align: center;
 }
@@ -13,7 +17,7 @@ section ul li {
   height: auto;
   padding: 1vw 0vw 2vw 1vw;
   margin: 1rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 1vw;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
   text-align: left;
@@ -63,21 +67,49 @@ section ul li p a:hover {
 /************************************************/
 /* Responsividade */
 
-@media only screen and (max-width: 768px) {
-
-  section ul {
+@media (max-width: 768px) {
+  main {
+    margin: 0;
+  }
+  section.main ul {
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 1rem;
+    padding: 0;
   }
 
   section ul li {
     width: 100%;
     margin: 1rem 0;
     padding: 1rem;
+    height: auto;
+    border-radius: 5px;
   }
+
+  section h1#titulo {
+    font-size: 2rem;
+    padding: 1rem 0 0.5rem 0;
+  }
+
   section h1 {
     font-size: 2rem;
   }
 
+  section ul li h2 {
+    font-size: 1.2rem;
+    padding: 0 0 0.5rem 0;
+    display: flex;
+    align-items: center;
+  }
+
+  section ul li h2 img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0.8rem 0 0;
+  }
+
+  section ul li p {
+    font-size: 0.9rem;
+  }
 }
