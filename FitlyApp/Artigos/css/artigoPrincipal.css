@@ -70,10 +70,10 @@ section ul li div.texto p {
 section div.texto p.button {
   background-color: var(--color-background);
   text-align: center;
-  color: var(--color-text);
-  border-radius: 1.6vw; 
-  padding: 0.6rem 2rem; 
-  font-size: 1.2rem;  
+  color: var(--color-text); 
+  border-radius: 12px; 
+  padding: 0.6rem 1rem; 
+  font-size: .9rem;  
   font-weight: bold;  
   border: 2px solid #009dff;
   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
@@ -180,10 +180,10 @@ footer
 
   section div.texto p.button {
     width: 100%; 
-    padding: 15px 0; 
+    padding: 15px .5rem; 
     font-size: 1.1rem;
     margin-top: 2rem;
-    border-radius: 40px; 
+    border-radius: 12px; 
   }
 
 }
