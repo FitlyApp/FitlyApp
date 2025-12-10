@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Referencias</title>
-    <link rel="stylesheet" href="/FitlyApp/Base/base.css" />
-    <link rel="stylesheet" href="css/Referencias.css?v=8" />
-    <link rel="icon" type="image/x-icon" href="/FitlyApp/Imagens/logos/FitlyLogo.png">
+    <link rel="stylesheet" href="../Base/base.css" />
+    <link rel="stylesheet" href="css/Referencias.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/FitlyApp/Imagens/logos/FitlyLogo.png"
+    />
     <script
       src="https://kit.fontawesome.com/a1f8cb2104.js"
       crossorigin="anonymous"
@@ -15,12 +19,16 @@
   </head>
 
   <body>
-     <header>
+    <header>
       <h1 class="logo">
         <img src="/FitlyApp/Imagens/logos/logoFitlySemTexto.png" alt="Logo" />
         <a href="/FitlyApp">Fitly</a>
       </h1>
       <nav class="nav-menu">
+        <button id="btn">
+          <span class="fa-solid fa-moon" id="lua"></span>
+          <span class="fa-solid fa-sun" id="sol"></span>
+        </button>
         <ul>
           <li>
             <a href="/FitlyApp/">Início</a>
@@ -41,7 +49,7 @@
     </header>
     <main>
       <section class="main">
-        <h1>Referências</h1>
+        <h1 id="titulo">Referências</h1>
         <ul>
           <li>
             <h2>
@@ -64,6 +72,7 @@
               . Acessado em: 15/08/2025.
             </p>
           </li>
+
           <li>
             <h2>
               <img
@@ -82,8 +91,7 @@
               . Acesso em: 22/08/2025.
             </p>
           </li>
-        </ul>
-        <ul>
+
           <li>
             <h2>
               <img
@@ -209,5 +217,38 @@
       </div>
     </footer>
     <script src="/FitlyApp/Base/script.js"></script>
+    <script>
+
+      let eClaro = true;
+      const raiz = document.documentElement;
+      let luaImg = document.getElementById("lua");
+      let solImg = document.getElementById("sol");
+      let lista = document.querySelector("section ul").querySelectorAll('li');
+      let title = document.getElementById("titulo");
+      let botaoNoturno = document.getElementById("btn");
+      botaoNoturno.addEventListener("click", function () {
+        if (eClaro) {
+          raiz.style.setProperty("--color-background", "#1D201F");
+          raiz.style.setProperty("--color-text", "white");
+          luaImg.style.display = "none";
+          solImg.style.display = "block";
+          title.style.color = "white";
+          for (const item of lista) {
+            item.style.backgroundColor = "#0a0908"
+          }
+          eClaro = false;
+        } else {
+          raiz.style.setProperty("--color-background", "#f7f7f7");
+          raiz.style.setProperty("--color-text", "#000000");
+          luaImg.style.display = "block";
+          solImg.style.display = "none";
+           title.style.color = "#000000";
+          for (const item of lista) {
+            item.style.backgroundColor = "#F7F7F7"
+          }
+          eClaro = true;
+        }
+      });
+    </script>
   </body>
 </html>
